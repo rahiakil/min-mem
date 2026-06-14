@@ -1,6 +1,13 @@
 # min-mem
 
-Shrink memory text for LLM storage without losing meaning — replace longer words with shorter synonyms from a minimal dictionary. **Nouns are never changed.**
+[![CI](https://github.com/rahiakil/min-mem/actions/workflows/ci.yml/badge.svg)](https://github.com/rahiakil/min-mem/actions/workflows/ci.yml)
+[![GitHub Pages](https://github.com/rahiakil/min-mem/actions/workflows/pages.yml/badge.svg)](https://github.com/rahiakil/min-mem/actions/workflows/pages.yml)
+
+**🌐 [Live demo & experiments →](https://rahiakil.github.io/min-mem/)**
+
+Shrink agent memory for LLM storage without losing meaning — replace longer words with shorter synonyms from a minimal dictionary. **Nouns are never changed.**
+
+> **Contributing welcome** — we use PRs and branch protection on `main`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Idea
 
@@ -96,17 +103,40 @@ But, they before needed also libraries to aid the workflow.
 - Does not rewrite sentence structure or remove redundancy beyond dictionary swaps
 - `expand()` provides a best-effort inverse (short → first long form in dict)
 
+## Experiments
+
+Reproducible benchmarks and CPU LLM agent demo:
+
+```bash
+pip install -e ".[dev,experiments]"
+
+# Comparative study (5 methods, 15-sample corpus)
+python experiments/run_benchmark.py
+python experiments/generate_figures.py
+
+# Agent + skills context reduction (requires Ollama + qwen2.5:0.5b)
+python experiments/agent_context_demo.py
+```
+
+Results power the [GitHub Pages site](https://rahiakil.github.io/min-mem/).
+
 ## Project layout
 
 ```
 min_dict.json          # minimal synonym dictionary
-src/min_mem/
-  dictionary.py        # load & index entries
-  converter.py         # POS-aware minifier
-  cli.py               # command-line interface
+src/min_mem/           # converter, CLI
+experiments/           # benchmarks + CPU LLM agent demo
+docs/                  # GitHub Pages site
 tests/
-  test_converter.py
 ```
+
+## Contribute
+
+1. Fork → branch → PR
+2. Dictionary entries: edit `min_dict.json` (non-nouns only)
+3. `pytest` must pass — CI runs on every PR
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) · [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## Test
 

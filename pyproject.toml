@@ -13,14 +13,13 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = [
-    "pytest>=7.0",
-]
-experiments = [
-    "tiktoken>=0.5",
-    "matplotlib>=3.7",
-    "numpy>=1.24",
-]
+dev = ["pytest>=7.0"]
+experiments = ["tiktoken>=0.5", "matplotlib>=3.7", "numpy>=1.24"]
+
+[project.urls]
+Homepage = "https://rahiakil.github.io/min-mem/"
+Repository = "https://github.com/rahiakil/min-mem"
+Issues = "https://github.com/rahiakil/min-mem/issues"
 
 [project.scripts]
 min-mem = "min_mem.cli:main"

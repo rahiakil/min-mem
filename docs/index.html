@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min-Mem — Shrink LLM Agent Memory, Keep the Meaning</title>
+  <meta name="description" content="Min-Mem minifies LLM agent memory using shorter synonyms. Nouns stay intact. Proven with local CPU LLMs. Open source — contribute today.">
+  <meta property="og:title" content="Min-Mem — Lexical Minification for LLM Agent Memory">
+  <meta property="og:description" content="Same semantic knowledge. Fewer characters. Zero noun corruption. Experiments included.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a class="logo" href="#">min<span>-mem</span></a>
+    <ul class="nav-links">
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#experiments">Experiments</a></li>
+      <li><a href="#agent">Agent demo</a></li>
+      <li><a href="#contribute">Contribute</a></li>
+    </ul>
+    <a class="btn btn-primary" href="https://github.com/rahiakil/min-mem" target="_blank">★ Star on GitHub</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Same memory.<br><em>Smaller words.</em></h1>
+    <p class="lead">
+      LLM agents hoard verbose text in persistent memory — <code>utilize</code>, <code>in order to</code>, <code>nevertheless</code>.
+      Min-Mem replaces them with shorter equivalents. <strong>Nouns never change.</strong> Meaning stays. Context shrinks.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://github.com/rahiakil/min-mem#install">Get started</a>
+      <a class="btn btn-outline" href="#demo">Try live demo</a>
+      <a class="btn btn-outline" href="https://github.com/rahiakil/min-mem/fork" target="_blank">Fork & contribute</a>
+    </div>
+    <div class="stats-row" id="hero-stats">
+      <div class="stat-card"><div class="num" id="stat-char">—</div><div class="lbl">Character reduction</div></div>
+      <div class="stat-card"><div class="num" id="stat-noun">—</div><div class="lbl">Noun preservation</div></div>
+      <div class="stat-card"><div class="num" id="stat-agent">—</div><div class="lbl">Agent context saved</div></div>
+      <div class="stat-card"><div class="num" id="stat-qa">—</div><div class="lbl">CPU LLM QA parity</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="container">
+    <h2>Not compression. Lexical normalization.</h2>
+    <p class="subtitle">gzip makes bytes smaller but produces unreadable output. Min-Mem keeps human-readable English that LLMs parse identically — just shorter.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Before</h3>
+        <pre>The user prefers to <span class="code-verb">utilize</span> <span class="code-noun">Python</span> <span class="code-verb">in order to</span> <span class="code-verb">accomplish</span> data analysis tasks.
+<span class="code-verb">However</span>, they <span class="code-verb">previously required additional</span> libraries to <span class="code-verb">facilitate</span> the <span class="code-noun">workflow</span>.</pre>
+      </div>
+      <div class="card">
+        <h3>After Min-Mem</h3>
+        <pre>The user prefers to <span class="code-save">use</span> <span class="code-noun">Python</span> <span class="code-save">to</span> <span class="code-save">do</span> data analysis tasks.
+<span class="code-save">But</span>, they <span class="code-save">before needed more</span> libraries to <span class="code-save">aid</span> the <span class="code-noun">workflow</span>.</pre>
+        <p style="margin-top:.75rem;font-size:.85rem;color:var(--accent2)">↓ 27% fewer characters · nouns untouched</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:2rem">
+      <h3>Processing pipeline</h3>
+      <div class="pipeline">
+        <div class="pipe-step">Memory text</div><span class="pipe-arrow">→</span>
+        <div class="pipe-step">Phrase replace</div><span class="pipe-arrow">→</span>
+        <div class="pipe-step">POS tag</div><span class="pipe-arrow">→</span>
+        <div class="pipe-step">Skip nouns</div><span class="pipe-arrow">→</span>
+        <div class="pipe-step">Dict + inflect</div><span class="pipe-arrow">→</span>
+        <div class="pipe-step">Minified output</div>
+      </div>
+      <img class="diagram" src="assets/img/fig_architecture.png" alt="Min-Mem architecture diagram" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="container">
+    <h2>Live demo</h2>
+    <p class="subtitle">Type agent-style memory. See instant minification with sample dictionary rules.</p>
+    <textarea class="demo-input" id="demo-input" placeholder="The user prefers to utilize Python in order to accomplish data analysis tasks...">The user prefers to utilize Python in order to accomplish data analysis tasks. However, they previously required additional libraries to facilitate the workflow.</textarea>
+    <button class="btn btn-primary" style="margin-top:1rem" onclick="runDemo()">Minify</button>
+    <div class="compare demo-output" id="demo-output" style="margin-top:1.5rem"></div>
+    <p style="margin-top:1rem;font-size:.8rem;color:var(--muted)">Demo uses client-side rules. Full pipeline uses NLTK POS tagging + 112-entry dictionary. <a href="https://github.com/rahiakil/min-mem">Run locally →</a></p>
+  </div>
+</section>
+
+<section id="experiments">
+  <div class="container">
+    <h2>Experiments & benchmarks</h2>
+    <p class="subtitle">Reproducible comparative study across 15 agent-memory passages and 5 methods. Run yourself: <code>python experiments/run_benchmark.py</code></p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Method comparison</h3>
+        <div class="chart-wrap"><canvas id="chart-methods"></canvas></div>
+      </div>
+      <div class="card">
+        <h3>Savings by memory type</h3>
+        <div class="chart-wrap"><canvas id="chart-categories"></canvas></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:2rem">
+      <h3>Why not naive substitution?</h3>
+      <div class="chart-wrap tall"><canvas id="chart-safety"></canvas></div>
+      <p style="margin-top:1rem;font-size:.85rem;color:var(--muted)">Naive dict saves ~1% more chars but corrupts nouns 3% more often. Min-Mem trades tiny size gains for entity safety.</p>
+    </div>
+  </div>
+</section>
+
+<section id="agent">
+  <div class="container">
+    <h2>Agent + skills context reduction</h2>
+    <p class="subtitle">Real agent prompts = system + skills + memory blocks. Min-Mem attacks the memory layer. Proven with <strong id="llm-model">local CPU LLM</strong> via Ollama.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Full agent prompt budget (60 memories)</h3>
+        <div id="stack-verbose" class="stack-bar"></div>
+        <div id="stack-minified" class="stack-bar"></div>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:1rem" id="agent-summary"></p>
+      </div>
+      <div class="card">
+        <h3>Scale: memory blocks vs 8K context</h3>
+        <div class="chart-wrap tall"><canvas id="chart-scale"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:2rem">
+      <h3>CPU LLM retrieval parity</h3>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:1rem">Same questions asked against verbose vs minified memory. Keyword fact retention measured on <code>qwen2.5:0.5b</code> running on CPU.</p>
+      <div id="qa-table"></div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="container">
+    <h2>Why agents need this</h2>
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="card">
+        <h3>🗂️ More room for skills & tools</h3>
+        <p style="font-size:.9rem;color:var(--muted)">Agent prompts pack system instructions, skill definitions, tool schemas, AND memory. Shrinking memory leaves headroom for what actually does work.</p>
+      </div>
+      <div class="card">
+        <h3>💰 Cheaper storage</h3>
+        <p style="font-size:.9rem;color:var(--muted)">Memory stores grow forever. 16%+ character reduction compounds across thousands of entries — no GPU, no retraining.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Entities stay safe</h3>
+        <p style="font-size:.9rem;color:var(--muted)">POS tagging blocks noun replacement. Python, Redis, Acme Corp — never touched. 96%+ noun-tag preservation in benchmarks.</p>
+      </div>
+      <div class="card">
+        <h3>🔧 Drop-in & extensible</h3>
+        <p style="font-size:.9rem;color:var(--muted)">112-entry JSON dictionary. Add synonyms without code changes. CLI + Python API. 7 tests. PRs welcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contribute">
+  <div class="container">
+    <div class="cta">
+      <h2>Help build the smallest words movement</h2>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 1.5rem">We use branch protection and pull requests. Fork, branch, experiment, open a PR. Dictionary entries and language support especially welcome.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/rahiakil/min-mem/fork" target="_blank">Fork the repo</a>
+        <a class="btn btn-outline" href="https://github.com/rahiakil/min-mem/blob/main/CONTRIBUTING.md" target="_blank">Contributing guide</a>
+        <a class="btn btn-outline" href="https://github.com/rahiakil/min-mem/issues" target="_blank">Open an issue</a>
+      </div>
+      <div class="badge-row" style="justify-content:center">
+        <span class="badge">PRs required on main</span>
+        <span class="badge">112 dictionary entries</span>
+        <span class="badge">MIT-friendly workflow</span>
+        <span class="badge">CPU LLM tested</span>
+      </div>
+    </div>
+    <div class="card" style="margin-top:2rem">
+      <h3>Quick install</h3>
+      <pre>git clone https://github.com/rahiakil/min-mem.git
+cd min-mem && python3 -m venv .venv
+.venv/bin/pip install -e ".[dev,experiments]"
+
+# Minify text
+.venv/bin/min-mem minify -v "The user prefers to utilize Python..."
+
+# Run all experiments
+.venv/bin/python experiments/run_benchmark.py
+.venv/bin/python experiments/agent_context_demo.py</pre>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Min-Mem — open source lexical minification for LLM agent memory</p>
+    <p style="margin-top:.5rem"><a href="https://github.com/rahiakil/min-mem">github.com/rahiakil/min-mem</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

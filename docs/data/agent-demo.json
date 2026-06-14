@@ -1,0 +1,535 @@
+{
+  "model": "qwen2.5:0.5b",
+  "ollama_available": true,
+  "memory_count": 60,
+  "skills_chars": 299,
+  "context": {
+    "verbose": {
+      "chars": 12703,
+      "tokens": 1892,
+      "memory_chars": 12127,
+      "memory_tokens": 1744,
+      "pct_of_8k": 23.095703125,
+      "pct_of_32k": 5.77392578125
+    },
+    "minified": {
+      "chars": 10627,
+      "tokens": 1880,
+      "memory_chars": 10051,
+      "memory_tokens": 1728,
+      "pct_of_8k": 22.94921875,
+      "pct_of_32k": 5.7373046875
+    },
+    "chars_saved": 2076,
+    "tokens_saved": 12,
+    "char_reduction_pct": 16.3,
+    "token_reduction_pct": 0.6,
+    "memory_char_reduction_pct": 17.1,
+    "context_8k_freed_pct": 0.15
+  },
+  "memory_traces": [
+    {
+      "original": "The user prefers to utilize Python in order to accomplish data analysis tasks. However, they previously required additional libraries to facilitate the workflow. Nevertheless, they frequently investigate numerous packages and demonstrate considerable expertise.",
+      "minified": "The user prefers to use Python to do data analysis tasks. But, they before needed more libraries to aid the workflow. Yet, they often check many packages and demonstrate much expertise.",
+      "chars_saved": 76,
+      "savings_pct": 29.1,
+      "swaps": 13
+    },
+    {
+      "original": "The user has established a preference for TypeScript over JavaScript. They additionally require strict typing and frequently communicate that maintainability is particularly important.",
+      "minified": "The user has seted a preference for TypeScript over JavaScript. They also need strict typing and often tell that maintainability is very key.",
+      "chars_saved": 43,
+      "savings_pct": 23.4,
+      "swaps": 7
+    },
+    {
+      "original": "The project implements a microservices architecture utilizing Docker containers. The team previously attempted to facilitate deployment through Kubernetes but subsequently determined that additional complexity was insufficiently advantageous.",
+      "minified": "The project dos a microservices architecture using Docker containers. The team before tryed to aid deployment through Kubernetes but subsequently finded that more complexity was shortly good.",
+      "chars_saved": 51,
+      "savings_pct": 21.1,
+      "swaps": 9
+    },
+    {
+      "original": "The repository contains numerous modules relating to authentication. Developers should investigate configuration files prior to modifying environment variables.",
+      "minified": "The repository contains many modules on authentication. Developers should check configuration files before changing environment variables.",
+      "chars_saved": 22,
+      "savings_pct": 13.8,
+      "swaps": 5
+    },
+    {
+      "original": "During the previous session, the assistant helped the user construct an API endpoint. The user requested additional documentation and consequently the assistant provided comprehensive examples.",
+      "minified": "During the previous session, the assistant helped the user construct an API endpoint. The user requested more documentation and so the assistant provided comprehensive examples.",
+      "chars_saved": 16,
+      "savings_pct": 8.3,
+      "swaps": 2
+    },
+    {
+      "original": "The assistant previously recognized that the user possesses significant experience with React. Nevertheless, they required assistance regarding state management patterns.",
+      "minified": "The assistant before seed that the user haves key experience with React. Nevertheless, they needed assistance on state management patterns.",
+      "chars_saved": 31,
+      "savings_pct": 18.2,
+      "swaps": 6
+    },
+    {
+      "original": "The user's organization is located in Berlin. They frequently participate in conferences and communicate regularly with stakeholders regarding product requirements.",
+      "minified": "The user's organization is located in Berlin. They often join in conferences and tell regularly with stakeholders on product requirements.",
+      "chars_saved": 26,
+      "savings_pct": 15.9,
+      "swaps": 4
+    },
+    {
+      "original": "The database utilizes PostgreSQL version 15. The application previously experienced performance issues that were subsequently resolved through query optimization.",
+      "minified": "The database uses PostgreSQL version 15. The application before experienced performance issues that were subsequently resolved through query optimization.",
+      "chars_saved": 8,
+      "savings_pct": 4.9,
+      "swaps": 2
+    },
+    {
+      "original": "When responding, the assistant should communicate clearly and avoid excessively verbose explanations. However, technical accuracy is particularly important and should never be compromised.",
+      "minified": "When replying, the assistant should tell clearly and avoid too verbose explanations. But, technical accuracy is very key and should never be compromised.",
+      "chars_saved": 35,
+      "savings_pct": 18.6,
+      "swaps": 6
+    },
+    {
+      "original": "The user instructed the assistant to investigate errors thoroughly prior to proposing solutions. Additionally, they prefer concise summaries at the conclusion of each interaction.",
+      "minified": "The user instructed the assistant to check errors thoroughly before proposing solutions. Also, they prefer concise summaries at the conclusion of each interaction.",
+      "chars_saved": 16,
+      "savings_pct": 8.9,
+      "swaps": 3
+    },
+    {
+      "original": "The user utilizes Obsidian for note-taking and has established a Second Brain workflow. They previously requested that planning documents be stored in markdown format. Furthermore, they demonstrate considerable interest in LLM memory optimization techniques.",
+      "minified": "The user uses Obsidian for note-taking and has seted a Second Brain workflow. They before requested that planning documents be stored in markdown format. Also, they show much interest in LLM memory optimization techniques.",
+      "chars_saved": 36,
+      "savings_pct": 14.0,
+      "swaps": 6
+    },
+    {
+      "original": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
+      "minified": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+      "chars_saved": 28,
+      "savings_pct": 12.0,
+      "swaps": 4
+    },
+    {
+      "original": "The assistant should endeavor to accomplish tasks efficiently while simultaneously maintaining adequate communication with the user. Consequently, it is particularly important to establish clear expectations at the commencement of each session.",
+      "minified": "The assistant should try to do tasks fastly while simultaneously keeping enough communication with the user. So, it is very key to set clear expectations at the commencement of each session.",
+      "chars_saved": 54,
+      "savings_pct": 22.1,
+      "swaps": 9
+    },
+    {
+      "original": "Numerous developers have previously attempted to implement similar solutions. However, they frequently encountered considerable difficulties relating to semantic preservation and subsequently terminated their efforts.",
+      "minified": "Many developers have before tryed to do like solutions. But, they often encountered much difficulties on semantic preservation and subsequently ended their efforts.",
+      "chars_saved": 53,
+      "savings_pct": 24.4,
+      "swaps": 10
+    },
+    {
+      "original": "The user works with Python, Redis, and Kubernetes at Acme Corp. They previously utilized GitHub Actions in order to facilitate CI/CD for the Phoenix microservice.",
+      "minified": "The user works with Python, Redis, and Kubernetes at Acme Corp. They before used GitHub Actions to aid CI/CD for the Phoenix microservice.",
+      "chars_saved": 24,
+      "savings_pct": 14.8,
+      "swaps": 4
+    },
+    {
+      "original": "The user prefers to utilize Python in order to accomplish data analysis tasks. However, they previously required additional libraries to facilitate the workflow. Nevertheless, they frequently investigate numerous packages and demonstrate considerable expertise.",
+      "minified": "The user prefers to use Python to do data analysis tasks. But, they before needed more libraries to aid the workflow. Yet, they often check many packages and demonstrate much expertise.",
+      "chars_saved": 76,
+      "savings_pct": 29.1,
+      "swaps": 13
+    },
+    {
+      "original": "The user has established a preference for TypeScript over JavaScript. They additionally require strict typing and frequently communicate that maintainability is particularly important.",
+      "minified": "The user has seted a preference for TypeScript over JavaScript. They also need strict typing and often tell that maintainability is very key.",
+      "chars_saved": 43,
+      "savings_pct": 23.4,
+      "swaps": 7
+    },
+    {
+      "original": "The project implements a microservices architecture utilizing Docker containers. The team previously attempted to facilitate deployment through Kubernetes but subsequently determined that additional complexity was insufficiently advantageous.",
+      "minified": "The project dos a microservices architecture using Docker containers. The team before tryed to aid deployment through Kubernetes but subsequently finded that more complexity was shortly good.",
+      "chars_saved": 51,
+      "savings_pct": 21.1,
+      "swaps": 9
+    },
+    {
+      "original": "The repository contains numerous modules relating to authentication. Developers should investigate configuration files prior to modifying environment variables.",
+      "minified": "The repository contains many modules on authentication. Developers should check configuration files before changing environment variables.",
+      "chars_saved": 22,
+      "savings_pct": 13.8,
+      "swaps": 5
+    },
+    {
+      "original": "During the previous session, the assistant helped the user construct an API endpoint. The user requested additional documentation and consequently the assistant provided comprehensive examples.",
+      "minified": "During the previous session, the assistant helped the user construct an API endpoint. The user requested more documentation and so the assistant provided comprehensive examples.",
+      "chars_saved": 16,
+      "savings_pct": 8.3,
+      "swaps": 2
+    },
+    {
+      "original": "The assistant previously recognized that the user possesses significant experience with React. Nevertheless, they required assistance regarding state management patterns.",
+      "minified": "The assistant before seed that the user haves key experience with React. Nevertheless, they needed assistance on state management patterns.",
+      "chars_saved": 31,
+      "savings_pct": 18.2,
+      "swaps": 6
+    },
+    {
+      "original": "The user's organization is located in Berlin. They frequently participate in conferences and communicate regularly with stakeholders regarding product requirements.",
+      "minified": "The user's organization is located in Berlin. They often join in conferences and tell regularly with stakeholders on product requirements.",
+      "chars_saved": 26,
+      "savings_pct": 15.9,
+      "swaps": 4
+    },
+    {
+      "original": "The database utilizes PostgreSQL version 15. The application previously experienced performance issues that were subsequently resolved through query optimization.",
+      "minified": "The database uses PostgreSQL version 15. The application before experienced performance issues that were subsequently resolved through query optimization.",
+      "chars_saved": 8,
+      "savings_pct": 4.9,
+      "swaps": 2
+    },
+    {
+      "original": "When responding, the assistant should communicate clearly and avoid excessively verbose explanations. However, technical accuracy is particularly important and should never be compromised.",
+      "minified": "When replying, the assistant should tell clearly and avoid too verbose explanations. But, technical accuracy is very key and should never be compromised.",
+      "chars_saved": 35,
+      "savings_pct": 18.6,
+      "swaps": 6
+    },
+    {
+      "original": "The user instructed the assistant to investigate errors thoroughly prior to proposing solutions. Additionally, they prefer concise summaries at the conclusion of each interaction.",
+      "minified": "The user instructed the assistant to check errors thoroughly before proposing solutions. Also, they prefer concise summaries at the conclusion of each interaction.",
+      "chars_saved": 16,
+      "savings_pct": 8.9,
+      "swaps": 3
+    },
+    {
+      "original": "The user utilizes Obsidian for note-taking and has established a Second Brain workflow. They previously requested that planning documents be stored in markdown format. Furthermore, they demonstrate considerable interest in LLM memory optimization techniques.",
+      "minified": "The user uses Obsidian for note-taking and has seted a Second Brain workflow. They before requested that planning documents be stored in markdown format. Also, they show much interest in LLM memory optimization techniques.",
+      "chars_saved": 36,
+      "savings_pct": 14.0,
+      "swaps": 6
+    },
+    {
+      "original": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
+      "minified": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+      "chars_saved": 28,
+      "savings_pct": 12.0,
+      "swaps": 4
+    },
+    {
+      "original": "The assistant should endeavor to accomplish tasks efficiently while simultaneously maintaining adequate communication with the user. Consequently, it is particularly important to establish clear expectations at the commencement of each session.",
+      "minified": "The assistant should try to do tasks fastly while simultaneously keeping enough communication with the user. So, it is very key to set clear expectations at the commencement of each session.",
+      "chars_saved": 54,
+      "savings_pct": 22.1,
+      "swaps": 9
+    },
+    {
+      "original": "Numerous developers have previously attempted to implement similar solutions. However, they frequently encountered considerable difficulties relating to semantic preservation and subsequently terminated their efforts.",
+      "minified": "Many developers have before tryed to do like solutions. But, they often encountered much difficulties on semantic preservation and subsequently ended their efforts.",
+      "chars_saved": 53,
+      "savings_pct": 24.4,
+      "swaps": 10
+    },
+    {
+      "original": "The user works with Python, Redis, and Kubernetes at Acme Corp. They previously utilized GitHub Actions in order to facilitate CI/CD for the Phoenix microservice.",
+      "minified": "The user works with Python, Redis, and Kubernetes at Acme Corp. They before used GitHub Actions to aid CI/CD for the Phoenix microservice.",
+      "chars_saved": 24,
+      "savings_pct": 14.8,
+      "swaps": 4
+    },
+    {
+      "original": "The user prefers to utilize Python in order to accomplish data analysis tasks. However, they previously required additional libraries to facilitate the workflow. Nevertheless, they frequently investigate numerous packages and demonstrate considerable expertise.",
+      "minified": "The user prefers to use Python to do data analysis tasks. But, they before needed more libraries to aid the workflow. Yet, they often check many packages and demonstrate much expertise.",
+      "chars_saved": 76,
+      "savings_pct": 29.1,
+      "swaps": 13
+    },
+    {
+      "original": "The user has established a preference for TypeScript over JavaScript. They additionally require strict typing and frequently communicate that maintainability is particularly important.",
+      "minified": "The user has seted a preference for TypeScript over JavaScript. They also need strict typing and often tell that maintainability is very key.",
+      "chars_saved": 43,
+      "savings_pct": 23.4,
+      "swaps": 7
+    },
+    {
+      "original": "The project implements a microservices architecture utilizing Docker containers. The team previously attempted to facilitate deployment through Kubernetes but subsequently determined that additional complexity was insufficiently advantageous.",
+      "minified": "The project dos a microservices architecture using Docker containers. The team before tryed to aid deployment through Kubernetes but subsequently finded that more complexity was shortly good.",
+      "chars_saved": 51,
+      "savings_pct": 21.1,
+      "swaps": 9
+    },
+    {
+      "original": "The repository contains numerous modules relating to authentication. Developers should investigate configuration files prior to modifying environment variables.",
+      "minified": "The repository contains many modules on authentication. Developers should check configuration files before changing environment variables.",
+      "chars_saved": 22,
+      "savings_pct": 13.8,
+      "swaps": 5
+    },
+    {
+      "original": "During the previous session, the assistant helped the user construct an API endpoint. The user requested additional documentation and consequently the assistant provided comprehensive examples.",
+      "minified": "During the previous session, the assistant helped the user construct an API endpoint. The user requested more documentation and so the assistant provided comprehensive examples.",
+      "chars_saved": 16,
+      "savings_pct": 8.3,
+      "swaps": 2
+    },
+    {
+      "original": "The assistant previously recognized that the user possesses significant experience with React. Nevertheless, they required assistance regarding state management patterns.",
+      "minified": "The assistant before seed that the user haves key experience with React. Nevertheless, they needed assistance on state management patterns.",
+      "chars_saved": 31,
+      "savings_pct": 18.2,
+      "swaps": 6
+    },
+    {
+      "original": "The user's organization is located in Berlin. They frequently participate in conferences and communicate regularly with stakeholders regarding product requirements.",
+      "minified": "The user's organization is located in Berlin. They often join in conferences and tell regularly with stakeholders on product requirements.",
+      "chars_saved": 26,
+      "savings_pct": 15.9,
+      "swaps": 4
+    },
+    {
+      "original": "The database utilizes PostgreSQL version 15. The application previously experienced performance issues that were subsequently resolved through query optimization.",
+      "minified": "The database uses PostgreSQL version 15. The application before experienced performance issues that were subsequently resolved through query optimization.",
+      "chars_saved": 8,
+      "savings_pct": 4.9,
+      "swaps": 2
+    },
+    {
+      "original": "When responding, the assistant should communicate clearly and avoid excessively verbose explanations. However, technical accuracy is particularly important and should never be compromised.",
+      "minified": "When replying, the assistant should tell clearly and avoid too verbose explanations. But, technical accuracy is very key and should never be compromised.",
+      "chars_saved": 35,
+      "savings_pct": 18.6,
+      "swaps": 6
+    },
+    {
+      "original": "The user instructed the assistant to investigate errors thoroughly prior to proposing solutions. Additionally, they prefer concise summaries at the conclusion of each interaction.",
+      "minified": "The user instructed the assistant to check errors thoroughly before proposing solutions. Also, they prefer concise summaries at the conclusion of each interaction.",
+      "chars_saved": 16,
+      "savings_pct": 8.9,
+      "swaps": 3
+    },
+    {
+      "original": "The user utilizes Obsidian for note-taking and has established a Second Brain workflow. They previously requested that planning documents be stored in markdown format. Furthermore, they demonstrate considerable interest in LLM memory optimization techniques.",
+      "minified": "The user uses Obsidian for note-taking and has seted a Second Brain workflow. They before requested that planning documents be stored in markdown format. Also, they show much interest in LLM memory optimization techniques.",
+      "chars_saved": 36,
+      "savings_pct": 14.0,
+      "swaps": 6
+    },
+    {
+      "original": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
+      "minified": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+      "chars_saved": 28,
+      "savings_pct": 12.0,
+      "swaps": 4
+    },
+    {
+      "original": "The assistant should endeavor to accomplish tasks efficiently while simultaneously maintaining adequate communication with the user. Consequently, it is particularly important to establish clear expectations at the commencement of each session.",
+      "minified": "The assistant should try to do tasks fastly while simultaneously keeping enough communication with the user. So, it is very key to set clear expectations at the commencement of each session.",
+      "chars_saved": 54,
+      "savings_pct": 22.1,
+      "swaps": 9
+    },
+    {
+      "original": "Numerous developers have previously attempted to implement similar solutions. However, they frequently encountered considerable difficulties relating to semantic preservation and subsequently terminated their efforts.",
+      "minified": "Many developers have before tryed to do like solutions. But, they often encountered much difficulties on semantic preservation and subsequently ended their efforts.",
+      "chars_saved": 53,
+      "savings_pct": 24.4,
+      "swaps": 10
+    },
+    {
+      "original": "The user works with Python, Redis, and Kubernetes at Acme Corp. They previously utilized GitHub Actions in order to facilitate CI/CD for the Phoenix microservice.",
+      "minified": "The user works with Python, Redis, and Kubernetes at Acme Corp. They before used GitHub Actions to aid CI/CD for the Phoenix microservice.",
+      "chars_saved": 24,
+      "savings_pct": 14.8,
+      "swaps": 4
+    },
+    {
+      "original": "The user prefers to utilize Python in order to accomplish data analysis tasks. However, they previously required additional libraries to facilitate the workflow. Nevertheless, they frequently investigate numerous packages and demonstrate considerable expertise.",
+      "minified": "The user prefers to use Python to do data analysis tasks. But, they before needed more libraries to aid the workflow. Yet, they often check many packages and demonstrate much expertise.",
+      "chars_saved": 76,
+      "savings_pct": 29.1,
+      "swaps": 13
+    },
+    {
+      "original": "The user has established a preference for TypeScript over JavaScript. They additionally require strict typing and frequently communicate that maintainability is particularly important.",
+      "minified": "The user has seted a preference for TypeScript over JavaScript. They also need strict typing and often tell that maintainability is very key.",
+      "chars_saved": 43,
+      "savings_pct": 23.4,
+      "swaps": 7
+    },
+    {
+      "original": "The project implements a microservices architecture utilizing Docker containers. The team previously attempted to facilitate deployment through Kubernetes but subsequently determined that additional complexity was insufficiently advantageous.",
+      "minified": "The project dos a microservices architecture using Docker containers. The team before tryed to aid deployment through Kubernetes but subsequently finded that more complexity was shortly good.",
+      "chars_saved": 51,
+      "savings_pct": 21.1,
+      "swaps": 9
+    },
+    {
+      "original": "The repository contains numerous modules relating to authentication. Developers should investigate configuration files prior to modifying environment variables.",
+      "minified": "The repository contains many modules on authentication. Developers should check configuration files before changing environment variables.",
+      "chars_saved": 22,
+      "savings_pct": 13.8,
+      "swaps": 5
+    },
+    {
+      "original": "During the previous session, the assistant helped the user construct an API endpoint. The user requested additional documentation and consequently the assistant provided comprehensive examples.",
+      "minified": "During the previous session, the assistant helped the user construct an API endpoint. The user requested more documentation and so the assistant provided comprehensive examples.",
+      "chars_saved": 16,
+      "savings_pct": 8.3,
+      "swaps": 2
+    },
+    {
+      "original": "The assistant previously recognized that the user possesses significant experience with React. Nevertheless, they required assistance regarding state management patterns.",
+      "minified": "The assistant before seed that the user haves key experience with React. Nevertheless, they needed assistance on state management patterns.",
+      "chars_saved": 31,
+      "savings_pct": 18.2,
+      "swaps": 6
+    },
+    {
+      "original": "The user's organization is located in Berlin. They frequently participate in conferences and communicate regularly with stakeholders regarding product requirements.",
+      "minified": "The user's organization is located in Berlin. They often join in conferences and tell regularly with stakeholders on product requirements.",
+      "chars_saved": 26,
+      "savings_pct": 15.9,
+      "swaps": 4
+    },
+    {
+      "original": "The database utilizes PostgreSQL version 15. The application previously experienced performance issues that were subsequently resolved through query optimization.",
+      "minified": "The database uses PostgreSQL version 15. The application before experienced performance issues that were subsequently resolved through query optimization.",
+      "chars_saved": 8,
+      "savings_pct": 4.9,
+      "swaps": 2
+    },
+    {
+      "original": "When responding, the assistant should communicate clearly and avoid excessively verbose explanations. However, technical accuracy is particularly important and should never be compromised.",
+      "minified": "When replying, the assistant should tell clearly and avoid too verbose explanations. But, technical accuracy is very key and should never be compromised.",
+      "chars_saved": 35,
+      "savings_pct": 18.6,
+      "swaps": 6
+    },
+    {
+      "original": "The user instructed the assistant to investigate errors thoroughly prior to proposing solutions. Additionally, they prefer concise summaries at the conclusion of each interaction.",
+      "minified": "The user instructed the assistant to check errors thoroughly before proposing solutions. Also, they prefer concise summaries at the conclusion of each interaction.",
+      "chars_saved": 16,
+      "savings_pct": 8.9,
+      "swaps": 3
+    },
+    {
+      "original": "The user utilizes Obsidian for note-taking and has established a Second Brain workflow. They previously requested that planning documents be stored in markdown format. Furthermore, they demonstrate considerable interest in LLM memory optimization techniques.",
+      "minified": "The user uses Obsidian for note-taking and has seted a Second Brain workflow. They before requested that planning documents be stored in markdown format. Also, they show much interest in LLM memory optimization techniques.",
+      "chars_saved": 36,
+      "savings_pct": 14.0,
+      "swaps": 6
+    },
+    {
+      "original": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
+      "minified": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+      "chars_saved": 28,
+      "savings_pct": 12.0,
+      "swaps": 4
+    },
+    {
+      "original": "The assistant should endeavor to accomplish tasks efficiently while simultaneously maintaining adequate communication with the user. Consequently, it is particularly important to establish clear expectations at the commencement of each session.",
+      "minified": "The assistant should try to do tasks fastly while simultaneously keeping enough communication with the user. So, it is very key to set clear expectations at the commencement of each session.",
+      "chars_saved": 54,
+      "savings_pct": 22.1,
+      "swaps": 9
+    },
+    {
+      "original": "Numerous developers have previously attempted to implement similar solutions. However, they frequently encountered considerable difficulties relating to semantic preservation and subsequently terminated their efforts.",
+      "minified": "Many developers have before tryed to do like solutions. But, they often encountered much difficulties on semantic preservation and subsequently ended their efforts.",
+      "chars_saved": 53,
+      "savings_pct": 24.4,
+      "swaps": 10
+    },
+    {
+      "original": "The user works with Python, Redis, and Kubernetes at Acme Corp. They previously utilized GitHub Actions in order to facilitate CI/CD for the Phoenix microservice.",
+      "minified": "The user works with Python, Redis, and Kubernetes at Acme Corp. They before used GitHub Actions to aid CI/CD for the Phoenix microservice.",
+      "chars_saved": 24,
+      "savings_pct": 14.8,
+      "swaps": 4
+    }
+  ],
+  "qa_parity": [
+    {
+      "question": "What language does the user prefer?",
+      "answer_verbose": "The user prefers to use Python.",
+      "answer_minified": "The user prefers to use Python.",
+      "keywords_expected": [
+        "python"
+      ],
+      "match": true,
+      "latency_verbose_ms": 839,
+      "latency_minified_ms": 693
+    },
+    {
+      "question": "Where is the user's organization located?",
+      "answer_verbose": "The user's organization is located in Berlin.",
+      "answer_minified": "The user's organization is located in Berlin.",
+      "keywords_expected": [
+        "berlin"
+      ],
+      "match": true,
+      "latency_verbose_ms": 763,
+      "latency_minified_ms": 725
+    },
+    {
+      "question": "What note-taking tool does the user use?",
+      "answer_verbose": "The user uses Obsidian for note-taking.",
+      "answer_minified": "The user uses Obsidian for note-taking.",
+      "keywords_expected": [
+        "obsidian"
+      ],
+      "match": true,
+      "latency_verbose_ms": 721,
+      "latency_minified_ms": 713
+    },
+    {
+      "question": "Does the user prefer strict typing?",
+      "answer_verbose": "Yes, the user prefers strict typing.",
+      "answer_minified": "Yes, the user prefers strict typing.",
+      "keywords_expected": [
+        "typescript",
+        "typing",
+        "yes"
+      ],
+      "match": false,
+      "latency_verbose_ms": 705,
+      "latency_minified_ms": 716
+    }
+  ],
+  "qa_match_rate": 75.0,
+  "scale_projections": [
+    {
+      "memory_blocks": 15,
+      "verbose_tokens": 542,
+      "minified_tokens": 539,
+      "tokens_saved": 3,
+      "pct_of_8k_verbose": 6.6,
+      "pct_of_8k_minified": 6.6
+    },
+    {
+      "memory_blocks": 50,
+      "verbose_tokens": 1590,
+      "minified_tokens": 1579,
+      "tokens_saved": 11,
+      "pct_of_8k_verbose": 19.4,
+      "pct_of_8k_minified": 19.3
+    },
+    {
+      "memory_blocks": 100,
+      "verbose_tokens": 3067,
+      "minified_tokens": 3048,
+      "tokens_saved": 19,
+      "pct_of_8k_verbose": 37.4,
+      "pct_of_8k_minified": 37.2
+    },
+    {
+      "memory_blocks": 200,
+      "verbose_tokens": 6090,
+      "minified_tokens": 6049,
+      "tokens_saved": 41,
+      "pct_of_8k_verbose": 74.3,
+      "pct_of_8k_minified": 73.8
+    }
+  ]
+}

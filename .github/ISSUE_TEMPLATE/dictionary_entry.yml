@@ -1,0 +1,31 @@
+name: Dictionary suggestion
+description: Propose a new long → short synonym
+labels: dictionary
+body:
+  - type: input
+    id: long
+    attributes:
+      label: Long form
+      placeholder: utilize
+    validations:
+      required: true
+  - type: input
+    id: short
+    attributes:
+      label: Short form
+      placeholder: use
+    validations:
+      required: true
+  - type: dropdown
+    id: pos
+    attributes:
+      label: Part of speech
+      options: [verb, adjective, adverb, connector, phrase]
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example sentence in agent memory context
+    validations:
+      required: true
