@@ -52,7 +52,11 @@ Start from the hub: `min-mem - index.md`
 
 ## Project context
 
-**min-mem** minifies LLM memory text via a minimal synonym dictionary. Nouns are never replaced. See `README.md` and Second Brain cluster [[min-mem - index]] at `~/obsidian2nd/Second Brain/min-mem/`.
+**min-mem** minifies LLM memory text via a minimal synonym dictionary. Nouns are never replaced.
+
+- **Code:** https://github.com/rahiakil/min-mem
+- **Paper (6-page):** https://github.com/rahiakil/min-mem-paper
+- **Second Brain:** `~/obsidian2nd/Second Brain/min-mem/`
 
 ## Code principles
 
