@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "min-mem"
+version = "0.1.0"
+description = "Semantic-preserving memory minification via a minimal synonym dictionary"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "nltk>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+experiments = [
+    "tiktoken>=0.5",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+min-mem = "min_mem.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
