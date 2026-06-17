@@ -11,9 +11,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(Path(__file__).parent))
 
 from min_mem.converter import MinMemConverter, _detokenize, _preserve_case  # noqa: E402
 from min_mem.dictionary import NOUN_TAGS, MinDictionary  # noqa: E402
+from dictionary_tiers import build_tiers, load_entries  # noqa: E402
 
 try:
     import tiktoken
@@ -25,7 +27,6 @@ try:
     from min_mem.converter import _ensure_nltk_data
 except ImportError:
     pos_tag = None  # type: ignore[assignment]
-
 
 CORPUS_PATH = Path(__file__).parent / "corpus.json"
 OUTPUT_PATH = Path(__file__).parent / "results.json"
@@ -249,6 +250,61 @@ def aggregate(results: list[MethodResult]) -> dict:
     return summary
 
 
+def run_dictionary_ablation(corpus: list[dict], full_entries: dict[str, str]) -> dict:
+    """Benchmark progressive min dictionary tiers."""
+    tiers = build_tiers(full_entries)
+    ablation = []
+
+    for tier in tiers:
+        dictionary = MinDictionary.from_dict(tier["entries"])
+        converter = MinMemConverter(dictionary)
+        char_savings, token_savings, noun_pres, swaps = [], [], [], []
+
+        for sample in corpus:
+            text = sample["text"]
+            if not tier["entries"]:
+                transformed = text
+                n_swaps = 0
+            else:
+                r = converter.minify(text)
+                transformed = r.minified
+                n_swaps = len(r.replacements)
+            ev = evaluate(
+                tier["name"], sample["id"], text, transformed, n_swaps, dictionary
+            )
+            char_savings.append(ev.char_savings_pct)
+            token_savings.append(ev.token_savings_pct)
+            noun_pres.append(ev.nouns_preserved_pct)
+            swaps.append(max(n_swaps, 0))
+
+        n = len(corpus)
+        ablation.append({
+            "tier": tier["name"],
+            "label": tier["label"],
+            "dict_size": tier.get("size", 0),
+            "char_savings_pct_mean": sum(char_savings) / n,
+            "token_savings_pct_mean": sum(token_savings) / n,
+            "nouns_preserved_pct_mean": sum(noun_pres) / n,
+            "replacements_mean": sum(swaps) / n,
+        })
+
+    return {"tiers": ablation}
+
+
+def top_dictionary_hits(corpus: list[dict], dictionary: MinDictionary) -> list[dict]:
+    """Most frequent replacements across corpus."""
+    from collections import Counter
+
+    hits: Counter[str] = Counter()
+    converter = MinMemConverter(dictionary)
+    for sample in corpus:
+        r = converter.minify(sample["text"])
+        for rep in r.replacements:
+            key = f"{rep.original} → {rep.replacement}"
+            hits[key] += 1
+    return [{"swap": k, "count": v} for k, v in hits.most_common(15)]
+
+
 def main() -> None:
     corpus = json.loads(CORPUS_PATH.read_text(encoding="utf-8"))
     dictionary = MinDictionary.from_path(ROOT / "min_dict.json")
@@ -300,6 +356,15 @@ def main() -> None:
         cat = sample["category"]
         by_category.setdefault(cat, []).append(r.savings_ratio * 100)
 
+    full_entries = load_entries(ROOT / "min_dict.json")
+    dict_ablation = run_dictionary_ablation(corpus["samples"], full_entries)
+    top_hits = top_dictionary_hits(corpus["samples"], dictionary)
+
+    # Per-sample min-mem only (for scatter chart)
+    per_sample_minmem = [
+        asdict(r) for r in results if r.method == "min-mem (full)"
+    ]
+
     payload = {
         "corpus_size": len(corpus["samples"]),
         "dictionary_size": len(dictionary),
@@ -310,6 +375,9 @@ def main() -> None:
         "by_category_char_savings": {
             k: sum(v) / len(v) for k, v in by_category.items()
         },
+        "dictionary_ablation": dict_ablation,
+        "top_swaps": top_hits,
+        "per_sample_minmem": per_sample_minmem,
         "per_sample": [asdict(r) for r in results],
         "gzip_per_sample": gzip_ratios,
     }

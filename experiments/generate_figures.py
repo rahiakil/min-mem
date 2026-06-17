@@ -145,12 +145,73 @@ def fig_semantic_proxy(data: dict) -> None:
     plt.close(fig)
 
 
+def fig_dictionary_ablation(data: dict) -> None:
+    abl = data.get("dictionary_ablation", {}).get("tiers", [])
+    if not abl:
+        return
+    labels = [t["label"] for t in abl]
+    sizes = [t["dict_size"] for t in abl]
+    chars = [t["char_savings_pct_mean"] for t in abl]
+
+    fig, ax1 = plt.subplots(figsize=(5.5, 2.8))
+    color = "#2c5f8a"
+    ax1.bar(range(len(labels)), chars, color=color, edgecolor="black", linewidth=0.4)
+    ax1.set_ylabel("Character reduction (%)")
+    ax1.set_xticks(range(len(labels)))
+    ax1.set_xticklabels([f"{l}\n(n={s})" for l, s in zip(labels, sizes)], fontsize=6, rotation=0)
+    ax1.set_title("Dictionary ablation: savings vs min dictionary size")
+    for i, v in enumerate(chars):
+        ax1.text(i, v + 0.3, f"{v:.1f}%", ha="center", fontsize=7)
+    fig.tight_layout()
+    fig.savefig(FIGURES / "fig_dictionary_ablation.pdf")
+    fig.savefig(FIGURES / "fig_dictionary_ablation.png")
+    plt.close(fig)
+
+
+def fig_top_swaps(data: dict) -> None:
+    hits = data.get("top_swaps", [])[:10]
+    if not hits:
+        return
+    labels = [h["swap"] for h in hits][::-1]
+    counts = [h["count"] for h in hits][::-1]
+    fig, ax = plt.subplots(figsize=(4.5, 2.8))
+    ax.barh(labels, counts, color="#6366f1", edgecolor="black", linewidth=0.4)
+    ax.set_xlabel("Occurrences across corpus")
+    ax.set_title("Top min dictionary replacements")
+    fig.tight_layout()
+    fig.savefig(FIGURES / "fig_top_swaps.pdf")
+    fig.savefig(FIGURES / "fig_top_swaps.png")
+    plt.close(fig)
+
+
+def fig_per_sample(data: dict) -> None:
+    samples = data.get("per_sample_minmem", [])
+    if not samples:
+        return
+    chars = [s["char_savings_pct"] for s in samples]
+    tokens = [s["token_savings_pct"] for s in samples]
+    fig, ax = plt.subplots(figsize=(3.4, 2.6))
+    ax.scatter(chars, tokens, c="#3b9eff", edgecolors="black", linewidths=0.4, s=40, alpha=0.85)
+    ax.set_xlabel("Character reduction (%)")
+    ax.set_ylabel("Token reduction (%)")
+    ax.set_title("Per-sample char vs token savings")
+    ax.axhline(0, color="#666", linewidth=0.5)
+    ax.axvline(0, color="#666", linewidth=0.5)
+    fig.tight_layout()
+    fig.savefig(FIGURES / "fig_per_sample.pdf")
+    fig.savefig(FIGURES / "fig_per_sample.png")
+    plt.close(fig)
+
+
 def main() -> None:
     data = load()
     fig_method_comparison(data)
     fig_category_breakdown(data)
     fig_architecture()
     fig_semantic_proxy(data)
+    fig_dictionary_ablation(data)
+    fig_top_swaps(data)
+    fig_per_sample(data)
     print(f"Figures written to {FIGURES}")
 
 
