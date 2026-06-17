@@ -203,6 +203,30 @@ def fig_per_sample(data: dict) -> None:
     plt.close(fig)
 
 
+def fig_improve_history() -> None:
+    hist_path = Path(__file__).parent / "improve_history.json"
+    if not hist_path.exists():
+        return
+    hist = json.loads(hist_path.read_text())
+    iters = [h["iteration"] for h in hist]
+    chars = [h["char_savings_pct"] for h in hist]
+    sizes = [h["dict_size"] for h in hist]
+    tokens = [h["agent_tokens_saved"] for h in hist]
+
+    fig, ax1 = plt.subplots(figsize=(5.0, 2.6))
+    ax1.plot(iters, chars, "o-", color="#2c5f8a", label="Char savings %")
+    ax1.set_xlabel("Improvement iteration")
+    ax1.set_ylabel("Char reduction (%)", color="#2c5f8a")
+    ax2 = ax1.twinx()
+    ax2.plot(iters, sizes, "s--", color="#22d3a6", label="Dict size")
+    ax2.set_ylabel("Dictionary entries", color="#22d3a6")
+    ax1.set_title("Dictionary growth loop convergence")
+    fig.tight_layout()
+    fig.savefig(FIGURES / "fig_improve_history.pdf")
+    fig.savefig(FIGURES / "fig_improve_history.png")
+    plt.close(fig)
+
+
 def main() -> None:
     data = load()
     fig_method_comparison(data)
@@ -212,6 +236,7 @@ def main() -> None:
     fig_dictionary_ablation(data)
     fig_top_swaps(data)
     fig_per_sample(data)
+    fig_improve_history()
     print(f"Figures written to {FIGURES}")
 
 

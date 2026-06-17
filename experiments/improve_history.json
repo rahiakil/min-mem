@@ -1,0 +1,119 @@
+[
+  {
+    "iteration": 1,
+    "dict_size": 120,
+    "char_savings_pct": 17.87,
+    "token_savings_pct": 0.92,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 18.46,
+    "agent_tokens_saved": 3,
+    "added_entries": [
+      "subsequently \u2192 then",
+      "optimization \u2192 tuning",
+      "developers \u2192 devs",
+      "architecture \u2192 design",
+      "solution \u2192 fix",
+      "simultaneously \u2192 also",
+      "experience \u2192 skill",
+      "authentication \u2192 auth"
+    ],
+    "timestamp": "2026-06-17T00:40:36.909126+00:00"
+  },
+  {
+    "iteration": 2,
+    "dict_size": 128,
+    "char_savings_pct": 18.67,
+    "token_savings_pct": 0.92,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 19.29,
+    "agent_tokens_saved": 3,
+    "added_entries": [
+      "documentation \u2192 docs",
+      "comprehensive \u2192 full",
+      "solutions \u2192 fixes",
+      "requested \u2192 asked",
+      "maintaining \u2192 keeping",
+      "incorporates \u2192 adds",
+      "environment \u2192 env",
+      "encountered \u2192 hit"
+    ],
+    "timestamp": "2026-06-17T00:40:39.138280+00:00"
+  },
+  {
+    "iteration": 3,
+    "dict_size": 136,
+    "char_savings_pct": 18.71,
+    "token_savings_pct": 1.37,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 19.32,
+    "agent_tokens_saved": 5,
+    "added_entries": [
+      "attempted \u2192 tried",
+      "application \u2192 app",
+      "stakeholders \u2192 leads",
+      "requirements \u2192 needs",
+      "requirement \u2192 need",
+      "recognized \u2192 saw",
+      "interaction \u2192 chat",
+      "expectations \u2192 goals"
+    ],
+    "timestamp": "2026-06-17T00:40:41.491993+00:00"
+  },
+  {
+    "iteration": 4,
+    "dict_size": 144,
+    "char_savings_pct": 19.01,
+    "token_savings_pct": 1.66,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 19.59,
+    "agent_tokens_saved": 6,
+    "added_entries": [
+      "configuration \u2192 config",
+      "conclusion \u2192 end",
+      "commencement \u2192 start",
+      "sufficiently \u2192 enough",
+      "repository \u2192 repo",
+      "possesses \u2192 has",
+      "performance \u2192 speed",
+      "instructed \u2192 told"
+    ],
+    "timestamp": "2026-06-17T00:40:43.739876+00:00"
+  },
+  {
+    "iteration": 5,
+    "dict_size": 152,
+    "char_savings_pct": 19.33,
+    "token_savings_pct": 1.66,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 19.89,
+    "agent_tokens_saved": 6,
+    "added_entries": [
+      "difficulties \u2192 issues",
+      "conferences \u2192 talks",
+      "thoroughly \u2192 fully",
+      "terminated \u2192 ended",
+      "preservation \u2192 keeping",
+      "microservices \u2192 services",
+      "provided \u2192 gave",
+      "preference \u2192 choice"
+    ],
+    "timestamp": "2026-06-17T00:40:45.940708+00:00"
+  },
+  {
+    "iteration": 6,
+    "dict_size": 157,
+    "char_savings_pct": 19.33,
+    "token_savings_pct": 1.66,
+    "noun_preservation_pct": 94.44,
+    "memory_reduction_pct": 19.89,
+    "agent_tokens_saved": 6,
+    "added_entries": [
+      "expertise \u2192 skill",
+      "deployment \u2192 deploy",
+      "summaries \u2192 recaps",
+      "equivalence \u2192 sameness",
+      "modifying \u2192 changing"
+    ],
+    "timestamp": "2026-06-17T00:40:47.565804+00:00"
+  }
+]
