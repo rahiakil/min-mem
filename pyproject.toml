@@ -4,28 +4,46 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "min-mem"
-version = "0.1.0"
-description = "Semantic-preserving memory minification via a minimal synonym dictionary"
+version = "0.2.0"
+description = "Semantic-preserving memory minification for LLM agents via POS-gated synonym substitution"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.10"
+authors = [{ name = "Rahi Akil" }]
+keywords = ["llm", "agents", "memory", "nlp", "compression", "synonyms", "cursor"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
 dependencies = [
     "nltk>=3.8",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0"]
+dev = ["pytest>=7.0", "build>=1.0", "twine>=5.0"]
 experiments = ["tiktoken>=0.5", "matplotlib>=3.7", "numpy>=1.24"]
 
 [project.urls]
 Homepage = "https://rahiakil.github.io/min-mem/"
+Documentation = "https://github.com/rahiakil/min-mem#readme"
 Repository = "https://github.com/rahiakil/min-mem"
 Issues = "https://github.com/rahiakil/min-mem/issues"
+Changelog = "https://github.com/rahiakil/min-mem/releases"
 
 [project.scripts]
 min-mem = "min_mem.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+min_mem = ["data/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

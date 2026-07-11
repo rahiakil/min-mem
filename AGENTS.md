@@ -54,9 +54,11 @@ Start from the hub: `min-mem - index.md`
 
 **min-mem** minifies LLM memory text via a minimal synonym dictionary. Nouns are never replaced.
 
-- **Code:** https://github.com/rahiakil/min-mem
-- **Paper (6-page):** https://github.com/rahiakil/min-mem-paper
+- **Code (public):** https://github.com/rahiakil/min-mem
+- **PyPI:** `pip install min-mem`
 - **Second Brain:** `~/obsidian2nd/Second Brain/min-mem/`
+
+Research paper and conference benchmarks live in a **private** repo (`min-mem-paper`) — do not link it publicly from this repo.
 
 ## Code principles
 

@@ -1,0 +1,38 @@
+{
+  "context": {
+    "verbose": {
+      "memory_blocks": 60,
+      "memory_chars_verbose": 12127,
+      "memory_chars_minified": 12127,
+      "memory_chars_saved": 0,
+      "memory_reduction_pct": 0.0,
+      "prompt_tokens": 1845,
+      "pct_of_8k": 22.52
+    },
+    "minified": {
+      "memory_blocks": 60,
+      "memory_chars_verbose": 12127,
+      "memory_chars_minified": 9727,
+      "memory_chars_saved": 2400,
+      "memory_reduction_pct": 19.79,
+      "prompt_tokens": 1821,
+      "pct_of_8k": 22.23
+    },
+    "tokens_saved": 24,
+    "chars_saved": 2400
+  },
+  "qa": [
+    {
+      "q": "What language does the user prefer?",
+      "a": "The user prefers to use Python.",
+      "ok": true
+    },
+    {
+      "q": "Where is the organization?",
+      "a": "The organization is located in Berlin.",
+      "ok": true
+    }
+  ],
+  "dict_size": 157,
+  "history_iterations": 6
+}

@@ -6,7 +6,8 @@ import sys
 from pathlib import Path
 
 from min_mem import MinMemConverter
-from min_mem.dictionary import MinDictionary
+from min_mem.bootstrap import doctor_report, init_project
+from min_mem.dictionary import MinDictionary, resolve_dict_path
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -15,6 +16,17 @@ def _build_parser() -> argparse.ArgumentParser:
         description="Minify memory text using a minimal synonym dictionary (nouns preserved).",
     )
     sub = parser.add_subparsers(dest="command", required=True)
+
+    init_cmd = sub.add_parser("init", help="Install dictionary, NLTK data, and optional Cursor hook")
+    init_cmd.add_argument(
+        "--no-cursor",
+        action="store_true",
+        help="Skip installing .cursor/hooks.json session hook",
+    )
+    init_cmd.add_argument("--force", action="store_true", help="Overwrite user dictionary")
+
+    doctor = sub.add_parser("doctor", help="Verify install, dictionary, and NLTK data")
+    doctor.add_argument("--json", action="store_true", help="JSON output")
 
     minify = sub.add_parser("minify", help="Reduce text size while preserving meaning")
     minify.add_argument("text", nargs="?", help="Text to minify (or use --file)")
@@ -32,6 +44,11 @@ def _build_parser() -> argparse.ArgumentParser:
     stats.add_argument("-f", "--file", type=Path, help="Read text from a file")
     stats.add_argument("-d", "--dict", type=Path, help="Custom dictionary JSON path")
 
+    measure = sub.add_parser("measure", help="Benchmark minification on a file or stdin")
+    measure.add_argument("-f", "--file", type=Path, help="Memory file to measure")
+    measure.add_argument("-d", "--dict", type=Path, help="Custom dictionary JSON path")
+    measure.add_argument("--json", action="store_true", help="JSON output")
+
     return parser
 
 
@@ -47,6 +64,33 @@ def _converter(dict_path: Path | None) -> MinMemConverter:
     if dict_path:
         return MinMemConverter.from_dict_path(dict_path)
     return MinMemConverter()
+
+
+def cmd_init(args: argparse.Namespace) -> int:
+    result = init_project(cursor_hook=not args.no_cursor, force_dict=args.force)
+    print("Min-Mem initialized.")
+    print(f"  Dictionary: {result['dictionary']} ({result['entries']} entries)")
+    if result.get("cursor_hook"):
+        print(f"  Cursor hook: {result['cursor_hook']}")
+    print(f"  Metrics:     {result['metrics_file']}")
+    print("\nRun `min-mem doctor` to verify.")
+    return 0
+
+
+def cmd_doctor(args: argparse.Namespace) -> int:
+    report = doctor_report()
+    if args.json:
+        print(json.dumps(report, indent=2))
+    else:
+        status = "OK" if report["ok"] else "ISSUES"
+        print(f"min-mem {report['version']} — {status}")
+        print(f"  Dictionary: {report['dictionary_entries']} entries ({report['dictionary_path']})")
+        print(f"  User dict:  {'installed' if report['user_dict_installed'] else 'using bundled'}")
+        print(f"  NLTK:       {'ready' if report['nltk_ok'] else report['nltk_error']}")
+        if report.get("metrics"):
+            m = report["metrics"]
+            print(f"  Lifetime:   {m.get('total_chars_saved', 0)} chars saved across sessions")
+    return 0 if report["ok"] else 1
 
 
 def cmd_minify(args: argparse.Namespace) -> int:
@@ -83,8 +127,8 @@ def cmd_minify(args: argparse.Namespace) -> int:
 
 
 def cmd_dict(args: argparse.Namespace) -> int:
-    path = args.dict
-    dictionary = MinDictionary.from_path(path) if path else MinDictionary.from_path()
+    path = args.dict or resolve_dict_path()
+    dictionary = MinDictionary.from_path(path)
     if args.count:
         print(len(dictionary))
         return 0
@@ -118,18 +162,42 @@ def cmd_stats(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_measure(args: argparse.Namespace) -> int:
+    content = _read_input(None, args.file)
+    converter = _converter(args.dict)
+    result = converter.minify(content)
+    payload = {
+        "original_chars": result.original_chars,
+        "minified_chars": result.minified_chars,
+        "chars_saved": result.chars_saved,
+        "savings_pct": round(result.savings_ratio * 100, 2),
+        "replacements": len(result.replacements),
+        "dictionary": str(resolve_dict_path(args.dict)),
+    }
+    if args.json:
+        print(json.dumps(payload, indent=2))
+    else:
+        print(f"chars:  {result.original_chars} → {result.minified_chars}  (−{result.chars_saved}, {payload['savings_pct']}%)")
+        print(f"swaps:  {len(result.replacements)}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
 
-    if args.command == "minify":
-        return cmd_minify(args)
-    if args.command == "dict":
-        return cmd_dict(args)
-    if args.command == "stats":
-        return cmd_stats(args)
-    parser.error(f"unknown command: {args.command}")
-    return 2
+    handlers = {
+        "init": cmd_init,
+        "doctor": cmd_doctor,
+        "minify": cmd_minify,
+        "dict": cmd_dict,
+        "stats": cmd_stats,
+        "measure": cmd_measure,
+    }
+    handler = handlers.get(args.command)
+    if handler is None:
+        parser.error(f"unknown command: {args.command}")
+    return handler(args)
 
 
 if __name__ == "__main__":
