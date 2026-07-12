@@ -1,0 +1,4 @@
+# Default owner: repository owner must approve every PR.
+# This enforces that changes to main require @rahiakil's review
+# once branch protection requires CODEOWNERS review.
+* @rahiakil
