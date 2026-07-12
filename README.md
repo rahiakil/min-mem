@@ -209,6 +209,24 @@ make figures    # benchmark + charts → experiments/results.json
 
 Charts and interactive demo: **[rahiakil.github.io/min-mem](https://rahiakil.github.io/min-mem/)**
 
+### Tiered compression vs external baselines
+
+min-mem is the **zero-inference, auditable first tier**. Optional second tiers use small CPU LMs (GPT-2 selective pruning, LLMLingua-2):
+
+```bash
+pip install -e ".[dev,baselines]"
+make baselines          # → experiments/baseline_results.json
+make retrieval          # Ollama QA fidelity across modes
+```
+
+| Mode | Char ↓ | QA accuracy (60 blocks) | Inference |
+|------|--------|-------------------------|-----------|
+| min-mem | 19% | **100%** | none |
+| llmlingua-2@0.5 | 42% | **100%** | small LM |
+| **min-mem → llmlingua-2** | **52%** | **100%** | small LM |
+
+Full study: [`experiments/BASELINE_STUDY.md`](experiments/BASELINE_STUDY.md)
+
 ---
 
 ## CLI reference
