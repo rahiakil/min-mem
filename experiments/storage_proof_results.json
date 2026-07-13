@@ -1,0 +1,1173 @@
+{
+  "version": "storage-proof-v1",
+  "timestamp": "2026-07-13T00:27:40.239798+00:00",
+  "dict_path": "/home/papa/repos/min-mem/min_dict.json",
+  "dict_hash": "33230ab11655b8e2",
+  "dict_size": 200,
+  "write_path_inference": "none",
+  "reader_models": [
+    "bm25_extract",
+    "keyword",
+    "ollama:qwen2.5:0.5b",
+    "ollama:gemma4:latest"
+  ],
+  "ollama_available": true,
+  "benchmarks": {
+    "agent_corpus": {
+      "name": "agent_corpus",
+      "version": "corpus-v1",
+      "data_hash": "4b0692569c8f736f",
+      "source": "/home/papa/repos/min-mem/experiments/corpus.json",
+      "record_count": 60,
+      "qa_count": 8,
+      "char_reduction_pct": 20.351342393105732,
+      "identity_bytes": 12068,
+      "minified_bytes": 9612,
+      "storage": {
+        "checkpoints": [
+          {
+            "event_count": 10,
+            "identity_payload_bytes": 1903,
+            "minified_payload_bytes": 1516,
+            "identity_file_bytes": 3379,
+            "minified_file_bytes": 2992,
+            "identity_gzip_bytes": 1160,
+            "minified_gzip_bytes": 1041,
+            "reduction_pct": 20.336311087756176,
+            "minify_latency_ms": 10.691061968100257
+          },
+          {
+            "event_count": 25,
+            "identity_payload_bytes": 4920,
+            "minified_payload_bytes": 3919,
+            "identity_file_bytes": 8616,
+            "minified_file_bytes": 7615,
+            "identity_gzip_bytes": 1770,
+            "minified_gzip_bytes": 1614,
+            "reduction_pct": 20.345528455284555,
+            "minify_latency_ms": 10.691061968100257
+          },
+          {
+            "event_count": 50,
+            "identity_payload_bytes": 10091,
+            "minified_payload_bytes": 8007,
+            "identity_file_bytes": 17493,
+            "minified_file_bytes": 15409,
+            "identity_gzip_bytes": 2063,
+            "minified_gzip_bytes": 1874,
+            "reduction_pct": 20.652066197601826,
+            "minify_latency_ms": 10.691061968100257
+          }
+        ],
+        "identity_sqlite_bytes": 28672,
+        "minified_sqlite_bytes": 28672,
+        "identity_jsonl_bytes": 20948,
+        "minified_jsonl_bytes": 18492,
+        "bytes_per_memory_identity": 349.1333333333333,
+        "bytes_per_memory_minified": 308.2,
+        "growth_slope_bytes_per_event": 204.7,
+        "sqlite_reduction_pct": 0.0,
+        "jsonl_reduction_pct": 11.724269620011452
+      },
+      "retention": {
+        "retention_ratio": 1.0,
+        "retention_pct": 100.0,
+        "regressions": 0,
+        "passed": true,
+        "models": [
+          "bm25_extract",
+          "keyword"
+        ],
+        "benchmarks": [
+          "agent_corpus"
+        ],
+        "items": [
+          {
+            "qa_id": "qa-01",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What language does the user prefer?",
+            "identity_score": 0.0,
+            "minified_score": 0.0,
+            "retained": true,
+            "identity_passed": false,
+            "minified_passed": false,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-02",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "Where is the user's organization located?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "qa-03",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What note-taking tool does the user use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-04",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "Does the user prefer strict typing?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-05",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What architecture does the project use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "qa-06",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What database does the application use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "qa-07",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What does min-mem implement?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "qa-08",
+            "benchmark": "agent_corpus",
+            "model": "bm25_extract",
+            "question": "What CI tool was previously used?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "qa-01",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What language does the user prefer?",
+            "identity_score": 0.0,
+            "minified_score": 0.0,
+            "retained": true,
+            "identity_passed": false,
+            "minified_passed": false,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-02",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "Where is the user's organization located?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "qa-03",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What note-taking tool does the user use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-04",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "Does the user prefer strict typing?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "qa-05",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What architecture does the project use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "qa-06",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What database does the application use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "qa-07",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What does min-mem implement?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "qa-08",
+            "benchmark": "agent_corpus",
+            "model": "keyword",
+            "question": "What CI tool was previously used?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          }
+        ]
+      }
+    },
+    "locomo": {
+      "name": "locomo",
+      "version": "fixture-v1",
+      "data_hash": "79467413a64fdaa3",
+      "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/locomo_subset.json",
+      "record_count": 120,
+      "qa_count": 8,
+      "char_reduction_pct": 20.351342393105732,
+      "identity_bytes": 24136,
+      "minified_bytes": 19224,
+      "storage": {
+        "checkpoints": [
+          {
+            "event_count": 10,
+            "identity_payload_bytes": 1903,
+            "minified_payload_bytes": 1516,
+            "identity_file_bytes": 3393,
+            "minified_file_bytes": 3006,
+            "identity_gzip_bytes": 1127,
+            "minified_gzip_bytes": 1003,
+            "reduction_pct": 20.336311087756176,
+            "minify_latency_ms": 4.36930506596885
+          },
+          {
+            "event_count": 25,
+            "identity_payload_bytes": 4920,
+            "minified_payload_bytes": 3919,
+            "identity_file_bytes": 8650,
+            "minified_file_bytes": 7649,
+            "identity_gzip_bytes": 1749,
+            "minified_gzip_bytes": 1593,
+            "reduction_pct": 20.345528455284555,
+            "minify_latency_ms": 4.36930506596885
+          },
+          {
+            "event_count": 50,
+            "identity_payload_bytes": 10091,
+            "minified_payload_bytes": 8007,
+            "identity_file_bytes": 17556,
+            "minified_file_bytes": 15472,
+            "identity_gzip_bytes": 2089,
+            "minified_gzip_bytes": 1928,
+            "reduction_pct": 20.652066197601826,
+            "minify_latency_ms": 4.36930506596885
+          },
+          {
+            "event_count": 100,
+            "identity_payload_bytes": 20005,
+            "minified_payload_bytes": 15934,
+            "identity_file_bytes": 34935,
+            "minified_file_bytes": 30864,
+            "identity_gzip_bytes": 2788,
+            "minified_gzip_bytes": 2604,
+            "reduction_pct": 20.349912521869527,
+            "minify_latency_ms": 4.36930506596885
+          }
+        ],
+        "identity_sqlite_bytes": 45056,
+        "minified_sqlite_bytes": 40960,
+        "identity_jsonl_bytes": 42056,
+        "minified_jsonl_bytes": 37144,
+        "bytes_per_memory_identity": 350.46666666666664,
+        "bytes_per_memory_minified": 309.53333333333336,
+        "growth_slope_bytes_per_event": 201.13333333333333,
+        "sqlite_reduction_pct": 9.090909090909093,
+        "jsonl_reduction_pct": 11.679665208293699
+      },
+      "retention": {
+        "retention_ratio": 1.0,
+        "retention_pct": 100.0,
+        "regressions": 0,
+        "passed": true,
+        "models": [
+          "bm25_extract",
+          "keyword"
+        ],
+        "benchmarks": [
+          "locomo"
+        ],
+        "items": [
+          {
+            "qa_id": "locomo-sh-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "What language does the user prefer for data analysis?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "single_hop"
+          },
+          {
+            "qa_id": "locomo-sh-2",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "Where is the organization located?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "single_hop"
+          },
+          {
+            "qa_id": "locomo-temp-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "What did the assistant help construct in the previous session?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "temporal"
+          },
+          {
+            "qa_id": "locomo-mh-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "What tools does the user combine for notes and planning?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "multi_hop"
+          },
+          {
+            "qa_id": "locomo-od-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "What container technology does the project use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "open_domain"
+          },
+          {
+            "qa_id": "locomo-pref-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "Does the user prefer TypeScript?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "locomo-db-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "Which database version is in use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "locomo-proj-1",
+            "benchmark": "locomo",
+            "model": "bm25_extract",
+            "question": "What does min-mem facilitate?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          },
+          {
+            "qa_id": "locomo-sh-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "What language does the user prefer for data analysis?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "single_hop"
+          },
+          {
+            "qa_id": "locomo-sh-2",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "Where is the organization located?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "single_hop"
+          },
+          {
+            "qa_id": "locomo-temp-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "What did the assistant help construct in the previous session?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "temporal"
+          },
+          {
+            "qa_id": "locomo-mh-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "What tools does the user combine for notes and planning?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "multi_hop"
+          },
+          {
+            "qa_id": "locomo-od-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "What container technology does the project use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "open_domain"
+          },
+          {
+            "qa_id": "locomo-pref-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "Does the user prefer TypeScript?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "preference"
+          },
+          {
+            "qa_id": "locomo-db-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "Which database version is in use?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "locomo-proj-1",
+            "benchmark": "locomo",
+            "model": "keyword",
+            "question": "What does min-mem facilitate?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "project"
+          }
+        ]
+      }
+    },
+    "membench": {
+      "name": "membench",
+      "version": "fixture-v1",
+      "data_hash": "c6edbda8f7fde6da",
+      "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/membench_subset.json",
+      "record_count": 90,
+      "qa_count": 6,
+      "char_reduction_pct": 20.351342393105732,
+      "identity_bytes": 18102,
+      "minified_bytes": 14418,
+      "storage": {
+        "checkpoints": [
+          {
+            "event_count": 10,
+            "identity_payload_bytes": 1903,
+            "minified_payload_bytes": 1516,
+            "identity_file_bytes": 3683,
+            "minified_file_bytes": 3296,
+            "identity_gzip_bytes": 1155,
+            "minified_gzip_bytes": 1035,
+            "reduction_pct": 20.336311087756176,
+            "minify_latency_ms": 4.930370919302934
+          },
+          {
+            "event_count": 25,
+            "identity_payload_bytes": 4920,
+            "minified_payload_bytes": 3919,
+            "identity_file_bytes": 9302,
+            "minified_file_bytes": 8301,
+            "identity_gzip_bytes": 1812,
+            "minified_gzip_bytes": 1659,
+            "reduction_pct": 20.345528455284555,
+            "minify_latency_ms": 4.930370919302934
+          },
+          {
+            "event_count": 50,
+            "identity_payload_bytes": 10091,
+            "minified_payload_bytes": 8007,
+            "identity_file_bytes": 18854,
+            "minified_file_bytes": 16770,
+            "identity_gzip_bytes": 2187,
+            "minified_gzip_bytes": 2031,
+            "reduction_pct": 20.652066197601826,
+            "minify_latency_ms": 4.930370919302934
+          }
+        ],
+        "identity_sqlite_bytes": 40960,
+        "minified_sqlite_bytes": 36864,
+        "identity_jsonl_bytes": 33819,
+        "minified_jsonl_bytes": 30135,
+        "bytes_per_memory_identity": 375.76666666666665,
+        "bytes_per_memory_minified": 334.8333333333333,
+        "growth_slope_bytes_per_event": 204.7,
+        "sqlite_reduction_pct": 9.999999999999998,
+        "jsonl_reduction_pct": 10.893284839882911
+      },
+      "retention": {
+        "retention_ratio": 1.0,
+        "retention_pct": 100.0,
+        "regressions": 0,
+        "passed": true,
+        "models": [
+          "bm25_extract",
+          "keyword"
+        ],
+        "benchmarks": [
+          "membench"
+        ],
+        "items": [
+          {
+            "qa_id": "mb-fact-1",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What is the user's preferred language?",
+            "identity_score": 0.0,
+            "minified_score": 0.0,
+            "retained": true,
+            "identity_passed": false,
+            "minified_passed": false,
+            "category": "factual"
+          },
+          {
+            "qa_id": "mb-fact-2",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What city is the organization in?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "mb-refl-1",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What workflow does the user use for notes?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "reflective"
+          },
+          {
+            "qa_id": "mb-part-1",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What did the user request regarding documentation?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "participation"
+          },
+          {
+            "qa_id": "mb-obs-1",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What architecture pattern is implemented?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "observation"
+          },
+          {
+            "qa_id": "mb-upd-1",
+            "benchmark": "membench",
+            "model": "bm25_extract",
+            "question": "What database does the application utilize?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "knowledge_update"
+          },
+          {
+            "qa_id": "mb-fact-1",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What is the user's preferred language?",
+            "identity_score": 0.0,
+            "minified_score": 0.0,
+            "retained": true,
+            "identity_passed": false,
+            "minified_passed": false,
+            "category": "factual"
+          },
+          {
+            "qa_id": "mb-fact-2",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What city is the organization in?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "factual"
+          },
+          {
+            "qa_id": "mb-refl-1",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What workflow does the user use for notes?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "reflective"
+          },
+          {
+            "qa_id": "mb-part-1",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What did the user request regarding documentation?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "participation"
+          },
+          {
+            "qa_id": "mb-obs-1",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What architecture pattern is implemented?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "observation"
+          },
+          {
+            "qa_id": "mb-upd-1",
+            "benchmark": "membench",
+            "model": "keyword",
+            "question": "What database does the application utilize?",
+            "identity_score": 1.0,
+            "minified_score": 1.0,
+            "retained": true,
+            "identity_passed": true,
+            "minified_passed": true,
+            "category": "knowledge_update"
+          }
+        ]
+      }
+    }
+  },
+  "storage_growth": {
+    "checkpoints": [
+      {
+        "event_count": 10,
+        "identity_payload_bytes": 1903,
+        "minified_payload_bytes": 1516,
+        "identity_file_bytes": 3379,
+        "minified_file_bytes": 2992,
+        "identity_gzip_bytes": 1160,
+        "minified_gzip_bytes": 1041,
+        "reduction_pct": 20.336311087756176,
+        "minify_latency_ms": 4.7595493534269435
+      },
+      {
+        "event_count": 25,
+        "identity_payload_bytes": 4920,
+        "minified_payload_bytes": 3919,
+        "identity_file_bytes": 8616,
+        "minified_file_bytes": 7615,
+        "identity_gzip_bytes": 1770,
+        "minified_gzip_bytes": 1614,
+        "reduction_pct": 20.345528455284555,
+        "minify_latency_ms": 4.7595493534269435
+      },
+      {
+        "event_count": 50,
+        "identity_payload_bytes": 10091,
+        "minified_payload_bytes": 8007,
+        "identity_file_bytes": 17493,
+        "minified_file_bytes": 15409,
+        "identity_gzip_bytes": 2063,
+        "minified_gzip_bytes": 1874,
+        "reduction_pct": 20.652066197601826,
+        "minify_latency_ms": 4.7595493534269435
+      }
+    ],
+    "identity_sqlite_bytes": 28672,
+    "minified_sqlite_bytes": 28672,
+    "identity_jsonl_bytes": 20948,
+    "minified_jsonl_bytes": 18492,
+    "bytes_per_memory_identity": 349.1333333333333,
+    "bytes_per_memory_minified": 308.2,
+    "growth_slope_bytes_per_event": 204.7,
+    "sqlite_reduction_pct": 0.0,
+    "jsonl_reduction_pct": 11.724269620011452
+  },
+  "org_simulation": {
+    "consolidation": {
+      "writer_agents": 3,
+      "private_agent_totals_bytes": {
+        "writer_0": 6034,
+        "writer_1": 3017,
+        "writer_2": 3017
+      },
+      "naive_replicated_bytes": 12068,
+      "shared_consolidated_bytes": 2403,
+      "dedup_removed_count": 45,
+      "consolidation_reduction_pct": 80.08783559827644,
+      "cross_agent_record_count": 15,
+      "nightly_batches": 1
+    },
+    "org_retention": {
+      "retention_pct": 100.0,
+      "regressions": 0,
+      "items": [
+        {
+          "qa_id": "qa-01",
+          "model": "bm25_extract",
+          "identity_score": 0.0,
+          "minified_score": 0.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-02",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-03",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-04",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-05",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-06",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-07",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-08",
+          "model": "bm25_extract",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-01",
+          "model": "keyword",
+          "identity_score": 0.0,
+          "minified_score": 0.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-02",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-03",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-04",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-05",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-06",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-07",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        },
+        {
+          "qa_id": "qa-08",
+          "model": "keyword",
+          "identity_score": 1.0,
+          "minified_score": 1.0,
+          "retained": true
+        }
+      ]
+    }
+  },
+  "cross_model_readers": {
+    "models": [
+      "qwen2.5:0.5b",
+      "gemma4:latest"
+    ],
+    "question_count": 8,
+    "comparisons": 16,
+    "regressions": 0,
+    "retention_pct": 100.0,
+    "passed": true,
+    "items": [
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-01",
+        "question": "What language does the user prefer?",
+        "identity_answer": "The user prefers Python.",
+        "minified_answer": "The user prefers Python.",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 5686,
+        "minified_latency_ms": 483
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-02",
+        "question": "Where is the user's organization located?",
+        "identity_answer": "Berlin",
+        "minified_answer": "Berlin",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 339,
+        "minified_latency_ms": 326
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-03",
+        "question": "What note-taking tool does the user use?",
+        "identity_answer": "Obsidian",
+        "minified_answer": "The user uses Obsidian for note-taking.",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 360,
+        "minified_latency_ms": 420
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-04",
+        "question": "Does the user prefer strict typing?",
+        "identity_answer": "Yes.",
+        "minified_answer": "Yes.",
+        "identity_score": 0.0,
+        "minified_score": 0.0,
+        "retained": true,
+        "identity_latency_ms": 337,
+        "minified_latency_ms": 340
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-05",
+        "question": "What architecture does the project use?",
+        "identity_answer": "The project uses a microservices architecture utilizing Docker containers.",
+        "minified_answer": "The project uses a microservices architecture using Docker containers.",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 453,
+        "minified_latency_ms": 485
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-06",
+        "question": "What database does the application use?",
+        "identity_answer": "The application uses PostgreSQL version 15.",
+        "minified_answer": "The application uses PostgreSQL version 15.",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 420,
+        "minified_latency_ms": 444
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-07",
+        "question": "What does min-mem implement?",
+        "identity_answer": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
+        "minified_answer": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 757,
+        "minified_latency_ms": 685
+      },
+      {
+        "model": "qwen2.5:0.5b",
+        "qa_id": "qa-08",
+        "question": "What CI tool was previously used?",
+        "identity_answer": "GitHub Actions",
+        "minified_answer": "GitHub Actions",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 358,
+        "minified_latency_ms": 340
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-01",
+        "question": "What language does the user prefer?",
+        "identity_answer": "",
+        "minified_answer": "",
+        "identity_score": 0.0,
+        "minified_score": 0.0,
+        "retained": true,
+        "identity_latency_ms": 40119,
+        "minified_latency_ms": 2113
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-02",
+        "question": "Where is the user's organization located?",
+        "identity_answer": "Berlin",
+        "minified_answer": "Berlin",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 863,
+        "minified_latency_ms": 867
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-03",
+        "question": "What note-taking tool does the user use?",
+        "identity_answer": "Obsidian",
+        "minified_answer": "Obsidian",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 986,
+        "minified_latency_ms": 997
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-04",
+        "question": "Does the user prefer strict typing?",
+        "identity_answer": "",
+        "minified_answer": "",
+        "identity_score": 0.0,
+        "minified_score": 0.0,
+        "retained": true,
+        "identity_latency_ms": 1920,
+        "minified_latency_ms": 1922
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-05",
+        "question": "What architecture does the project use?",
+        "identity_answer": "",
+        "minified_answer": "",
+        "identity_score": 0.0,
+        "minified_score": 0.0,
+        "retained": true,
+        "identity_latency_ms": 1961,
+        "minified_latency_ms": 1907
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-06",
+        "question": "What database does the application use?",
+        "identity_answer": "PostgreSQL version 15",
+        "minified_answer": "PostgreSQL version 15",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 1044,
+        "minified_latency_ms": 1006
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-07",
+        "question": "What does min-mem implement?",
+        "identity_answer": "Lexical normalization for agent memory",
+        "minified_answer": "Lexical normalization for agent memory",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 1084,
+        "minified_latency_ms": 1021
+      },
+      {
+        "model": "gemma4:latest",
+        "qa_id": "qa-08",
+        "question": "What CI tool was previously used?",
+        "identity_answer": "GitHub Actions",
+        "minified_answer": "GitHub Actions",
+        "identity_score": 1.0,
+        "minified_score": 1.0,
+        "retained": true,
+        "identity_latency_ms": 904,
+        "minified_latency_ms": 896
+      }
+    ]
+  },
+  "quality_retention": {
+    "retention_pct": 100.0,
+    "regressions": 0,
+    "passed": true,
+    "definition": "minified_score >= identity_score for every question/model pair"
+  },
+  "cloud_projection": {
+    "usd_per_gb_month": 0.023,
+    "bytes_per_day_per_agent": 17456.666666666668,
+    "bytes_30_day": 5237000.000000001,
+    "bytes_1_year": 63716833.33333334,
+    "gb_month_cost_identity": 0.0013648412811259432,
+    "gb_month_cost_minified": 0.0010870777588815517,
+    "monthly_savings_usd": 0.0002777635222443915,
+    "annual_savings_usd": 0.003333162266932698
+  }
+}

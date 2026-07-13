@@ -84,6 +84,27 @@ class MinMemConverter:
         return cls(MinDictionary.from_path(path))
 
     def minify(self, text: str) -> MinifyResult:
+        return self._minify_once(text)
+
+    def minify_passes(self, text: str, passes: int = 2) -> MinifyResult:
+        """Apply minification repeatedly until stable or *passes* exhausted."""
+        if passes < 1:
+            passes = 1
+        result = self._minify_once(text)
+        for _ in range(passes - 1):
+            if not result.replacements:
+                break
+            nxt = self._minify_once(result.minified)
+            if nxt.minified == result.minified:
+                break
+            result = MinifyResult(
+                original=text,
+                minified=nxt.minified,
+                replacements=result.replacements + nxt.replacements,
+            )
+        return result
+
+    def _minify_once(self, text: str) -> MinifyResult:
         _ensure_nltk_data()
 
         replacements: list[Replacement] = []

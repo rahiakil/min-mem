@@ -1,0 +1,44 @@
+{
+  "_schema": {
+    "entries": "long_form -> short_form (runtime dict)",
+    "entry_provenance": "optional per-key {source, ppdb_relation, token_delta}",
+    "build_time_llm_judge": "optional; does not affect runtime zero-inference claim"
+  },
+  "candidates": [
+    {
+      "source": "in order to",
+      "target": "to",
+      "char_delta": 8,
+      "token_delta": 2,
+      "source_tokens": 3,
+      "target_tokens": 1,
+      "relation": "<",
+      "pos_source": "IN",
+      "pos_target": "IN",
+      "freq_source": null,
+      "freq_target": null,
+      "filters_passed": [
+        "relation",
+        "token_strict"
+      ]
+    },
+    {
+      "source": "utilize",
+      "target": "use",
+      "char_delta": 3,
+      "token_delta": 0,
+      "source_tokens": 1,
+      "target_tokens": 1,
+      "relation": "<",
+      "pos_source": "VB",
+      "pos_target": "VB",
+      "freq_source": 120.0,
+      "freq_target": 980.0,
+      "filters_passed": [
+        "relation",
+        "token_strict"
+      ]
+    }
+  ],
+  "note": "Provide --ppdb-path to a SimplePPDB extract to run full pipeline."
+}

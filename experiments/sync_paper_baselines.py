@@ -13,6 +13,7 @@ FILES = (
     "baseline_results.json",
     "BASELINE_STUDY.md",
     "retrieval_fidelity.json",
+    "storage_proof_results.json",
 )
 
 

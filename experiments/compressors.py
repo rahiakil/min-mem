@@ -28,9 +28,12 @@ class MinMemCompressor:
     converter: object
     name: str = "min-mem"
     inference_cost: str = "none"
+    passes: int = 1
 
     def compress(self, text: str) -> str:
-        return self.converter.minify(text).minified
+        if self.passes <= 1:
+            return self.converter.minify(text).minified
+        return self.converter.minify_passes(text, self.passes).minified
 
 
 @dataclass
@@ -138,12 +141,18 @@ def build_compressors(
     rates: tuple[float, ...] = (0.5,),
     include_gpt2: bool = True,
     include_llmlingua: bool = True,
+    include_two_pass: bool = True,
 ) -> list[Compressor]:
     """Build mode list for benchmark sweep."""
+    mm1 = MinMemCompressor(min_mem_converter, name="min-mem", passes=1)
     modes: list[Compressor] = [
         IdentityCompressor(),
-        MinMemCompressor(min_mem_converter, name="min-mem"),
+        mm1,
     ]
+
+    if include_two_pass:
+        mm2 = MinMemCompressor(min_mem_converter, name="min-mem×2", passes=2)
+        modes.append(mm2)
 
     if include_gpt2:
         for keep in rates:
@@ -152,11 +161,19 @@ def build_compressors(
             modes.append(gpt)
             modes.append(
                 ChainedCompressor(
-                    MinMemCompressor(min_mem_converter, name="min-mem"),
+                    mm1,
                     gpt,
                     name=f"min-mem+gpt2-selective@{keep}",
                 )
             )
+            if include_two_pass:
+                modes.append(
+                    ChainedCompressor(
+                        mm2,
+                        gpt,
+                        name=f"min-mem×2+gpt2-selective@{keep}",
+                    )
+                )
 
     if include_llmlingua:
         for rate in rates:
@@ -165,11 +182,19 @@ def build_compressors(
             modes.append(ll2)
             modes.append(
                 ChainedCompressor(
-                    MinMemCompressor(min_mem_converter, name="min-mem"),
+                    mm1,
                     ll2,
                     name=f"min-mem+llmlingua-2@{rate}",
                 )
             )
+            if include_two_pass:
+                modes.append(
+                    ChainedCompressor(
+                        mm2,
+                        ll2,
+                        name=f"min-mem×2+llmlingua-2@{rate}",
+                    )
+                )
 
     return modes
 

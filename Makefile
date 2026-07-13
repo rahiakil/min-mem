@@ -1,9 +1,12 @@
-.PHONY: benchmark figures baselines retrieval all test improve agent install
+.PHONY: benchmark figures baselines retrieval all test improve agent install storage-proof
 
 VENV := .venv/bin
 
 benchmark:
 	$(VENV)/python experiments/run_benchmark.py
+
+tiered:
+	$(VENV)/python experiments/tiered_value_benchmark.py
 
 baselines: benchmark
 	$(VENV)/python experiments/benchmark_baselines.py
@@ -21,6 +24,10 @@ improve:
 
 agent:
 	$(VENV)/python -c "from agents.minimal_agent import MinimalAgent, AgentConfig; import json; from pathlib import Path; c=json.loads(Path('experiments/corpus.json').read_text())['samples']; m=[s['text'] for s in c]*4; a=MinimalAgent(m, AgentConfig()); print(json.dumps(a.compare_context(), indent=2))"
+
+storage-proof:
+	$(VENV)/python experiments/storage_proof/runner.py
+	$(VENV)/python experiments/storage_proof/generate_figures.py
 
 all: baselines retrieval figures
 

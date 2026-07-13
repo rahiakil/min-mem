@@ -1,24 +1,24 @@
 {
   "corpus_size": 15,
-  "dictionary_size": 157,
+  "dictionary_size": 200,
   "summary": {
     "min-mem (full)": {
       "n": 15,
-      "char_savings_pct_mean": 19.33198060950767,
-      "token_savings_pct_mean": 1.6636368070333183,
-      "replacements_mean": 6.8,
+      "char_savings_pct_mean": 19.56250694291032,
+      "token_savings_pct_mean": 2.0826486894598353,
+      "replacements_mean": 6.866666666666666,
       "nouns_preserved_pct_mean": 96.13830613830615,
-      "content_jaccard_mean": 0.47439539645555445,
-      "synonym_aware_pct_mean": 87.50470797953635
+      "content_jaccard_mean": 0.46992209198225,
+      "synonym_aware_pct_mean": 88.65567416311123
     },
     "naive-dict": {
       "n": 15,
-      "char_savings_pct_mean": 27.004819257006552,
-      "token_savings_pct_mean": 1.1079674664177412,
+      "char_savings_pct_mean": 27.23534559040921,
+      "token_savings_pct_mean": 1.5269793488442578,
       "replacements_mean": -1.0,
       "nouns_preserved_pct_mean": 65.79143079143078,
-      "content_jaccard_mean": 0.3331433147310763,
-      "synonym_aware_pct_mean": 87.21485290707258
+      "content_jaccard_mean": 0.3286700102577718,
+      "synonym_aware_pct_mean": 88.36581909064746
     },
     "phrase-only": {
       "n": 15,
@@ -31,11 +31,11 @@
     },
     "no-inflection": {
       "n": 15,
-      "char_savings_pct_mean": 17.218966534206473,
+      "char_savings_pct_mean": 17.98653198514482,
       "token_savings_pct_mean": 2.5256407010792974,
       "replacements_mean": -1.0,
-      "nouns_preserved_pct_mean": 97.67676767676768,
-      "content_jaccard_mean": 0.5406595318261985,
+      "nouns_preserved_pct_mean": 97.16394716394716,
+      "content_jaccard_mean": 0.5215903244992779,
       "synonym_aware_pct_mean": 93.13675632783183
     },
     "identity": {
@@ -52,12 +52,12 @@
     "mean_savings_pct": 19.838972475819354
   },
   "by_category_char_savings": {
-    "user_preferences": 26.24416958187573,
+    "user_preferences": 26.787647842745294,
     "project_context": 19.0650826446281,
     "session_summary": 18.549222797927463,
     "factual_memory": 14.099668774465522,
-    "instructions": 16.850410079638653,
-    "mixed": 13.760521675483247,
+    "instructions": 17.648282420064184,
+    "mixed": 14.148118574708054,
     "high_verbosity": 29.013371609881396,
     "entity_heavy": 14.814814814814813
   },
@@ -75,7 +75,7 @@
       {
         "tier": "phrases",
         "label": "Phrases only",
-        "dict_size": 7,
+        "dict_size": 20,
         "char_savings_pct_mean": 1.6670850823581824,
         "token_savings_pct_mean": 2.2875454629840593,
         "nouns_preserved_pct_mean": 98.23232323232324,
@@ -84,7 +84,7 @@
       {
         "tier": "+connectors",
         "label": "+ Connectors",
-        "dict_size": 17,
+        "dict_size": 30,
         "char_savings_pct_mean": 3.063398852975924,
         "token_savings_pct_mean": 2.2875454629840593,
         "nouns_preserved_pct_mean": 98.23232323232324,
@@ -93,7 +93,7 @@
       {
         "tier": "+verbs",
         "label": "+ Verbs",
-        "dict_size": 53,
+        "dict_size": 66,
         "char_savings_pct_mean": 9.643151788945293,
         "token_savings_pct_mean": 0.6635621628699028,
         "nouns_preserved_pct_mean": 96.69386169386169,
@@ -102,20 +102,20 @@
       {
         "tier": "+adj/other",
         "label": "+ Adj/Other",
-        "dict_size": 157,
-        "char_savings_pct_mean": 19.33198060950767,
-        "token_savings_pct_mean": 1.6636368070333183,
+        "dict_size": 200,
+        "char_savings_pct_mean": 19.56250694291032,
+        "token_savings_pct_mean": 2.0826486894598353,
         "nouns_preserved_pct_mean": 96.13830613830615,
-        "replacements_mean": 6.8
+        "replacements_mean": 6.866666666666666
       },
       {
         "tier": "full",
         "label": "Full min dictionary",
-        "dict_size": 157,
-        "char_savings_pct_mean": 19.33198060950767,
-        "token_savings_pct_mean": 1.6636368070333183,
+        "dict_size": 200,
+        "char_savings_pct_mean": 19.56250694291032,
+        "token_savings_pct_mean": 2.0826486894598353,
         "nouns_preserved_pct_mean": 96.13830613830615,
-        "replacements_mean": 6.8
+        "replacements_mean": 6.866666666666666
       }
     ]
   },
@@ -200,15 +200,15 @@
       "method": "min-mem (full)",
       "sample_id": "prefs-02",
       "original_chars": 184,
-      "minified_chars": 141,
-      "char_savings_pct": 23.369565217391305,
+      "minified_chars": 139,
+      "char_savings_pct": 24.456521739130434,
       "original_tokens": 26,
-      "minified_tokens": 27,
-      "token_savings_pct": -3.8461538461538463,
+      "minified_tokens": 26,
+      "token_savings_pct": 0.0,
       "replacements": 7,
       "nouns_preserved_pct": 100.0,
       "content_jaccard": 0.36363636363636365,
-      "synonym_aware_pct": 93.33333333333333
+      "synonym_aware_pct": 100.0
     },
     {
       "method": "min-mem (full)",
@@ -298,14 +298,14 @@
       "method": "min-mem (full)",
       "sample_id": "instr-01",
       "original_chars": 188,
-      "minified_chars": 153,
-      "char_savings_pct": 18.617021276595743,
+      "minified_chars": 150,
+      "char_savings_pct": 20.21276595744681,
       "original_tokens": 27,
       "minified_tokens": 28,
       "token_savings_pct": -3.7037037037037037,
-      "replacements": 6,
+      "replacements": 7,
       "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.47619047619047616,
+      "content_jaccard": 0.4090909090909091,
       "synonym_aware_pct": 87.5
     },
     {
@@ -326,15 +326,15 @@
       "method": "min-mem (full)",
       "sample_id": "mixed-01",
       "original_chars": 258,
-      "minified_chars": 218,
-      "char_savings_pct": 15.503875968992247,
+      "minified_chars": 216,
+      "char_savings_pct": 16.27906976744186,
       "original_tokens": 41,
-      "minified_tokens": 42,
-      "token_savings_pct": -2.4390243902439024,
+      "minified_tokens": 41,
+      "token_savings_pct": 0.0,
       "replacements": 7,
       "nouns_preserved_pct": 76.92307692307692,
       "content_jaccard": 0.5333333333333333,
-      "synonym_aware_pct": 91.30434782608695
+      "synonym_aware_pct": 95.65217391304348
     },
     {
       "method": "min-mem (full)",
@@ -390,7 +390,7 @@
       "replacements": 4,
       "nouns_preserved_pct": 90.9090909090909,
       "content_jaccard": 0.631578947368421,
-      "synonym_aware_pct": 87.5
+      "synonym_aware_pct": 93.75
     }
   ],
   "per_sample": [
@@ -468,29 +468,29 @@
       "method": "min-mem (full)",
       "sample_id": "prefs-02",
       "original_chars": 184,
-      "minified_chars": 141,
-      "char_savings_pct": 23.369565217391305,
+      "minified_chars": 139,
+      "char_savings_pct": 24.456521739130434,
       "original_tokens": 26,
-      "minified_tokens": 27,
-      "token_savings_pct": -3.8461538461538463,
+      "minified_tokens": 26,
+      "token_savings_pct": 0.0,
       "replacements": 7,
       "nouns_preserved_pct": 100.0,
       "content_jaccard": 0.36363636363636365,
-      "synonym_aware_pct": 93.33333333333333
+      "synonym_aware_pct": 100.0
     },
     {
       "method": "naive-dict",
       "sample_id": "prefs-02",
       "original_chars": 184,
-      "minified_chars": 137,
-      "char_savings_pct": 25.543478260869566,
+      "minified_chars": 135,
+      "char_savings_pct": 26.630434782608695,
       "original_tokens": 26,
-      "minified_tokens": 27,
-      "token_savings_pct": -3.8461538461538463,
+      "minified_tokens": 26,
+      "token_savings_pct": 0.0,
       "replacements": -1,
       "nouns_preserved_pct": 83.33333333333333,
       "content_jaccard": 0.30434782608695654,
-      "synonym_aware_pct": 93.33333333333333
+      "synonym_aware_pct": 100.0
     },
     {
       "method": "phrase-only",
@@ -510,14 +510,14 @@
       "method": "no-inflection",
       "sample_id": "prefs-02",
       "original_chars": 184,
-      "minified_chars": 147,
-      "char_savings_pct": 20.108695652173914,
+      "minified_chars": 139,
+      "char_savings_pct": 24.456521739130434,
       "original_tokens": 26,
       "minified_tokens": 26,
       "token_savings_pct": 0.0,
       "replacements": -1,
       "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.42857142857142855,
+      "content_jaccard": 0.36363636363636365,
       "synonym_aware_pct": 100.0
     },
     {
@@ -958,28 +958,28 @@
       "method": "min-mem (full)",
       "sample_id": "instr-01",
       "original_chars": 188,
-      "minified_chars": 153,
-      "char_savings_pct": 18.617021276595743,
+      "minified_chars": 150,
+      "char_savings_pct": 20.21276595744681,
       "original_tokens": 27,
       "minified_tokens": 28,
       "token_savings_pct": -3.7037037037037037,
-      "replacements": 6,
+      "replacements": 7,
       "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.47619047619047616,
+      "content_jaccard": 0.4090909090909091,
       "synonym_aware_pct": 87.5
     },
     {
       "method": "naive-dict",
       "sample_id": "instr-01",
       "original_chars": 188,
-      "minified_chars": 153,
-      "char_savings_pct": 18.617021276595743,
+      "minified_chars": 150,
+      "char_savings_pct": 20.21276595744681,
       "original_tokens": 27,
       "minified_tokens": 28,
       "token_savings_pct": -3.7037037037037037,
       "replacements": -1,
       "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.47619047619047616,
+      "content_jaccard": 0.4090909090909091,
       "synonym_aware_pct": 87.5
     },
     {
@@ -1000,14 +1000,14 @@
       "method": "no-inflection",
       "sample_id": "instr-01",
       "original_chars": 188,
-      "minified_chars": 155,
-      "char_savings_pct": 17.5531914893617,
+      "minified_chars": 152,
+      "char_savings_pct": 19.148936170212767,
       "original_tokens": 27,
       "minified_tokens": 27,
       "token_savings_pct": 0.0,
       "replacements": -1,
       "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.55,
+      "content_jaccard": 0.47619047619047616,
       "synonym_aware_pct": 93.75
     },
     {
@@ -1098,29 +1098,29 @@
       "method": "min-mem (full)",
       "sample_id": "mixed-01",
       "original_chars": 258,
-      "minified_chars": 218,
-      "char_savings_pct": 15.503875968992247,
+      "minified_chars": 216,
+      "char_savings_pct": 16.27906976744186,
       "original_tokens": 41,
-      "minified_tokens": 42,
-      "token_savings_pct": -2.4390243902439024,
+      "minified_tokens": 41,
+      "token_savings_pct": 0.0,
       "replacements": 7,
       "nouns_preserved_pct": 76.92307692307692,
       "content_jaccard": 0.5333333333333333,
-      "synonym_aware_pct": 91.30434782608695
+      "synonym_aware_pct": 95.65217391304348
     },
     {
       "method": "naive-dict",
       "sample_id": "mixed-01",
       "original_chars": 258,
-      "minified_chars": 212,
-      "char_savings_pct": 17.829457364341085,
+      "minified_chars": 210,
+      "char_savings_pct": 18.6046511627907,
       "original_tokens": 41,
-      "minified_tokens": 42,
-      "token_savings_pct": -2.4390243902439024,
+      "minified_tokens": 41,
+      "token_savings_pct": 0.0,
       "replacements": -1,
       "nouns_preserved_pct": 69.23076923076923,
       "content_jaccard": 0.4838709677419355,
-      "synonym_aware_pct": 91.30434782608695
+      "synonym_aware_pct": 95.65217391304348
     },
     {
       "method": "phrase-only",
@@ -1140,14 +1140,14 @@
       "method": "no-inflection",
       "sample_id": "mixed-01",
       "original_chars": 258,
-      "minified_chars": 228,
-      "char_savings_pct": 11.627906976744185,
+      "minified_chars": 220,
+      "char_savings_pct": 14.728682170542635,
       "original_tokens": 41,
       "minified_tokens": 41,
       "token_savings_pct": 0.0,
       "replacements": -1,
-      "nouns_preserved_pct": 100.0,
-      "content_jaccard": 0.6428571428571429,
+      "nouns_preserved_pct": 92.3076923076923,
+      "content_jaccard": 0.5862068965517241,
       "synonym_aware_pct": 100.0
     },
     {
@@ -1386,7 +1386,7 @@
       "replacements": 4,
       "nouns_preserved_pct": 90.9090909090909,
       "content_jaccard": 0.631578947368421,
-      "synonym_aware_pct": 87.5
+      "synonym_aware_pct": 93.75
     },
     {
       "method": "naive-dict",
@@ -1400,7 +1400,7 @@
       "replacements": -1,
       "nouns_preserved_pct": 90.9090909090909,
       "content_jaccard": 0.631578947368421,
-      "synonym_aware_pct": 87.5
+      "synonym_aware_pct": 93.75
     },
     {
       "method": "phrase-only",
@@ -1420,14 +1420,14 @@
       "method": "no-inflection",
       "sample_id": "entities-01",
       "original_chars": 162,
-      "minified_chars": 142,
-      "char_savings_pct": 12.345679012345679,
+      "minified_chars": 138,
+      "char_savings_pct": 14.814814814814815,
       "original_tokens": 33,
       "minified_tokens": 31,
       "token_savings_pct": 6.0606060606060606,
       "replacements": -1,
       "nouns_preserved_pct": 90.9090909090909,
-      "content_jaccard": 0.7222222222222222,
+      "content_jaccard": 0.631578947368421,
       "synonym_aware_pct": 93.75
     },
     {

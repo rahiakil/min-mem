@@ -1,0 +1,226 @@
+{
+  "timestamp": "2026-07-12T23:22:04.681780+00:00",
+  "corpus_passages": 15,
+  "memory_blocks": 60,
+  "dictionary_size": 200,
+  "optional_backends": {
+    "gpt2": true,
+    "llmlingua": true,
+    "torch": true
+  },
+  "waterfall": [
+    {
+      "mode": "identity",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 0.0,
+        "token_savings_pct_mean": 0.0,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 100.0,
+        "content_jaccard_mean": 1.0,
+        "synonym_aware_pct_mean": 100.0,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 12068,
+      "chars_saved": 0,
+      "char_reduction_pct": 0.0,
+      "elapsed_ms": 1313.1,
+      "throughput_passages_per_sec": 45.7,
+      "incremental_pct": 0.0,
+      "inference_cost": "none"
+    },
+    {
+      "mode": "min-mem (pass 1)",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 19.56250694291032,
+        "token_savings_pct_mean": 2.0826486894598353,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 96.13830613830615,
+        "content_jaccard_mean": 0.46992209198225,
+        "synonym_aware_pct_mean": 88.65567416311123,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 9640,
+      "chars_saved": 2428,
+      "char_reduction_pct": 20.12,
+      "elapsed_ms": 861.3,
+      "throughput_passages_per_sec": 69.7,
+      "incremental_pct": 20.12,
+      "inference_cost": "none"
+    },
+    {
+      "mode": "min-mem (pass 2)",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 19.74130643205464,
+        "token_savings_pct_mean": 2.0826486894598353,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 96.13830613830615,
+        "content_jaccard_mean": 0.46740108357888865,
+        "synonym_aware_pct_mean": 88.65567416311123,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 9612,
+      "chars_saved": 2456,
+      "char_reduction_pct": 20.35,
+      "elapsed_ms": 1009.1,
+      "throughput_passages_per_sec": 59.5,
+      "incremental_pct": 0.23,
+      "inference_cost": "none"
+    },
+    {
+      "mode": "llmlingua-2@0.5 (alone)",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 42.25871535041673,
+        "token_savings_pct_mean": 53.72451774295408,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 81.95809745809746,
+        "content_jaccard_mean": 0.6828682603945762,
+        "synonym_aware_pct_mean": 68.93610140177647,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 6936,
+      "chars_saved": 5132,
+      "char_reduction_pct": 42.53,
+      "elapsed_ms": 71600.9,
+      "throughput_passages_per_sec": 0.8,
+      "incremental_pct": 22.18,
+      "inference_cost": "small_lm_mbert"
+    },
+    {
+      "mode": "min-mem \u2192 llmlingua-2@0.5",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 52.1489228045296,
+        "token_savings_pct_mean": 55.64820731688932,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 81.11699411699412,
+        "content_jaccard_mean": 0.4525716808350638,
+        "synonym_aware_pct_mean": 61.253381502809425,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 5728,
+      "chars_saved": 6340,
+      "char_reduction_pct": 52.54,
+      "elapsed_ms": 68261.5,
+      "throughput_passages_per_sec": 0.9,
+      "incremental_pct": 10.01,
+      "inference_cost": "small_lm"
+    },
+    {
+      "mode": "min-mem\u00d72 \u2192 llmlingua-2@0.5",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 52.20000837285655,
+        "token_savings_pct_mean": 55.47276872039809,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 81.11699411699412,
+        "content_jaccard_mean": 0.4487897008573108,
+        "synonym_aware_pct_mean": 61.5311592805872,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 5720,
+      "chars_saved": 6348,
+      "char_reduction_pct": 52.6,
+      "elapsed_ms": 68048.7,
+      "throughput_passages_per_sec": 0.9,
+      "incremental_pct": 0.06,
+      "inference_cost": "small_lm"
+    },
+    {
+      "mode": "gpt2-selective@0.5 (alone)",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 33.175668899340934,
+        "token_savings_pct_mean": 33.41456950590718,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 66.31635031635032,
+        "content_jaccard_mean": 0.6647515318396325,
+        "synonym_aware_pct_mean": 66.47515318396326,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 8196,
+      "chars_saved": 3872,
+      "char_reduction_pct": 32.08,
+      "elapsed_ms": 23465.4,
+      "throughput_passages_per_sec": 2.6,
+      "incremental_pct": -20.52,
+      "inference_cost": "small_lm_gpt2"
+    },
+    {
+      "mode": "min-mem \u2192 gpt2-selective@0.5",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 42.50203982507684,
+        "token_savings_pct_mean": 31.164598107598188,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 66.23532023532023,
+        "content_jaccard_mean": 0.32797439646123855,
+        "synonym_aware_pct_mean": 64.46371852149885,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 6912,
+      "chars_saved": 5156,
+      "char_reduction_pct": 42.72,
+      "elapsed_ms": 20349.9,
+      "throughput_passages_per_sec": 2.9,
+      "incremental_pct": 10.64,
+      "inference_cost": "small_lm"
+    },
+    {
+      "mode": "min-mem\u00d72 \u2192 gpt2-selective@0.5",
+      "summary": {
+        "n": 60,
+        "char_savings_pct_mean": 42.68083931422116,
+        "token_savings_pct_mean": 31.164598107598188,
+        "replacements_mean": -1.0,
+        "nouns_preserved_pct_mean": 66.23532023532023,
+        "content_jaccard_mean": 0.32563853787538,
+        "synonym_aware_pct_mean": 64.46371852149885,
+        "inference_cost": "none",
+        "params": null
+      },
+      "total_chars": 12068,
+      "compressed_chars": 6884,
+      "chars_saved": 5184,
+      "char_reduction_pct": 42.96,
+      "elapsed_ms": 20467.2,
+      "throughput_passages_per_sec": 2.9,
+      "incremental_pct": 0.24,
+      "inference_cost": "small_lm"
+    }
+  ],
+  "value_add": [
+    {
+      "comparison": "min-mem pre-step before LLMLingua",
+      "min_mem_alone_pct": 20.12,
+      "llmlingua_alone_pct": 42.53,
+      "stacked_pct": 52.54,
+      "min_mem_lift_on_stack": 10.01
+    },
+    {
+      "comparison": "2nd min-mem pass before LLMLingua",
+      "pass2_alone_pct": 20.35,
+      "stacked_pct": 52.6,
+      "pass2_lift_on_stack": 0.06
+    }
+  ]
+}
