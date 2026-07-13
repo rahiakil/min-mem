@@ -1,6 +1,6 @@
 {
   "version": "storage-proof-v1",
-  "timestamp": "2026-07-13T00:27:40.239798+00:00",
+  "timestamp": "2026-07-13T00:32:28.637496+00:00",
   "dict_path": "/home/papa/repos/min-mem/min_dict.json",
   "dict_hash": "33230ab11655b8e2",
   "dict_size": 200,
@@ -34,7 +34,7 @@
             "identity_gzip_bytes": 1160,
             "minified_gzip_bytes": 1041,
             "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 10.691061968100257
+            "minify_latency_ms": 9.651411501302695
           },
           {
             "event_count": 25,
@@ -45,7 +45,7 @@
             "identity_gzip_bytes": 1770,
             "minified_gzip_bytes": 1614,
             "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 10.691061968100257
+            "minify_latency_ms": 9.651411501302695
           },
           {
             "event_count": 50,
@@ -56,7 +56,7 @@
             "identity_gzip_bytes": 2063,
             "minified_gzip_bytes": 1874,
             "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 10.691061968100257
+            "minify_latency_ms": 9.651411501302695
           }
         ],
         "identity_sqlite_bytes": 28672,
@@ -298,7 +298,7 @@
             "identity_gzip_bytes": 1127,
             "minified_gzip_bytes": 1003,
             "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 4.36930506596885
+            "minify_latency_ms": 5.515512608205124
           },
           {
             "event_count": 25,
@@ -309,7 +309,7 @@
             "identity_gzip_bytes": 1749,
             "minified_gzip_bytes": 1593,
             "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 4.36930506596885
+            "minify_latency_ms": 5.515512608205124
           },
           {
             "event_count": 50,
@@ -320,7 +320,7 @@
             "identity_gzip_bytes": 2089,
             "minified_gzip_bytes": 1928,
             "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 4.36930506596885
+            "minify_latency_ms": 5.515512608205124
           },
           {
             "event_count": 100,
@@ -331,7 +331,7 @@
             "identity_gzip_bytes": 2788,
             "minified_gzip_bytes": 2604,
             "reduction_pct": 20.349912521869527,
-            "minify_latency_ms": 4.36930506596885
+            "minify_latency_ms": 5.515512608205124
           }
         ],
         "identity_sqlite_bytes": 45056,
@@ -573,7 +573,7 @@
             "identity_gzip_bytes": 1155,
             "minified_gzip_bytes": 1035,
             "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 4.930370919302934
+            "minify_latency_ms": 5.032004609367707
           },
           {
             "event_count": 25,
@@ -584,7 +584,7 @@
             "identity_gzip_bytes": 1812,
             "minified_gzip_bytes": 1659,
             "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 4.930370919302934
+            "minify_latency_ms": 5.032004609367707
           },
           {
             "event_count": 50,
@@ -595,7 +595,7 @@
             "identity_gzip_bytes": 2187,
             "minified_gzip_bytes": 2031,
             "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 4.930370919302934
+            "minify_latency_ms": 5.032004609367707
           }
         ],
         "identity_sqlite_bytes": 40960,
@@ -780,7 +780,7 @@
         "identity_gzip_bytes": 1160,
         "minified_gzip_bytes": 1041,
         "reduction_pct": 20.336311087756176,
-        "minify_latency_ms": 4.7595493534269435
+        "minify_latency_ms": 4.805098615664368
       },
       {
         "event_count": 25,
@@ -791,7 +791,7 @@
         "identity_gzip_bytes": 1770,
         "minified_gzip_bytes": 1614,
         "reduction_pct": 20.345528455284555,
-        "minify_latency_ms": 4.7595493534269435
+        "minify_latency_ms": 4.805098615664368
       },
       {
         "event_count": 50,
@@ -802,7 +802,7 @@
         "identity_gzip_bytes": 2063,
         "minified_gzip_bytes": 1874,
         "reduction_pct": 20.652066197601826,
-        "minify_latency_ms": 4.7595493534269435
+        "minify_latency_ms": 4.805098615664368
       }
     ],
     "identity_sqlite_bytes": 28672,
@@ -969,8 +969,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 5686,
-        "minified_latency_ms": 483
+        "identity_latency_ms": 375,
+        "minified_latency_ms": 382
       },
       {
         "model": "qwen2.5:0.5b",
@@ -981,8 +981,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 339,
-        "minified_latency_ms": 326
+        "identity_latency_ms": 324,
+        "minified_latency_ms": 292
       },
       {
         "model": "qwen2.5:0.5b",
@@ -993,8 +993,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 360,
-        "minified_latency_ms": 420
+        "identity_latency_ms": 337,
+        "minified_latency_ms": 405
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1005,8 +1005,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 337,
-        "minified_latency_ms": 340
+        "identity_latency_ms": 318,
+        "minified_latency_ms": 332
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1017,8 +1017,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 453,
-        "minified_latency_ms": 485
+        "identity_latency_ms": 418,
+        "minified_latency_ms": 413
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1029,8 +1029,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 420,
-        "minified_latency_ms": 444
+        "identity_latency_ms": 387,
+        "minified_latency_ms": 391
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1041,8 +1041,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 757,
-        "minified_latency_ms": 685
+        "identity_latency_ms": 691,
+        "minified_latency_ms": 630
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1053,8 +1053,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 358,
-        "minified_latency_ms": 340
+        "identity_latency_ms": 323,
+        "minified_latency_ms": 305
       },
       {
         "model": "gemma4:latest",
@@ -1065,8 +1065,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 40119,
-        "minified_latency_ms": 2113
+        "identity_latency_ms": 1889,
+        "minified_latency_ms": 1872
       },
       {
         "model": "gemma4:latest",
@@ -1077,8 +1077,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 863,
-        "minified_latency_ms": 867
+        "identity_latency_ms": 858,
+        "minified_latency_ms": 864
       },
       {
         "model": "gemma4:latest",
@@ -1089,8 +1089,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 986,
-        "minified_latency_ms": 997
+        "identity_latency_ms": 955,
+        "minified_latency_ms": 976
       },
       {
         "model": "gemma4:latest",
@@ -1101,8 +1101,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1920,
-        "minified_latency_ms": 1922
+        "identity_latency_ms": 2645,
+        "minified_latency_ms": 1901
       },
       {
         "model": "gemma4:latest",
@@ -1113,8 +1113,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1961,
-        "minified_latency_ms": 1907
+        "identity_latency_ms": 1959,
+        "minified_latency_ms": 1872
       },
       {
         "model": "gemma4:latest",
@@ -1125,8 +1125,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1044,
-        "minified_latency_ms": 1006
+        "identity_latency_ms": 974,
+        "minified_latency_ms": 983
       },
       {
         "model": "gemma4:latest",
@@ -1137,8 +1137,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1084,
-        "minified_latency_ms": 1021
+        "identity_latency_ms": 1045,
+        "minified_latency_ms": 1010
       },
       {
         "model": "gemma4:latest",
@@ -1149,8 +1149,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 904,
-        "minified_latency_ms": 896
+        "identity_latency_ms": 917,
+        "minified_latency_ms": 895
       }
     ]
   },
@@ -1169,5 +1169,25 @@
     "gb_month_cost_minified": 0.0010870777588815517,
     "monthly_savings_usd": 0.0002777635222443915,
     "annual_savings_usd": 0.003333162266932698
+  },
+  "network_savings": {
+    "payload_bytes_saved_per_full_sync": 2456,
+    "payload_reduction_pct": 20.351342393105735,
+    "gzip_bytes_saved_per_full_sync": 189,
+    "gzip_reduction_pct": 9.161415414444983,
+    "org_broadcast_bytes_saved": 9665,
+    "org_broadcast_reduction_pct": 80.08783559827644,
+    "projected_daily_sync_bytes_saved": 1228000.0,
+    "projected_30_day_sync_bytes_saved": 36840000.0
+  },
+  "auditability": {
+    "auditability_index": 89.57484373186168,
+    "phrase_only_char_pct": 1.6670850823581824,
+    "verb_policy_char_pct": 9.643151788945293,
+    "full_pipeline_char_pct": 19.56250694291032,
+    "naive_char_pct": 27.23534559040921,
+    "naive_noun_pct": 65.79143079143078,
+    "replacements_per_memory": 6.866666666666666,
+    "rule_attribution_pct": 100.0
   }
 }

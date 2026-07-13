@@ -34,27 +34,50 @@ def main() -> None:
     id_bytes = [c["identity_payload_bytes"] / 1024 for c in sg]
     min_bytes = [c["minified_payload_bytes"] / 1024 for c in sg]
 
-    fig, ax = plt.subplots(figsize=(5, 3.2))
-    ax.plot(events, id_bytes, "o-", label="Identity store", color="#4C72B0")
-    ax.plot(events, min_bytes, "s-", label="Min-mem store", color="#55A868")
+    fig, ax = plt.subplots(figsize=(5.2, 3.4))
+    ax.plot(events, id_bytes, "o-", label="Identity store", color="#4C72B0", linewidth=2)
+    ax.plot(events, min_bytes, "s-", label="Min-mem store", color="#55A868", linewidth=2)
     ax.set_xlabel("Memory events")
     ax.set_ylabel("Payload (KB)")
-    ax.set_title("Memory growth: identity vs min-mem")
-    ax.legend()
+    ax.set_title("Storage growth: identity vs min-mem")
+    ax.legend(loc="upper left", framealpha=0.9)
     ax.grid(True, alpha=0.3)
-    fig.tight_layout()
+    ymax = max(id_bytes + min_bytes) * 1.12
+    ax.set_ylim(0, ymax)
+    for xs, ys, color in ((events, id_bytes, "#4C72B0"), (events, min_bytes, "#55A868")):
+        ax.annotate(
+            f"{ys[-1]:.1f}",
+            xy=(xs[-1], ys[-1]),
+            xytext=(8, 0),
+            textcoords="offset points",
+            fontsize=7,
+            color=color,
+        )
+    fig.subplots_adjust(left=0.12, right=0.95, bottom=0.14, top=0.90)
     fig.savefig(FIG_DIR / "fig_storage_growth.pdf")
     fig.savefig(FIG_DIR / "fig_storage_growth.png", dpi=150)
     plt.close(fig)
 
     org = data["org_simulation"]["consolidation"]
-    labels = ["Naive replicated", "Shared consolidated"]
+    labels = ["Naive\nreplicated", "Shared\nconsolidated"]
     vals = [org["naive_replicated_bytes"] / 1024, org["shared_consolidated_bytes"] / 1024]
-    fig2, ax2 = plt.subplots(figsize=(4.5, 3))
-    ax2.bar(labels, vals, color=["#C44E52", "#55A868"])
+    fig2, ax2 = plt.subplots(figsize=(4.8, 3.2))
+    ymax = max(vals) * 1.22
+    bars = ax2.bar(labels, vals, color=["#C44E52", "#55A868"])
     ax2.set_ylabel("KB")
-    ax2.set_title("Organizational consolidation (3 writers)")
-    fig2.tight_layout()
+    ax2.set_title("Organizational memory growth (3 writers)")
+    ax2.set_ylim(0, ymax)
+    ax2.margins(x=0.15)
+    for bar, val in zip(bars, vals):
+        ax2.text(
+            bar.get_x() + bar.get_width() / 2,
+            val + ymax * 0.03,
+            f"{val:.1f}",
+            ha="center",
+            va="bottom",
+            fontsize=8,
+        )
+    fig2.subplots_adjust(bottom=0.18)
     fig2.savefig(FIG_DIR / "fig_org_consolidation.pdf")
     fig2.savefig(FIG_DIR / "fig_org_consolidation.png", dpi=150)
     plt.close(fig2)

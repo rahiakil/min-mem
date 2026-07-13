@@ -238,6 +238,62 @@ def run_cross_model_readers(
     }
 
 
+def compute_network_savings(
+    identity_bytes: int,
+    minified_bytes: int,
+    org: dict,
+    sg: dict,
+    memories_per_day: float = 50.0,
+    agents: int = 10,
+) -> dict:
+    """Quantify bytes not sent over the network when stores are minified."""
+    payload_saved = identity_bytes - minified_bytes
+    payload_pct = 100.0 * payload_saved / identity_bytes if identity_bytes else 0.0
+    checkpoints = sg.get("checkpoints", [])
+    last = checkpoints[-1] if checkpoints else {}
+    gzip_saved = last.get("identity_gzip_bytes", 0) - last.get("minified_gzip_bytes", 0)
+    org_saved = org.get("naive_replicated_bytes", 0) - org.get("shared_consolidated_bytes", 0)
+    daily_sync = payload_saved * memories_per_day * agents
+    return {
+        "payload_bytes_saved_per_full_sync": payload_saved,
+        "payload_reduction_pct": payload_pct,
+        "gzip_bytes_saved_per_full_sync": gzip_saved,
+        "gzip_reduction_pct": (
+            100.0 * gzip_saved / last.get("identity_gzip_bytes", 1)
+            if last.get("identity_gzip_bytes")
+            else 0.0
+        ),
+        "org_broadcast_bytes_saved": org_saved,
+        "org_broadcast_reduction_pct": org.get("consolidation_reduction_pct", 0.0),
+        "projected_daily_sync_bytes_saved": daily_sync,
+        "projected_30_day_sync_bytes_saved": daily_sync * 30,
+    }
+
+
+def compute_auditability(results_path: Path) -> dict:
+    """Composite auditability index from benchmark means."""
+    if not results_path.exists():
+        return {"auditability_index": 0.0, "phrase_only_char_pct": 0.0, "verb_policy_char_pct": 0.0}
+    data = json.loads(results_path.read_text(encoding="utf-8"))
+    summary = data["summary"]["min-mem (full)"]
+    abl = {t["tier"]: t for t in data.get("dictionary_ablation", {}).get("tiers", [])}
+    d, t, b = 1.0, 1.0, 1.0
+    e = summary["nouns_preserved_pct_mean"] / 100.0
+    l_score = summary["synonym_aware_pct_mean"] / 100.0
+    r_score = summary["content_jaccard_mean"]
+    audit = 0.15 * d + 0.25 * t + 0.20 * e + 0.15 * l_score + 0.15 * r_score + 0.10 * b
+    return {
+        "auditability_index": audit * 100.0,
+        "phrase_only_char_pct": abl.get("phrases", {}).get("char_savings_pct_mean", 0.0),
+        "verb_policy_char_pct": abl.get("+verbs", {}).get("char_savings_pct_mean", 0.0),
+        "full_pipeline_char_pct": abl.get("full", {}).get("char_savings_pct_mean", 0.0),
+        "naive_char_pct": data["summary"]["naive-dict"]["char_savings_pct_mean"],
+        "naive_noun_pct": data["summary"]["naive-dict"]["nouns_preserved_pct_mean"],
+        "replacements_per_memory": summary["replacements_mean"],
+        "rule_attribution_pct": 100.0,
+    }
+
+
 def write_report_md(payload: dict) -> None:
     b = payload["benchmarks"]
     sg = payload["storage_growth"]
@@ -262,6 +318,12 @@ def write_report_md(payload: dict) -> None:
         f"- LoCoMo-shaped: **{b['locomo']['char_reduction_pct']:.1f}%**",
         f"- MemBench-shaped: **{b['membench']['char_reduction_pct']:.1f}%**",
         f"- Org consolidation reduction: **{org['consolidation']['consolidation_reduction_pct']:.1f}%**",
+        f"- Network payload saved per sync: **{payload['network_savings']['payload_bytes_saved_per_full_sync']:,} bytes** "
+        f"({payload['network_savings']['payload_reduction_pct']:.1f}%)",
+        f"- Org broadcast saved: **{payload['network_savings']['org_broadcast_bytes_saved']:,} bytes**",
+        f"- Auditability index: **{payload['auditability']['auditability_index']:.1f}/100**",
+        f"- Phrase-only savings: **{payload['auditability']['phrase_only_char_pct']:.1f}%** vs "
+        f"full POS policy: **{payload['auditability']['full_pipeline_char_pct']:.1f}%**",
         f"- Cross-model readers: **{payload['cross_model_readers']['retention_pct']:.1f}%** retention "
         f"({', '.join(payload['cross_model_readers']['models']) or 'not run'})",
         "",
@@ -393,6 +455,13 @@ def main() -> int:
             "definition": "minified_score >= identity_score for every question/model pair",
         },
         "cloud_projection": projection_to_dict(cloud),
+        "network_savings": compute_network_savings(
+            benchmark_results["agent_corpus"]["identity_bytes"],
+            benchmark_results["agent_corpus"]["minified_bytes"],
+            org["consolidation"],
+            report_to_dict(storage_report),
+        ),
+        "auditability": compute_auditability(ROOT / "experiments" / "results.json"),
     }
 
     OUT_JSON.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

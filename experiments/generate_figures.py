@@ -44,19 +44,39 @@ def fig_method_comparison(data: dict) -> None:
     x = np.arange(len(methods))
     width = 0.35
 
-    fig, axes = plt.subplots(1, 2, figsize=(6.5, 2.6))
+    fig, axes = plt.subplots(1, 2, figsize=(6.8, 3.0))
 
     ax = axes[0]
-    ax.bar(x - width / 2, char_sav, width, label="Characters", color="#2c5f8a")
-    ax.bar(x + width / 2, token_sav, width, label="Tokens (GPT-4)", color="#6baed6")
+    ymax = max(char_sav + token_sav) * 1.35
+    bars_char = ax.bar(x - width / 2, char_sav, width, label="Characters", color="#2c5f8a")
+    bars_tok = ax.bar(x + width / 2, token_sav, width, label="Tokens (GPT-4)", color="#6baed6")
     ax.set_ylabel("Mean reduction (%)")
     ax.set_title("(a) Size reduction by method")
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, rotation=15, ha="right")
-    ax.legend(loc="upper right")
-    ax.set_ylim(0, max(char_sav + token_sav) * 1.25)
-    ax.axhline(data["gzip_baseline"]["mean_savings_pct"], color="#c44e52", linestyle="--", linewidth=1, label="gzip (bytes)")
-    ax.legend(loc="upper right", fontsize=6)
+    ax.set_xticklabels(labels, rotation=25, ha="right")
+    ax.set_ylim(0, ymax)
+    ax.margins(x=0.08)
+    for bars in (bars_char, bars_tok):
+        for bar in bars:
+            h = bar.get_height()
+            if h <= 0:
+                continue
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                h + ymax * 0.02,
+                f"{h:.1f}",
+                ha="center",
+                va="bottom",
+                fontsize=6,
+            )
+    ax.axhline(
+        data["gzip_baseline"]["mean_savings_pct"],
+        color="#c44e52",
+        linestyle="--",
+        linewidth=1,
+        label="gzip (bytes)",
+    )
+    ax.legend(loc="upper right", fontsize=6, framealpha=0.9)
 
     ax = axes[1]
     colors = ["#2ca02c" if v >= 99 else "#ff7f0e" if v >= 95 else "#d62728" for v in noun_pres]
@@ -64,12 +84,20 @@ def fig_method_comparison(data: dict) -> None:
     ax.set_ylabel("Noun preservation (%)")
     ax.set_title("(b) Entity safety (noun tags)")
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, rotation=15, ha="right")
-    ax.set_ylim(0, 105)
+    ax.set_xticklabels(labels, rotation=25, ha="right")
+    ax.set_ylim(0, 112)
+    ax.margins(x=0.08)
     for bar, val in zip(bars, noun_pres):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, f"{val:.0f}%", ha="center", va="bottom", fontsize=7)
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            min(val + 2, 108),
+            f"{val:.0f}%",
+            ha="center",
+            va="bottom",
+            fontsize=7,
+        )
 
-    fig.tight_layout()
+    fig.subplots_adjust(bottom=0.28, wspace=0.28)
     fig.savefig(FIGURES / "fig_method_comparison.pdf")
     fig.savefig(FIGURES / "fig_method_comparison.png")
     plt.close(fig)
@@ -153,16 +181,30 @@ def fig_dictionary_ablation(data: dict) -> None:
     sizes = [t["dict_size"] for t in abl]
     chars = [t["char_savings_pct_mean"] for t in abl]
 
-    fig, ax1 = plt.subplots(figsize=(5.5, 2.8))
+    fig, ax1 = plt.subplots(figsize=(5.8, 3.0))
     color = "#2c5f8a"
-    ax1.bar(range(len(labels)), chars, color=color, edgecolor="black", linewidth=0.4)
+    ymax = max(chars) * 1.28 if chars else 25
+    bars = ax1.bar(range(len(labels)), chars, color=color, edgecolor="black", linewidth=0.4)
     ax1.set_ylabel("Character reduction (%)")
+    short_labels = ["None", "Phrases", "+Conn.", "+Verbs", "+Adj", "Full"]
     ax1.set_xticks(range(len(labels)))
-    ax1.set_xticklabels([f"{l}\n(n={s})" for l, s in zip(labels, sizes)], fontsize=6, rotation=0)
-    ax1.set_title("Dictionary ablation: savings vs min dictionary size")
-    for i, v in enumerate(chars):
-        ax1.text(i, v + 0.3, f"{v:.1f}%", ha="center", fontsize=7)
-    fig.tight_layout()
+    ax1.set_xticklabels(
+        [f"{short_labels[i]}\n(n={sizes[i]})" for i in range(len(labels))],
+        fontsize=7,
+    )
+    ax1.set_title("Dictionary ablation: savings vs dictionary size")
+    ax1.set_ylim(0, ymax)
+    ax1.margins(x=0.05)
+    for bar, v in zip(bars, chars):
+        ax1.text(
+            bar.get_x() + bar.get_width() / 2,
+            v + ymax * 0.03,
+            f"{v:.1f}%",
+            ha="center",
+            va="bottom",
+            fontsize=7,
+        )
+    fig.subplots_adjust(bottom=0.22)
     fig.savefig(FIGURES / "fig_dictionary_ablation.pdf")
     fig.savefig(FIGURES / "fig_dictionary_ablation.png")
     plt.close(fig)
@@ -227,6 +269,62 @@ def fig_improve_history() -> None:
     plt.close(fig)
 
 
+def fig_value_decomposition(data: dict) -> None:
+    """Phrase rules vs full POS-gated policy pipeline."""
+    abl = {t["tier"]: t for t in data.get("dictionary_ablation", {}).get("tiers", [])}
+    summary = data["summary"]
+    if not abl:
+        return
+
+    labels = ["Phrases\nonly", "Verbs +\nPOS policy", "Full\npipeline", "Naive\n(no POS)"]
+    chars = [
+        abl["phrases"]["char_savings_pct_mean"],
+        abl["+verbs"]["char_savings_pct_mean"],
+        abl["full"]["char_savings_pct_mean"],
+        summary["naive-dict"]["char_savings_pct_mean"],
+    ]
+    nouns = [
+        abl["phrases"]["nouns_preserved_pct_mean"],
+        abl["+verbs"]["nouns_preserved_pct_mean"],
+        abl["full"]["nouns_preserved_pct_mean"],
+        summary["naive-dict"]["nouns_preserved_pct_mean"],
+    ]
+    colors = ["#9ecae1", "#6baed6", "#2c5f8a", "#d62728"]
+
+    fig, ax1 = plt.subplots(figsize=(5.2, 3.0))
+    x = np.arange(len(labels))
+    ymax = max(chars) * 1.3
+    bars = ax1.bar(x, chars, color=colors, edgecolor="black", linewidth=0.4)
+    ax1.set_ylabel("Mean char reduction (%)")
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(labels, fontsize=7)
+    ax1.set_title("Where savings come from: phrases vs POS policy")
+    ax1.set_ylim(0, ymax)
+    ax1.margins(x=0.08)
+    for bar, val, noun in zip(bars, chars, nouns):
+        ax1.text(
+            bar.get_x() + bar.get_width() / 2,
+            val + ymax * 0.03,
+            f"{val:.1f}%",
+            ha="center",
+            va="bottom",
+            fontsize=7,
+        )
+        ax1.text(
+            bar.get_x() + bar.get_width() / 2,
+            ymax * 0.12,
+            f"noun {noun:.0f}%",
+            ha="center",
+            va="bottom",
+            fontsize=6,
+            color="#444444",
+        )
+    fig.subplots_adjust(bottom=0.18)
+    fig.savefig(FIGURES / "fig_value_decomposition.pdf")
+    fig.savefig(FIGURES / "fig_value_decomposition.png")
+    plt.close(fig)
+
+
 def main() -> None:
     data = load()
     fig_method_comparison(data)
@@ -234,6 +332,7 @@ def main() -> None:
     fig_architecture()
     fig_semantic_proxy(data)
     fig_dictionary_ablation(data)
+    fig_value_decomposition(data)
     fig_top_swaps(data)
     fig_per_sample(data)
     fig_improve_history()

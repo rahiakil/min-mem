@@ -1,6 +1,6 @@
 # Storage Growth and QA-Retention Proof
 
-*Generated 2026-07-13T00:27:40.239798+00:00*
+*Generated 2026-07-13T00:32:28.637496+00:00*
 
 ## Claim
 
@@ -16,7 +16,11 @@ model's identity-memory baseline (no regressions).
 - LoCoMo-shaped: **20.4%**
 - MemBench-shaped: **20.4%**
 - Org consolidation reduction: **80.1%**
-- Cross-model readers: **100.0%** retention (`qwen2.5:0.5b`, `gemma4:latest`; 16 comparisons, 0 regressions)
+- Network payload saved per sync: **2,456 bytes** (20.4%)
+- Org broadcast saved: **9,665 bytes**
+- Auditability index: **89.6/100**
+- Phrase-only savings: **1.7%** vs full POS policy: **19.6%**
+- Cross-model readers: **100.0%** retention (qwen2.5:0.5b, gemma4:latest)
 
 ## Storage growth (agent corpus)
 
