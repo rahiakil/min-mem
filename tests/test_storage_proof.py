@@ -75,5 +75,33 @@ def test_retention_no_regression_on_agent_corpus():
     assert report.passed, f"Regressions: {report.regressions}"
 
 
+def test_tiny_policy_beats_fifo_under_budget():
+    from storage_proof.tiny_policy import evaluate_policy_budget
+
+    bundle = build_agent_corpus_bundle(scale=1)
+    converter = MinMemConverter()
+    minified = [
+        MemoryRecord(
+            r.record_id,
+            converter.minify(r.text).minified,
+            r.agent_id,
+            r.namespace,
+            r.timestamp,
+            r.session_id,
+        )
+        for r in bundle.records
+    ]
+    report = evaluate_policy_budget(
+        bundle.records,
+        minified,
+        bundle.qa_items,
+        budgets=[0.25],
+        policies=["fifo_oldest", "tiny_linear"],
+    )
+    headline = report["headline"]
+    assert headline["tiny_at_25_retention_pct"] >= headline["fifo_oldest_at_25_retention_pct"]
+    assert headline["tiny_at_25_bytes_reduction_pct"] > 0
+
+
 def test_normalize_for_dedup():
     assert normalize_for_dedup("  Hello   World ") == "hello world"

@@ -1,9 +1,9 @@
 {
   "version": "storage-proof-v1",
-  "timestamp": "2026-07-13T00:32:28.637496+00:00",
+  "timestamp": "2026-07-19T02:40:50.858742+00:00",
   "dict_path": "/home/papa/repos/min-mem/min_dict.json",
-  "dict_hash": "33230ab11655b8e2",
-  "dict_size": 200,
+  "dict_hash": "eb141c022109e6fa",
+  "dict_size": 873,
   "write_path_inference": "none",
   "reader_models": [
     "bm25_extract",
@@ -20,54 +20,54 @@
       "source": "/home/papa/repos/min-mem/experiments/corpus.json",
       "record_count": 60,
       "qa_count": 8,
-      "char_reduction_pct": 20.351342393105732,
+      "char_reduction_pct": 21.27941663904541,
       "identity_bytes": 12068,
-      "minified_bytes": 9612,
+      "minified_bytes": 9500,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1516,
+            "minified_payload_bytes": 1492,
             "identity_file_bytes": 3379,
-            "minified_file_bytes": 2992,
+            "minified_file_bytes": 2968,
             "identity_gzip_bytes": 1160,
-            "minified_gzip_bytes": 1041,
-            "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 9.651411501302695
+            "minified_gzip_bytes": 1026,
+            "reduction_pct": 21.597477666841826,
+            "minify_latency_ms": 10.73891848597365
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3919,
+            "minified_payload_bytes": 3867,
             "identity_file_bytes": 8616,
-            "minified_file_bytes": 7615,
+            "minified_file_bytes": 7563,
             "identity_gzip_bytes": 1770,
-            "minified_gzip_bytes": 1614,
-            "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 9.651411501302695
+            "minified_gzip_bytes": 1601,
+            "reduction_pct": 21.40243902439024,
+            "minify_latency_ms": 10.73891848597365
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 8007,
+            "minified_payload_bytes": 7909,
             "identity_file_bytes": 17493,
-            "minified_file_bytes": 15409,
+            "minified_file_bytes": 15311,
             "identity_gzip_bytes": 2063,
-            "minified_gzip_bytes": 1874,
-            "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 9.651411501302695
+            "minified_gzip_bytes": 1860,
+            "reduction_pct": 21.623228619561985,
+            "minify_latency_ms": 10.73891848597365
           }
         ],
         "identity_sqlite_bytes": 28672,
         "minified_sqlite_bytes": 28672,
         "identity_jsonl_bytes": 20948,
-        "minified_jsonl_bytes": 18492,
+        "minified_jsonl_bytes": 18380,
         "bytes_per_memory_identity": 349.1333333333333,
-        "bytes_per_memory_minified": 308.2,
+        "bytes_per_memory_minified": 306.3333333333333,
         "growth_slope_bytes_per_event": 204.7,
         "sqlite_reduction_pct": 0.0,
-        "jsonl_reduction_pct": 11.724269620011452
+        "jsonl_reduction_pct": 12.258926866526643
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -284,65 +284,65 @@
       "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/locomo_subset.json",
       "record_count": 120,
       "qa_count": 8,
-      "char_reduction_pct": 20.351342393105732,
+      "char_reduction_pct": 21.27941663904541,
       "identity_bytes": 24136,
-      "minified_bytes": 19224,
+      "minified_bytes": 19000,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1516,
+            "minified_payload_bytes": 1492,
             "identity_file_bytes": 3393,
-            "minified_file_bytes": 3006,
+            "minified_file_bytes": 2982,
             "identity_gzip_bytes": 1127,
-            "minified_gzip_bytes": 1003,
-            "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 5.515512608205124
+            "minified_gzip_bytes": 988,
+            "reduction_pct": 21.597477666841826,
+            "minify_latency_ms": 5.466733518793869
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3919,
+            "minified_payload_bytes": 3867,
             "identity_file_bytes": 8650,
-            "minified_file_bytes": 7649,
+            "minified_file_bytes": 7597,
             "identity_gzip_bytes": 1749,
-            "minified_gzip_bytes": 1593,
-            "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 5.515512608205124
+            "minified_gzip_bytes": 1579,
+            "reduction_pct": 21.40243902439024,
+            "minify_latency_ms": 5.466733518793869
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 8007,
+            "minified_payload_bytes": 7909,
             "identity_file_bytes": 17556,
-            "minified_file_bytes": 15472,
+            "minified_file_bytes": 15374,
             "identity_gzip_bytes": 2089,
-            "minified_gzip_bytes": 1928,
-            "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 5.515512608205124
+            "minified_gzip_bytes": 1913,
+            "reduction_pct": 21.623228619561985,
+            "minify_latency_ms": 5.466733518793869
           },
           {
             "event_count": 100,
             "identity_payload_bytes": 20005,
-            "minified_payload_bytes": 15934,
+            "minified_payload_bytes": 15742,
             "identity_file_bytes": 34935,
-            "minified_file_bytes": 30864,
+            "minified_file_bytes": 30672,
             "identity_gzip_bytes": 2788,
-            "minified_gzip_bytes": 2604,
-            "reduction_pct": 20.349912521869527,
-            "minify_latency_ms": 5.515512608205124
+            "minified_gzip_bytes": 2588,
+            "reduction_pct": 21.30967258185453,
+            "minify_latency_ms": 5.466733518793869
           }
         ],
         "identity_sqlite_bytes": 45056,
         "minified_sqlite_bytes": 40960,
         "identity_jsonl_bytes": 42056,
-        "minified_jsonl_bytes": 37144,
+        "minified_jsonl_bytes": 36920,
         "bytes_per_memory_identity": 350.46666666666664,
-        "bytes_per_memory_minified": 309.53333333333336,
+        "bytes_per_memory_minified": 307.6666666666667,
         "growth_slope_bytes_per_event": 201.13333333333333,
         "sqlite_reduction_pct": 9.090909090909093,
-        "jsonl_reduction_pct": 11.679665208293699
+        "jsonl_reduction_pct": 12.21228837740156
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -559,54 +559,54 @@
       "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/membench_subset.json",
       "record_count": 90,
       "qa_count": 6,
-      "char_reduction_pct": 20.351342393105732,
+      "char_reduction_pct": 21.27941663904541,
       "identity_bytes": 18102,
-      "minified_bytes": 14418,
+      "minified_bytes": 14250,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1516,
+            "minified_payload_bytes": 1492,
             "identity_file_bytes": 3683,
-            "minified_file_bytes": 3296,
+            "minified_file_bytes": 3272,
             "identity_gzip_bytes": 1155,
-            "minified_gzip_bytes": 1035,
-            "reduction_pct": 20.336311087756176,
-            "minify_latency_ms": 5.032004609367707
+            "minified_gzip_bytes": 1021,
+            "reduction_pct": 21.597477666841826,
+            "minify_latency_ms": 5.499724103396551
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3919,
+            "minified_payload_bytes": 3867,
             "identity_file_bytes": 9302,
-            "minified_file_bytes": 8301,
+            "minified_file_bytes": 8249,
             "identity_gzip_bytes": 1812,
-            "minified_gzip_bytes": 1659,
-            "reduction_pct": 20.345528455284555,
-            "minify_latency_ms": 5.032004609367707
+            "minified_gzip_bytes": 1647,
+            "reduction_pct": 21.40243902439024,
+            "minify_latency_ms": 5.499724103396551
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 8007,
+            "minified_payload_bytes": 7909,
             "identity_file_bytes": 18854,
-            "minified_file_bytes": 16770,
+            "minified_file_bytes": 16672,
             "identity_gzip_bytes": 2187,
-            "minified_gzip_bytes": 2031,
-            "reduction_pct": 20.652066197601826,
-            "minify_latency_ms": 5.032004609367707
+            "minified_gzip_bytes": 2017,
+            "reduction_pct": 21.623228619561985,
+            "minify_latency_ms": 5.499724103396551
           }
         ],
         "identity_sqlite_bytes": 40960,
         "minified_sqlite_bytes": 36864,
         "identity_jsonl_bytes": 33819,
-        "minified_jsonl_bytes": 30135,
+        "minified_jsonl_bytes": 29967,
         "bytes_per_memory_identity": 375.76666666666665,
-        "bytes_per_memory_minified": 334.8333333333333,
+        "bytes_per_memory_minified": 332.96666666666664,
         "growth_slope_bytes_per_event": 204.7,
         "sqlite_reduction_pct": 9.999999999999998,
-        "jsonl_reduction_pct": 10.893284839882911
+        "jsonl_reduction_pct": 11.390047014991577
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -774,46 +774,46 @@
       {
         "event_count": 10,
         "identity_payload_bytes": 1903,
-        "minified_payload_bytes": 1516,
+        "minified_payload_bytes": 1492,
         "identity_file_bytes": 3379,
-        "minified_file_bytes": 2992,
+        "minified_file_bytes": 2968,
         "identity_gzip_bytes": 1160,
-        "minified_gzip_bytes": 1041,
-        "reduction_pct": 20.336311087756176,
-        "minify_latency_ms": 4.805098615664368
+        "minified_gzip_bytes": 1026,
+        "reduction_pct": 21.597477666841826,
+        "minify_latency_ms": 5.631760313796501
       },
       {
         "event_count": 25,
         "identity_payload_bytes": 4920,
-        "minified_payload_bytes": 3919,
+        "minified_payload_bytes": 3867,
         "identity_file_bytes": 8616,
-        "minified_file_bytes": 7615,
+        "minified_file_bytes": 7563,
         "identity_gzip_bytes": 1770,
-        "minified_gzip_bytes": 1614,
-        "reduction_pct": 20.345528455284555,
-        "minify_latency_ms": 4.805098615664368
+        "minified_gzip_bytes": 1601,
+        "reduction_pct": 21.40243902439024,
+        "minify_latency_ms": 5.631760313796501
       },
       {
         "event_count": 50,
         "identity_payload_bytes": 10091,
-        "minified_payload_bytes": 8007,
+        "minified_payload_bytes": 7909,
         "identity_file_bytes": 17493,
-        "minified_file_bytes": 15409,
+        "minified_file_bytes": 15311,
         "identity_gzip_bytes": 2063,
-        "minified_gzip_bytes": 1874,
-        "reduction_pct": 20.652066197601826,
-        "minify_latency_ms": 4.805098615664368
+        "minified_gzip_bytes": 1860,
+        "reduction_pct": 21.623228619561985,
+        "minify_latency_ms": 5.631760313796501
       }
     ],
     "identity_sqlite_bytes": 28672,
     "minified_sqlite_bytes": 28672,
     "identity_jsonl_bytes": 20948,
-    "minified_jsonl_bytes": 18492,
+    "minified_jsonl_bytes": 18380,
     "bytes_per_memory_identity": 349.1333333333333,
-    "bytes_per_memory_minified": 308.2,
+    "bytes_per_memory_minified": 306.3333333333333,
     "growth_slope_bytes_per_event": 204.7,
     "sqlite_reduction_pct": 0.0,
-    "jsonl_reduction_pct": 11.724269620011452
+    "jsonl_reduction_pct": 12.258926866526643
   },
   "org_simulation": {
     "consolidation": {
@@ -824,9 +824,9 @@
         "writer_2": 3017
       },
       "naive_replicated_bytes": 12068,
-      "shared_consolidated_bytes": 2403,
+      "shared_consolidated_bytes": 2375,
       "dedup_removed_count": 45,
-      "consolidation_reduction_pct": 80.08783559827644,
+      "consolidation_reduction_pct": 80.31985415976135,
       "cross_agent_record_count": 15,
       "nightly_batches": 1
     },
@@ -949,6 +949,2779 @@
       ]
     }
   },
+  "tiny_policy_validation": {
+    "agent_unique": {
+      "description": "SuperCompress-style read-path validation: tiny linear CPU policy selects which already-minified memories to keep under a budget.",
+      "write_path_neural": false,
+      "read_path_policy": true,
+      "budgets": [
+        0.25,
+        0.35,
+        0.5
+      ],
+      "policies": [
+        "fifo_oldest",
+        "fifo_newest",
+        "bm25_only",
+        "tiny_linear"
+      ],
+      "results": [
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.25,
+          "kept_count": 4,
+          "total_count": 15,
+          "kept_bytes": 629,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 73.51578947368421,
+          "retention_pct": 37.5,
+          "regressions": 5,
+          "comparisons": 8,
+          "latency_ms": 0.0226279953494668,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.35,
+          "kept_count": 6,
+          "total_count": 15,
+          "kept_bytes": 920,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 61.26315789473684,
+          "retention_pct": 37.5,
+          "regressions": 5,
+          "comparisons": 8,
+          "latency_ms": 0.019553146557882428,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.5,
+          "kept_count": 8,
+          "total_count": 15,
+          "kept_bytes": 1193,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 49.76842105263158,
+          "retention_pct": 62.5,
+          "regressions": 3,
+          "comparisons": 8,
+          "latency_ms": 0.023408225388266146,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.25,
+          "kept_count": 4,
+          "total_count": 15,
+          "kept_bytes": 667,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 71.91578947368421,
+          "retention_pct": 37.5,
+          "regressions": 5,
+          "comparisons": 8,
+          "latency_ms": 0.01539735239930451,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.35,
+          "kept_count": 6,
+          "total_count": 15,
+          "kept_bytes": 1032,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 56.54736842105264,
+          "retention_pct": 50.0,
+          "regressions": 4,
+          "comparisons": 8,
+          "latency_ms": 0.016406236682087183,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": false,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.5,
+          "kept_count": 8,
+          "total_count": 15,
+          "kept_bytes": 1324,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 44.252631578947366,
+          "retention_pct": 62.5,
+          "regressions": 3,
+          "comparisons": 8,
+          "latency_ms": 0.03609138366300613,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": false,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.25,
+          "kept_count": 4,
+          "total_count": 15,
+          "kept_bytes": 621,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 73.82631578947368,
+          "retention_pct": 87.5,
+          "regressions": 1,
+          "comparisons": 8,
+          "latency_ms": 0.7545197586296126,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": false,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 0.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.35,
+          "kept_count": 6,
+          "total_count": 15,
+          "kept_bytes": 914,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 61.51052631578947,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.7343183679040521,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.5,
+          "kept_count": 8,
+          "total_count": 15,
+          "kept_bytes": 1241,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 47.72105263157894,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.7170353637775406,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.25,
+          "kept_count": 4,
+          "total_count": 15,
+          "kept_bytes": 640,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 73.02105263157894,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.7486348913516849,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 4,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.35,
+          "kept_count": 6,
+          "total_count": 15,
+          "kept_bytes": 956,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 59.74736842105264,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.7173476042225957,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 6,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.5,
+          "kept_count": 8,
+          "total_count": 15,
+          "kept_bytes": 1281,
+          "identity_context_bytes": 2375,
+          "bytes_reduction_pct": 46.05263157894737,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.7367925136350095,
+          "items": [
+            {
+              "qa_id": "qa-01",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.124744383876748,
+                "recency": 0.6428571428571429,
+                "entity_density": 0.08333333333333333,
+                "length_penalty": 0.9049773755656109,
+                "char_len": 179.0
+              }
+            },
+            {
+              "qa_id": "qa-02",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.73928804685919,
+                "recency": 0.42857142857142855,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "qa-03",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.569374520807892,
+                "recency": 0.7142857142857143,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "qa-04",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.585488003815275,
+                "recency": 0.07142857142857142,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "qa-05",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.743560458350281,
+                "recency": 0.14285714285714285,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "qa-06",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.487279692061753,
+                "recency": 0.5,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "qa-07",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.301288575588832,
+                "recency": 0.7857142857142857,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            },
+            {
+              "qa_id": "qa-08",
+              "retained": true,
+              "kept_count": 8,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.0882380754618226,
+                "recency": 1.0,
+                "entity_density": 0.46153846153846156,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            }
+          ]
+        }
+      ],
+      "headline": {
+        "tiny_at_25_retention_pct": 100.0,
+        "tiny_at_35_retention_pct": 100.0,
+        "fifo_oldest_at_25_retention_pct": 37.5,
+        "fifo_newest_at_25_retention_pct": 37.5,
+        "bm25_at_25_retention_pct": 87.5,
+        "tiny_vs_fifo_oldest_lift_at_25": 62.5,
+        "tiny_vs_bm25_lift_at_25": 12.5,
+        "tiny_at_25_bytes_reduction_pct": 73.02105263157894,
+        "tiny_at_35_bytes_reduction_pct": 59.74736842105264,
+        "tiny_at_25_latency_ms": 0.7486348913516849,
+        "tiny_at_35_latency_ms": 0.7173476042225957,
+        "fifo_at_35_retention_pct": 37.5,
+        "tiny_vs_fifo_lift_at_35": 62.5
+      }
+    },
+    "locomo_shaped": {
+      "description": "SuperCompress-style read-path validation: tiny linear CPU policy selects which already-minified memories to keep under a budget.",
+      "write_path_neural": false,
+      "read_path_policy": true,
+      "budgets": [
+        0.25,
+        0.35,
+        0.5
+      ],
+      "policies": [
+        "fifo_oldest",
+        "fifo_newest",
+        "bm25_only",
+        "tiny_linear"
+      ],
+      "results": [
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.25,
+          "kept_count": 30,
+          "total_count": 120,
+          "kept_bytes": 4750,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 75.0,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.06515659333672374,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.35,
+          "kept_count": 42,
+          "total_count": 120,
+          "kept_bytes": 6659,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 64.95263157894738,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.09493051038589329,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_oldest",
+          "budget_ratio": 0.5,
+          "kept_count": 60,
+          "total_count": 120,
+          "kept_bytes": 9500,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 50.0,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.09662372758612037,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.25,
+          "kept_count": 30,
+          "total_count": 120,
+          "kept_bytes": 4750,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 75.0,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.07593024929519743,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.35,
+          "kept_count": 42,
+          "total_count": 120,
+          "kept_bytes": 6631,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 65.10000000000001,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.08752002031542361,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "fifo_newest",
+          "budget_ratio": 0.5,
+          "kept_count": 60,
+          "total_count": 120,
+          "kept_bytes": 9500,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 50.0,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 0.09668413258623332,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "rank": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.25,
+          "kept_count": 30,
+          "total_count": 120,
+          "kept_bytes": 4832,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 74.5638157894737,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 6.37250037107151,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.0,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.05042016806722689,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.03361344537815126,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.08403361344537816,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.01680672268907563,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.008403361344537815,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.058823529411764705,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.09243697478991597,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.35,
+          "kept_count": 42,
+          "total_count": 120,
+          "kept_bytes": 6750,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 64.47302631578947,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 5.847668246133253,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.0,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.05042016806722689,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.03361344537815126,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.08403361344537816,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.01680672268907563,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.008403361344537815,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.058823529411764705,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.09243697478991597,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "bm25_only",
+          "budget_ratio": 0.5,
+          "kept_count": 60,
+          "total_count": 120,
+          "kept_bytes": 9518,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 49.902631578947364,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 5.799998369184323,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.0,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.05042016806722689,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.03361344537815126,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.08403361344537816,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.01680672268907563,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.008403361344537815,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.058823529411764705,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.09243697478991597,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.25,
+          "kept_count": 30,
+          "total_count": 120,
+          "kept_bytes": 4767,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 74.90723684210526,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 5.847211767104454,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.8823529411764706,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.9327731092436975,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.9159663865546218,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.9663865546218487,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.8991596638655462,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.8907563025210085,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.9411764705882353,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 30,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.9747899159663865,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.35,
+          "kept_count": 42,
+          "total_count": 120,
+          "kept_bytes": 6700,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 64.73552631578947,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 5.889080013730563,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.8823529411764706,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.9327731092436975,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.9159663865546218,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.9663865546218487,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.8991596638655462,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.8907563025210085,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.9411764705882353,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 42,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.9747899159663865,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        },
+        {
+          "policy": "tiny_linear",
+          "budget_ratio": 0.5,
+          "kept_count": 60,
+          "total_count": 120,
+          "kept_bytes": 9585,
+          "identity_context_bytes": 19000,
+          "bytes_reduction_pct": 49.550000000000004,
+          "retention_pct": 100.0,
+          "regressions": 0,
+          "comparisons": 8,
+          "latency_ms": 5.980851899948902,
+          "items": [
+            {
+              "qa_id": "locomo-sh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.220452620048505,
+                "recency": 0.8823529411764706,
+                "entity_density": 0.12121212121212122,
+                "length_penalty": 0.7662835249042146,
+                "char_len": 261.0
+              }
+            },
+            {
+              "qa_id": "locomo-sh-2",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 7.257470810769544,
+                "recency": 0.9327731092436975,
+                "entity_density": 0.14285714285714285,
+                "length_penalty": 0.8474576271186441,
+                "char_len": 164.0
+              }
+            },
+            {
+              "qa_id": "locomo-temp-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 9.198362128487961,
+                "recency": 0.9159663865546218,
+                "entity_density": 0.12,
+                "length_penalty": 0.9661835748792271,
+                "char_len": 193.0
+              }
+            },
+            {
+              "qa_id": "locomo-mh-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.324890846308104,
+                "recency": 0.9663865546218487,
+                "entity_density": 0.2,
+                "length_penalty": 0.7751937984496123,
+                "char_len": 258.0
+              }
+            },
+            {
+              "qa_id": "locomo-od-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 2.0370383516554353,
+                "recency": 0.8991596638655462,
+                "entity_density": 0.14814814814814814,
+                "length_penalty": 0.8264462809917356,
+                "char_len": 242.0
+              }
+            },
+            {
+              "qa_id": "locomo-pref-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 3.3808948857097114,
+                "recency": 0.8907563025210085,
+                "entity_density": 0.17391304347826086,
+                "length_penalty": 0.9259259259259258,
+                "char_len": 184.0
+              }
+            },
+            {
+              "qa_id": "locomo-db-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 5.984731001916552,
+                "recency": 0.9411764705882353,
+                "entity_density": 0.21052631578947367,
+                "length_penalty": 0.8403361344537815,
+                "char_len": 162.0
+              }
+            },
+            {
+              "qa_id": "locomo-proj-1",
+              "retained": true,
+              "kept_count": 60,
+              "full_score": 1.0,
+              "budget_score": 1.0,
+              "top_features": {
+                "bm25": 4.825703599274016,
+                "recency": 0.9747899159663865,
+                "entity_density": 0.12903225806451613,
+                "length_penalty": 0.8583690987124464,
+                "char_len": 233.0
+              }
+            }
+          ]
+        }
+      ],
+      "headline": {
+        "tiny_at_25_retention_pct": 100.0,
+        "tiny_at_35_retention_pct": 100.0,
+        "fifo_oldest_at_25_retention_pct": 100.0,
+        "fifo_newest_at_25_retention_pct": 100.0,
+        "bm25_at_25_retention_pct": 100.0,
+        "tiny_vs_fifo_oldest_lift_at_25": 0.0,
+        "tiny_vs_bm25_lift_at_25": 0.0,
+        "tiny_at_25_bytes_reduction_pct": 74.90723684210526,
+        "tiny_at_35_bytes_reduction_pct": 64.73552631578947,
+        "tiny_at_25_latency_ms": 5.847211767104454,
+        "tiny_at_35_latency_ms": 5.889080013730563,
+        "fifo_at_35_retention_pct": 100.0,
+        "tiny_vs_fifo_lift_at_35": 0.0
+      }
+    },
+    "headline": {
+      "agent_tiny_at_25_retention_pct": 100.0,
+      "agent_tiny_at_35_retention_pct": 100.0,
+      "agent_fifo_oldest_at_25_retention_pct": 37.5,
+      "agent_fifo_newest_at_25_retention_pct": 37.5,
+      "agent_bm25_at_25_retention_pct": 87.5,
+      "agent_tiny_vs_fifo_oldest_lift_at_25": 62.5,
+      "agent_tiny_vs_bm25_lift_at_25": 12.5,
+      "agent_tiny_at_25_bytes_reduction_pct": 73.02105263157894,
+      "agent_tiny_at_35_bytes_reduction_pct": 59.74736842105264,
+      "agent_tiny_at_25_latency_ms": 0.7486348913516849,
+      "agent_tiny_at_35_latency_ms": 0.7173476042225957,
+      "agent_fifo_at_35_retention_pct": 37.5,
+      "agent_tiny_vs_fifo_lift_at_35": 62.5,
+      "locomo_tiny_at_25_retention_pct": 100.0,
+      "locomo_tiny_at_35_retention_pct": 100.0,
+      "locomo_fifo_oldest_at_25_retention_pct": 100.0,
+      "locomo_fifo_newest_at_25_retention_pct": 100.0,
+      "locomo_bm25_at_25_retention_pct": 100.0,
+      "locomo_tiny_vs_fifo_oldest_lift_at_25": 0.0,
+      "locomo_tiny_vs_bm25_lift_at_25": 0.0,
+      "locomo_tiny_at_25_bytes_reduction_pct": 74.90723684210526,
+      "locomo_tiny_at_35_bytes_reduction_pct": 64.73552631578947,
+      "locomo_tiny_at_25_latency_ms": 5.847211767104454,
+      "locomo_tiny_at_35_latency_ms": 5.889080013730563,
+      "locomo_fifo_at_35_retention_pct": 100.0,
+      "locomo_tiny_vs_fifo_lift_at_35": 0.0,
+      "tiny_at_25_retention_pct": 100.0,
+      "tiny_at_35_retention_pct": 100.0,
+      "fifo_oldest_at_25_retention_pct": 37.5,
+      "fifo_newest_at_25_retention_pct": 37.5,
+      "bm25_at_25_retention_pct": 87.5,
+      "tiny_vs_fifo_oldest_lift_at_25": 62.5,
+      "tiny_vs_bm25_lift_at_25": 12.5,
+      "tiny_at_25_bytes_reduction_pct": 73.02105263157894,
+      "tiny_at_35_bytes_reduction_pct": 59.74736842105264,
+      "tiny_at_25_latency_ms": 0.7486348913516849,
+      "tiny_at_35_latency_ms": 0.7173476042225957,
+      "fifo_at_35_retention_pct": 37.5,
+      "tiny_vs_fifo_lift_at_35": 62.5
+    }
+  },
   "cross_model_readers": {
     "models": [
       "qwen2.5:0.5b",
@@ -956,21 +3729,21 @@
     ],
     "question_count": 8,
     "comparisons": 16,
-    "regressions": 0,
-    "retention_pct": 100.0,
-    "passed": true,
+    "regressions": 2,
+    "retention_pct": 87.5,
+    "passed": false,
     "items": [
       {
         "model": "qwen2.5:0.5b",
         "qa_id": "qa-01",
         "question": "What language does the user prefer?",
         "identity_answer": "The user prefers Python.",
-        "minified_answer": "The user prefers Python.",
+        "minified_answer": "The user prefers English.",
         "identity_score": 1.0,
-        "minified_score": 1.0,
-        "retained": true,
-        "identity_latency_ms": 375,
-        "minified_latency_ms": 382
+        "minified_score": 0.0,
+        "retained": false,
+        "identity_latency_ms": 5890,
+        "minified_latency_ms": 399
       },
       {
         "model": "qwen2.5:0.5b",
@@ -981,8 +3754,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 324,
-        "minified_latency_ms": 292
+        "identity_latency_ms": 345,
+        "minified_latency_ms": 323
       },
       {
         "model": "qwen2.5:0.5b",
@@ -993,8 +3766,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 337,
-        "minified_latency_ms": 405
+        "identity_latency_ms": 375,
+        "minified_latency_ms": 420
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1005,8 +3778,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 318,
-        "minified_latency_ms": 332
+        "identity_latency_ms": 361,
+        "minified_latency_ms": 334
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1017,8 +3790,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 418,
-        "minified_latency_ms": 413
+        "identity_latency_ms": 439,
+        "minified_latency_ms": 465
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1029,20 +3802,20 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 387,
-        "minified_latency_ms": 391
+        "identity_latency_ms": 411,
+        "minified_latency_ms": 436
       },
       {
         "model": "qwen2.5:0.5b",
         "qa_id": "qa-07",
         "question": "What does min-mem implement?",
         "identity_answer": "The min-mem project implements lexical normalization for agent memory. It facilitates storage reduction while maintaining semantic equivalence. The architecture incorporates POS tagging in order to preserve nouns and proper entities.",
-        "minified_answer": "The min-mem project implements lexical normalization for agent memory. It aids storage reduction while keeping semantic equivalence. The architecture adds POS tagging to preserve nouns and proper entities.",
+        "minified_answer": "min-mem implements lexical normalization for agent memory, which aids storage reduction while keeping semantic equivalence. It also adds POS tagging to keep nouns and proper entities.",
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 691,
-        "minified_latency_ms": 630
+        "identity_latency_ms": 741,
+        "minified_latency_ms": 629
       },
       {
         "model": "qwen2.5:0.5b",
@@ -1053,8 +3826,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 323,
-        "minified_latency_ms": 305
+        "identity_latency_ms": 360,
+        "minified_latency_ms": 334
       },
       {
         "model": "gemma4:latest",
@@ -1065,20 +3838,20 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1889,
-        "minified_latency_ms": 1872
+        "identity_latency_ms": 35699,
+        "minified_latency_ms": 2113
       },
       {
         "model": "gemma4:latest",
         "qa_id": "qa-02",
         "question": "Where is the user's organization located?",
         "identity_answer": "Berlin",
-        "minified_answer": "Berlin",
+        "minified_answer": "",
         "identity_score": 1.0,
-        "minified_score": 1.0,
-        "retained": true,
-        "identity_latency_ms": 858,
-        "minified_latency_ms": 864
+        "minified_score": 0.0,
+        "retained": false,
+        "identity_latency_ms": 1009,
+        "minified_latency_ms": 2858
       },
       {
         "model": "gemma4:latest",
@@ -1089,8 +3862,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 955,
-        "minified_latency_ms": 976
+        "identity_latency_ms": 1025,
+        "minified_latency_ms": 1002
       },
       {
         "model": "gemma4:latest",
@@ -1101,8 +3874,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 2645,
-        "minified_latency_ms": 1901
+        "identity_latency_ms": 1935,
+        "minified_latency_ms": 1924
       },
       {
         "model": "gemma4:latest",
@@ -1113,8 +3886,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1959,
-        "minified_latency_ms": 1872
+        "identity_latency_ms": 1934,
+        "minified_latency_ms": 1949
       },
       {
         "model": "gemma4:latest",
@@ -1125,8 +3898,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 974,
-        "minified_latency_ms": 983
+        "identity_latency_ms": 1054,
+        "minified_latency_ms": 988
       },
       {
         "model": "gemma4:latest",
@@ -1137,8 +3910,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1045,
-        "minified_latency_ms": 1010
+        "identity_latency_ms": 1079,
+        "minified_latency_ms": 1032
       },
       {
         "model": "gemma4:latest",
@@ -1149,15 +3922,15 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 917,
-        "minified_latency_ms": 895
+        "identity_latency_ms": 953,
+        "minified_latency_ms": 938
       }
     ]
   },
   "quality_retention": {
-    "retention_pct": 100.0,
-    "regressions": 0,
-    "passed": true,
+    "retention_pct": 97.36842105263158,
+    "regressions": 2,
+    "passed": false,
     "definition": "minified_score >= identity_score for every question/model pair"
   },
   "cloud_projection": {
@@ -1166,28 +3939,28 @@
     "bytes_30_day": 5237000.000000001,
     "bytes_1_year": 63716833.33333334,
     "gb_month_cost_identity": 0.0013648412811259432,
-    "gb_month_cost_minified": 0.0010870777588815517,
-    "monthly_savings_usd": 0.0002777635222443915,
-    "annual_savings_usd": 0.003333162266932698
+    "gb_month_cost_minified": 0.0010744110184534687,
+    "monthly_savings_usd": 0.0002904302626724744,
+    "annual_savings_usd": 0.003485163152069693
   },
   "network_savings": {
-    "payload_bytes_saved_per_full_sync": 2456,
-    "payload_reduction_pct": 20.351342393105735,
-    "gzip_bytes_saved_per_full_sync": 189,
-    "gzip_reduction_pct": 9.161415414444983,
-    "org_broadcast_bytes_saved": 9665,
-    "org_broadcast_reduction_pct": 80.08783559827644,
-    "projected_daily_sync_bytes_saved": 1228000.0,
-    "projected_30_day_sync_bytes_saved": 36840000.0
+    "payload_bytes_saved_per_full_sync": 2568,
+    "payload_reduction_pct": 21.279416639045408,
+    "gzip_bytes_saved_per_full_sync": 203,
+    "gzip_reduction_pct": 9.840038778477945,
+    "org_broadcast_bytes_saved": 9693,
+    "org_broadcast_reduction_pct": 80.31985415976135,
+    "projected_daily_sync_bytes_saved": 1284000.0,
+    "projected_30_day_sync_bytes_saved": 38520000.0
   },
   "auditability": {
-    "auditability_index": 89.57484373186168,
+    "auditability_index": 88.95688902574905,
     "phrase_only_char_pct": 1.6670850823581824,
     "verb_policy_char_pct": 9.643151788945293,
-    "full_pipeline_char_pct": 19.56250694291032,
-    "naive_char_pct": 27.23534559040921,
-    "naive_noun_pct": 65.79143079143078,
-    "replacements_per_memory": 6.866666666666666,
+    "full_pipeline_char_pct": 20.453597044950335,
+    "naive_char_pct": 28.35107774307644,
+    "naive_noun_pct": 64.44462944462944,
+    "replacements_per_memory": 7.266666666666667,
     "rule_attribution_pct": 100.0
   }
 }

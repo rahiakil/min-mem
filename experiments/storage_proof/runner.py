@@ -43,6 +43,7 @@ from storage_proof.quality_gate import compare_retention, pinned_retrieval_ids, 
 from storage_proof.readers import check_ollama, ollama_answer  # noqa: E402
 from storage_proof.scoring import extract_answer_from_context, score_prediction  # noqa: E402
 from storage_proof.storage import measure_growth, report_to_dict  # noqa: E402
+from storage_proof.tiny_policy import evaluate_policy_budget  # noqa: E402
 
 OUT_JSON = EXPERIMENTS / "storage_proof_results.json"
 OUT_MD = EXPERIMENTS / "STORAGE_PROOF.md"
@@ -324,6 +325,14 @@ def write_report_md(payload: dict) -> None:
         f"- Auditability index: **{payload['auditability']['auditability_index']:.1f}/100**",
         f"- Phrase-only savings: **{payload['auditability']['phrase_only_char_pct']:.1f}%** vs "
         f"full POS policy: **{payload['auditability']['full_pipeline_char_pct']:.1f}%**",
+        f"- Tiny read-path policy @25% budget: "
+        f"**{payload['tiny_policy_validation']['headline']['tiny_at_25_retention_pct']:.1f}%** "
+        f"retention vs oldest-FIFO "
+        f"**{payload['tiny_policy_validation']['headline']['fifo_oldest_at_25_retention_pct']:.1f}%** "
+        f"(+{payload['tiny_policy_validation']['headline']['tiny_vs_fifo_oldest_lift_at_25']:.1f} pt; "
+        f"{payload['tiny_policy_validation']['headline']['tiny_at_25_bytes_reduction_pct']:.1f}% "
+        f"context bytes cut; "
+        f"{payload['tiny_policy_validation']['headline']['tiny_at_25_latency_ms']:.1f} ms)",
         f"- Cross-model readers: **{payload['cross_model_readers']['retention_pct']:.1f}%** retention "
         f"({', '.join(payload['cross_model_readers']['models']) or 'not run'})",
         "",
@@ -411,6 +420,36 @@ def main() -> int:
 
     org = run_org_simulation(agent_bundle.records, converter, agent_bundle.qa_items, ["bm25_extract", "keyword"])
 
+    # Policy validation uses unique memories (scale=1) + LoCoMo-shaped so FIFO
+    # is not helped by duplicated blocks.
+    unique_bundle = build_agent_corpus_bundle(scale=1)
+    unique_minified, _, _ = minify_records(unique_bundle.records, converter)
+    locomo_minified, _, _ = minify_records(locomo_bundle.records, converter)
+    policy_agent = evaluate_policy_budget(
+        unique_bundle.records,
+        unique_minified,
+        unique_bundle.qa_items,
+        budgets=[0.25, 0.35, 0.5],
+        policies=["fifo_oldest", "fifo_newest", "bm25_only", "tiny_linear"],
+    )
+    policy_locomo = evaluate_policy_budget(
+        locomo_bundle.records,
+        locomo_minified,
+        locomo_bundle.qa_items,
+        budgets=[0.25, 0.35, 0.5],
+        policies=["fifo_oldest", "fifo_newest", "bm25_only", "tiny_linear"],
+    )
+    policy_validation = {
+        "agent_unique": policy_agent,
+        "locomo_shaped": policy_locomo,
+        "headline": {
+            **{f"agent_{k}": v for k, v in policy_agent["headline"].items()},
+            **{f"locomo_{k}": v for k, v in policy_locomo["headline"].items()},
+            # Prefer agent unique numbers as primary paper macros
+            **policy_agent["headline"],
+        },
+    }
+
     all_retention = []
     total_regressions = 0
     for key, br in benchmark_results.items():
@@ -447,6 +486,7 @@ def main() -> int:
         "benchmarks": benchmark_results,
         "storage_growth": report_to_dict(storage_report),
         "org_simulation": org,
+        "tiny_policy_validation": policy_validation,
         "cross_model_readers": cross_model,
         "quality_retention": {
             "retention_pct": retention_pct,

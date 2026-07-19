@@ -1,0 +1,2435 @@
+{
+  "generated": "2026-07-13T22:47:01.469208+00:00",
+  "sources": [
+    "wordnet",
+    "nltk:brown",
+    "experiments/corpus.json",
+    "experiments/candidates.json",
+    "curated_phrases"
+  ],
+  "baseline_agent": {
+    "char_savings_pct": 20.34186520137491,
+    "noun_preservation_pct": 94.44444444444444,
+    "dict_size": 500.0
+  },
+  "baseline_brown": {
+    "char_savings_pct": 3.5385696480532904,
+    "noun_preservation_pct": 100.0,
+    "dict_size": 500.0
+  },
+  "final_agent": {
+    "char_savings_pct": 20.453597044950335,
+    "noun_preservation_pct": 94.44444444444444,
+    "dict_size": 900.0
+  },
+  "final_brown": {
+    "char_savings_pct": 4.036238495408484,
+    "noun_preservation_pct": 100.0,
+    "dict_size": 900.0
+  },
+  "proposed": 400,
+  "accepted_count": 400,
+  "accepted": [
+    {
+      "source": "around",
+      "target": "some",
+      "score": 1607.32,
+      "char_delta": 2
+    },
+    {
+      "source": "second",
+      "target": "back",
+      "score": 975.72,
+      "char_delta": 2
+    },
+    {
+      "source": "outside",
+      "target": "away",
+      "score": 776.79,
+      "char_delta": 3
+    },
+    {
+      "source": "straight",
+      "target": "true",
+      "score": 620.16,
+      "char_delta": 4
+    },
+    {
+      "source": "reasonable",
+      "target": "fair",
+      "score": 537.6,
+      "char_delta": 6
+    },
+    {
+      "source": "primary",
+      "target": "main",
+      "score": 330.48,
+      "char_delta": 3
+    },
+    {
+      "source": "average",
+      "target": "mean",
+      "score": 283.59,
+      "char_delta": 3
+    },
+    {
+      "source": "future",
+      "target": "next",
+      "score": 260.3,
+      "char_delta": 2
+    },
+    {
+      "source": "appreciate",
+      "target": "value",
+      "score": 183.3,
+      "char_delta": 5
+    },
+    {
+      "source": "abstract",
+      "target": "lift",
+      "score": 179.52,
+      "char_delta": 4
+    },
+    {
+      "source": "evident",
+      "target": "plain",
+      "score": 161.28,
+      "char_delta": 2
+    },
+    {
+      "source": "severely",
+      "target": "hard",
+      "score": 155.52,
+      "char_delta": 4
+    },
+    {
+      "source": "desirable",
+      "target": "worthy",
+      "score": 155.52,
+      "char_delta": 3
+    },
+    {
+      "source": "cardinal",
+      "target": "key",
+      "score": 155.4,
+      "char_delta": 5
+    },
+    {
+      "source": "conceive",
+      "target": "think",
+      "score": 154.56,
+      "char_delta": 3
+    },
+    {
+      "source": "disposed",
+      "target": "given",
+      "score": 154.44,
+      "char_delta": 3
+    },
+    {
+      "source": "severe",
+      "target": "hard",
+      "score": 153.66,
+      "char_delta": 2
+    },
+    {
+      "source": "marginal",
+      "target": "bare",
+      "score": 152.88,
+      "char_delta": 4
+    },
+    {
+      "source": "functional",
+      "target": "working",
+      "score": 152.49,
+      "char_delta": 3
+    },
+    {
+      "source": "conduct",
+      "target": "take",
+      "score": 151.2,
+      "char_delta": 3
+    },
+    {
+      "source": "exceed",
+      "target": "top",
+      "score": 151.05,
+      "char_delta": 3
+    },
+    {
+      "source": "depressed",
+      "target": "down",
+      "score": 150.7,
+      "char_delta": 5
+    },
+    {
+      "source": "frightening",
+      "target": "awful",
+      "score": 150.36,
+      "char_delta": 6
+    },
+    {
+      "source": "exclusive",
+      "target": "single",
+      "score": 149.85,
+      "char_delta": 3
+    },
+    {
+      "source": "secure",
+      "target": "good",
+      "score": 148.8,
+      "char_delta": 2
+    },
+    {
+      "source": "capture",
+      "target": "get",
+      "score": 148.72,
+      "char_delta": 4
+    },
+    {
+      "source": "affected",
+      "target": "moved",
+      "score": 147.96,
+      "char_delta": 3
+    },
+    {
+      "source": "distressing",
+      "target": "sad",
+      "score": 147.84,
+      "char_delta": 8
+    },
+    {
+      "source": "widely",
+      "target": "wide",
+      "score": 147.68,
+      "char_delta": 2
+    },
+    {
+      "source": "discriminating",
+      "target": "sharp",
+      "score": 147.42,
+      "char_delta": 9
+    },
+    {
+      "source": "quietly",
+      "target": "quiet",
+      "score": 147.0,
+      "char_delta": 2
+    },
+    {
+      "source": "lightly",
+      "target": "light",
+      "score": 146.94,
+      "char_delta": 2
+    },
+    {
+      "source": "mother",
+      "target": "get",
+      "score": 146.88,
+      "char_delta": 3
+    },
+    {
+      "source": "preferably",
+      "target": "rather",
+      "score": 146.16,
+      "char_delta": 4
+    },
+    {
+      "source": "straightforward",
+      "target": "square",
+      "score": 144.72,
+      "char_delta": 9
+    },
+    {
+      "source": "necessitate",
+      "target": "need",
+      "score": 144.55,
+      "char_delta": 7
+    },
+    {
+      "source": "curious",
+      "target": "funny",
+      "score": 144.44,
+      "char_delta": 2
+    },
+    {
+      "source": "advanced",
+      "target": "modern",
+      "score": 144.16,
+      "char_delta": 2
+    },
+    {
+      "source": "associate",
+      "target": "link",
+      "score": 144.0,
+      "char_delta": 5
+    },
+    {
+      "source": "restrained",
+      "target": "quiet",
+      "score": 143.65,
+      "char_delta": 5
+    },
+    {
+      "source": "skillful",
+      "target": "good",
+      "score": 143.64,
+      "char_delta": 4
+    },
+    {
+      "source": "touched",
+      "target": "moved",
+      "score": 143.64,
+      "char_delta": 2
+    },
+    {
+      "source": "correctly",
+      "target": "right",
+      "score": 143.0,
+      "char_delta": 4
+    },
+    {
+      "source": "sometime",
+      "target": "old",
+      "score": 142.45,
+      "char_delta": 5
+    },
+    {
+      "source": "diminished",
+      "target": "small",
+      "score": 142.0,
+      "char_delta": 5
+    },
+    {
+      "source": "cherished",
+      "target": "wanted",
+      "score": 141.6,
+      "char_delta": 3
+    },
+    {
+      "source": "exploited",
+      "target": "used",
+      "score": 140.4,
+      "char_delta": 5
+    },
+    {
+      "source": "achieve",
+      "target": "reach",
+      "score": 139.74,
+      "char_delta": 2
+    },
+    {
+      "source": "lively",
+      "target": "live",
+      "score": 139.36,
+      "char_delta": 2
+    },
+    {
+      "source": "strengthen",
+      "target": "tone",
+      "score": 139.2,
+      "char_delta": 6
+    },
+    {
+      "source": "motionless",
+      "target": "still",
+      "score": 138.25,
+      "char_delta": 5
+    },
+    {
+      "source": "listen",
+      "target": "mind",
+      "score": 137.7,
+      "char_delta": 2
+    },
+    {
+      "source": "fastened",
+      "target": "tied",
+      "score": 137.2,
+      "char_delta": 4
+    },
+    {
+      "source": "intimately",
+      "target": "well",
+      "score": 136.44,
+      "char_delta": 6
+    },
+    {
+      "source": "formulate",
+      "target": "word",
+      "score": 136.35,
+      "char_delta": 5
+    },
+    {
+      "source": "detached",
+      "target": "free",
+      "score": 136.32,
+      "char_delta": 4
+    },
+    {
+      "source": "indispensable",
+      "target": "essential",
+      "score": 136.2,
+      "char_delta": 4
+    },
+    {
+      "source": "underground",
+      "target": "secret",
+      "score": 136.0,
+      "char_delta": 5
+    },
+    {
+      "source": "restrain",
+      "target": "keep",
+      "score": 135.6,
+      "char_delta": 4
+    },
+    {
+      "source": "convey",
+      "target": "get",
+      "score": 134.55,
+      "char_delta": 3
+    },
+    {
+      "source": "rationalize",
+      "target": "cut",
+      "score": 134.0,
+      "char_delta": 8
+    },
+    {
+      "source": "proceed",
+      "target": "keep",
+      "score": 133.92,
+      "char_delta": 3
+    },
+    {
+      "source": "cracking",
+      "target": "great",
+      "score": 133.2,
+      "char_delta": 3
+    },
+    {
+      "source": "sacrifice",
+      "target": "give",
+      "score": 133.1,
+      "char_delta": 5
+    },
+    {
+      "source": "elementary",
+      "target": "simple",
+      "score": 133.0,
+      "char_delta": 4
+    },
+    {
+      "source": "monotonous",
+      "target": "flat",
+      "score": 132.96,
+      "char_delta": 6
+    },
+    {
+      "source": "electrostatic",
+      "target": "static",
+      "score": 132.93,
+      "char_delta": 7
+    },
+    {
+      "source": "forthcoming",
+      "target": "coming",
+      "score": 132.5,
+      "char_delta": 5
+    },
+    {
+      "source": "practiced",
+      "target": "good",
+      "score": 132.0,
+      "char_delta": 5
+    },
+    {
+      "source": "dependent",
+      "target": "subject",
+      "score": 131.04,
+      "char_delta": 2
+    },
+    {
+      "source": "circular",
+      "target": "round",
+      "score": 130.8,
+      "char_delta": 3
+    },
+    {
+      "source": "organize",
+      "target": "form",
+      "score": 130.48,
+      "char_delta": 4
+    },
+    {
+      "source": "shortsighted",
+      "target": "short",
+      "score": 130.2,
+      "char_delta": 7
+    },
+    {
+      "source": "stimulate",
+      "target": "get",
+      "score": 129.96,
+      "char_delta": 6
+    },
+    {
+      "source": "whatsoever",
+      "target": "any",
+      "score": 129.36,
+      "char_delta": 7
+    },
+    {
+      "source": "consist",
+      "target": "lie",
+      "score": 129.2,
+      "char_delta": 4
+    },
+    {
+      "source": "devote",
+      "target": "pay",
+      "score": 129.15,
+      "char_delta": 3
+    },
+    {
+      "source": "prosperous",
+      "target": "easy",
+      "score": 129.12,
+      "char_delta": 6
+    },
+    {
+      "source": "strike",
+      "target": "hit",
+      "score": 128.25,
+      "char_delta": 3
+    },
+    {
+      "source": "downstairs",
+      "target": "below",
+      "score": 128.15,
+      "char_delta": 5
+    },
+    {
+      "source": "finish",
+      "target": "end",
+      "score": 127.44,
+      "char_delta": 3
+    },
+    {
+      "source": "literal",
+      "target": "real",
+      "score": 127.35,
+      "char_delta": 3
+    },
+    {
+      "source": "father",
+      "target": "get",
+      "score": 127.26,
+      "char_delta": 3
+    },
+    {
+      "source": "distinctive",
+      "target": "typical",
+      "score": 127.2,
+      "char_delta": 4
+    },
+    {
+      "source": "sinister",
+      "target": "dark",
+      "score": 126.88,
+      "char_delta": 4
+    },
+    {
+      "source": "speculate",
+      "target": "job",
+      "score": 126.84,
+      "char_delta": 6
+    },
+    {
+      "source": "relinquish",
+      "target": "free",
+      "score": 126.36,
+      "char_delta": 6
+    },
+    {
+      "source": "golden",
+      "target": "gold",
+      "score": 126.0,
+      "char_delta": 2
+    },
+    {
+      "source": "succeed",
+      "target": "win",
+      "score": 126.0,
+      "char_delta": 4
+    },
+    {
+      "source": "deeply",
+      "target": "deep",
+      "score": 125.58,
+      "char_delta": 2
+    },
+    {
+      "source": "suspicious",
+      "target": "funny",
+      "score": 125.45,
+      "char_delta": 5
+    },
+    {
+      "source": "register",
+      "target": "show",
+      "score": 125.4,
+      "char_delta": 4
+    },
+    {
+      "source": "respective",
+      "target": "several",
+      "score": 125.4,
+      "char_delta": 3
+    },
+    {
+      "source": "advance",
+      "target": "win",
+      "score": 125.28,
+      "char_delta": 4
+    },
+    {
+      "source": "missed",
+      "target": "lost",
+      "score": 124.8,
+      "char_delta": 2
+    },
+    {
+      "source": "defective",
+      "target": "bad",
+      "score": 124.32,
+      "char_delta": 6
+    },
+    {
+      "source": "specify",
+      "target": "set",
+      "score": 123.64,
+      "char_delta": 4
+    },
+    {
+      "source": "everlasting",
+      "target": "pure",
+      "score": 123.2,
+      "char_delta": 7
+    },
+    {
+      "source": "emphasize",
+      "target": "stress",
+      "score": 122.4,
+      "char_delta": 3
+    },
+    {
+      "source": "slashed",
+      "target": "cut",
+      "score": 122.4,
+      "char_delta": 4
+    },
+    {
+      "source": "inscrutable",
+      "target": "deep",
+      "score": 122.15,
+      "char_delta": 7
+    },
+    {
+      "source": "unquestionably",
+      "target": "definitely",
+      "score": 121.88,
+      "char_delta": 4
+    },
+    {
+      "source": "technological",
+      "target": "technical",
+      "score": 121.68,
+      "char_delta": 4
+    },
+    {
+      "source": "charming",
+      "target": "magic",
+      "score": 121.68,
+      "char_delta": 3
+    },
+    {
+      "source": "ordinarily",
+      "target": "usually",
+      "score": 121.38,
+      "char_delta": 3
+    },
+    {
+      "source": "steady",
+      "target": "firm",
+      "score": 121.36,
+      "char_delta": 2
+    },
+    {
+      "source": "favored",
+      "target": "pet",
+      "score": 120.96,
+      "char_delta": 4
+    },
+    {
+      "source": "adjust",
+      "target": "set",
+      "score": 120.96,
+      "char_delta": 3
+    },
+    {
+      "source": "sharply",
+      "target": "sharp",
+      "score": 120.84,
+      "char_delta": 2
+    },
+    {
+      "source": "probable",
+      "target": "likely",
+      "score": 120.5,
+      "char_delta": 2
+    },
+    {
+      "source": "handle",
+      "target": "care",
+      "score": 120.36,
+      "char_delta": 2
+    },
+    {
+      "source": "correspond",
+      "target": "fit",
+      "score": 120.05,
+      "char_delta": 7
+    },
+    {
+      "source": "foremost",
+      "target": "first",
+      "score": 119.88,
+      "char_delta": 3
+    },
+    {
+      "source": "humble",
+      "target": "low",
+      "score": 119.88,
+      "char_delta": 3
+    },
+    {
+      "source": "contemplate",
+      "target": "study",
+      "score": 119.7,
+      "char_delta": 6
+    },
+    {
+      "source": "affect",
+      "target": "move",
+      "score": 119.68,
+      "char_delta": 2
+    },
+    {
+      "source": "execute",
+      "target": "do",
+      "score": 119.0,
+      "char_delta": 5
+    },
+    {
+      "source": "distribute",
+      "target": "lot",
+      "score": 118.44,
+      "char_delta": 7
+    },
+    {
+      "source": "bewildered",
+      "target": "lost",
+      "score": 118.44,
+      "char_delta": 6
+    },
+    {
+      "source": "stunned",
+      "target": "out",
+      "score": 118.4,
+      "char_delta": 4
+    },
+    {
+      "source": "conclude",
+      "target": "close",
+      "score": 118.08,
+      "char_delta": 3
+    },
+    {
+      "source": "precious",
+      "target": "wanted",
+      "score": 117.74,
+      "char_delta": 2
+    },
+    {
+      "source": "singular",
+      "target": "odd",
+      "score": 117.6,
+      "char_delta": 5
+    },
+    {
+      "source": "satisfying",
+      "target": "solid",
+      "score": 117.0,
+      "char_delta": 5
+    },
+    {
+      "source": "staring",
+      "target": "pure",
+      "score": 117.0,
+      "char_delta": 3
+    },
+    {
+      "source": "solely",
+      "target": "only",
+      "score": 116.8,
+      "char_delta": 2
+    },
+    {
+      "source": "exhausted",
+      "target": "spent",
+      "score": 116.4,
+      "char_delta": 4
+    },
+    {
+      "source": "concentrate",
+      "target": "focus",
+      "score": 115.8,
+      "char_delta": 6
+    },
+    {
+      "source": "blasphemous",
+      "target": "blue",
+      "score": 115.15,
+      "char_delta": 7
+    },
+    {
+      "source": "unmistakable",
+      "target": "plain",
+      "score": 115.15,
+      "char_delta": 7
+    },
+    {
+      "source": "shortened",
+      "target": "cut",
+      "score": 115.08,
+      "char_delta": 6
+    },
+    {
+      "source": "proficient",
+      "target": "good",
+      "score": 114.9,
+      "char_delta": 6
+    },
+    {
+      "source": "gentle",
+      "target": "easy",
+      "score": 114.48,
+      "char_delta": 2
+    },
+    {
+      "source": "select",
+      "target": "take",
+      "score": 113.62,
+      "char_delta": 2
+    },
+    {
+      "source": "flying",
+      "target": "fast",
+      "score": 113.6,
+      "char_delta": 2
+    },
+    {
+      "source": "compressed",
+      "target": "flat",
+      "score": 113.4,
+      "char_delta": 6
+    },
+    {
+      "source": "affectionate",
+      "target": "warm",
+      "score": 113.28,
+      "char_delta": 8
+    },
+    {
+      "source": "demand",
+      "target": "ask",
+      "score": 112.5,
+      "char_delta": 3
+    },
+    {
+      "source": "fortunate",
+      "target": "golden",
+      "score": 112.2,
+      "char_delta": 3
+    },
+    {
+      "source": "commit",
+      "target": "put",
+      "score": 111.84,
+      "char_delta": 3
+    },
+    {
+      "source": "wounded",
+      "target": "hurt",
+      "score": 111.78,
+      "char_delta": 3
+    },
+    {
+      "source": "obscure",
+      "target": "dark",
+      "score": 111.69,
+      "char_delta": 3
+    },
+    {
+      "source": "relieve",
+      "target": "free",
+      "score": 111.54,
+      "char_delta": 3
+    },
+    {
+      "source": "authoritative",
+      "target": "classic",
+      "score": 111.36,
+      "char_delta": 6
+    },
+    {
+      "source": "ominous",
+      "target": "ill",
+      "score": 111.36,
+      "char_delta": 4
+    },
+    {
+      "source": "succeeding",
+      "target": "next",
+      "score": 110.52,
+      "char_delta": 6
+    },
+    {
+      "source": "economical",
+      "target": "economic",
+      "score": 110.44,
+      "char_delta": 2
+    },
+    {
+      "source": "recently",
+      "target": "lately",
+      "score": 110.0,
+      "char_delta": 2
+    },
+    {
+      "source": "principally",
+      "target": "mainly",
+      "score": 110.0,
+      "char_delta": 5
+    },
+    {
+      "source": "satisfy",
+      "target": "meet",
+      "score": 109.92,
+      "char_delta": 3
+    },
+    {
+      "source": "marvelous",
+      "target": "tall",
+      "score": 109.45,
+      "char_delta": 5
+    },
+    {
+      "source": "deliberate",
+      "target": "debate",
+      "score": 109.2,
+      "char_delta": 4
+    },
+    {
+      "source": "asleep",
+      "target": "gone",
+      "score": 108.6,
+      "char_delta": 2
+    },
+    {
+      "source": "promising",
+      "target": "bright",
+      "score": 108.0,
+      "char_delta": 3
+    },
+    {
+      "source": "notice",
+      "target": "find",
+      "score": 107.88,
+      "char_delta": 2
+    },
+    {
+      "source": "telegraph",
+      "target": "wire",
+      "score": 107.25,
+      "char_delta": 5
+    },
+    {
+      "source": "slender",
+      "target": "thin",
+      "score": 107.16,
+      "char_delta": 3
+    },
+    {
+      "source": "generate",
+      "target": "get",
+      "score": 107.1,
+      "char_delta": 5
+    },
+    {
+      "source": "underdeveloped",
+      "target": "developing",
+      "score": 106.8,
+      "char_delta": 4
+    },
+    {
+      "source": "thence",
+      "target": "so",
+      "score": 106.8,
+      "char_delta": 4
+    },
+    {
+      "source": "frantic",
+      "target": "mad",
+      "score": 106.04,
+      "char_delta": 4
+    },
+    {
+      "source": "persuade",
+      "target": "carry",
+      "score": 105.57,
+      "char_delta": 3
+    },
+    {
+      "source": "proportional",
+      "target": "relative",
+      "score": 105.28,
+      "char_delta": 4
+    },
+    {
+      "source": "project",
+      "target": "see",
+      "score": 105.28,
+      "char_delta": 4
+    },
+    {
+      "source": "mythological",
+      "target": "fabulous",
+      "score": 105.04,
+      "char_delta": 4
+    },
+    {
+      "source": "charter",
+      "target": "take",
+      "score": 104.91,
+      "char_delta": 3
+    },
+    {
+      "source": "substitute",
+      "target": "sub",
+      "score": 104.3,
+      "char_delta": 7
+    },
+    {
+      "source": "changeable",
+      "target": "shot",
+      "score": 104.1,
+      "char_delta": 6
+    },
+    {
+      "source": "pronounced",
+      "target": "marked",
+      "score": 103.68,
+      "char_delta": 4
+    },
+    {
+      "source": "approach",
+      "target": "near",
+      "score": 103.36,
+      "char_delta": 4
+    },
+    {
+      "source": "tolerant",
+      "target": "kind",
+      "score": 103.32,
+      "char_delta": 4
+    },
+    {
+      "source": "witness",
+      "target": "see",
+      "score": 103.2,
+      "char_delta": 4
+    },
+    {
+      "source": "vicious",
+      "target": "fell",
+      "score": 103.02,
+      "char_delta": 3
+    },
+    {
+      "source": "youthful",
+      "target": "young",
+      "score": 102.6,
+      "char_delta": 3
+    },
+    {
+      "source": "amount",
+      "target": "come",
+      "score": 102.3,
+      "char_delta": 2
+    },
+    {
+      "source": "smashed",
+      "target": "wet",
+      "score": 102.0,
+      "char_delta": 4
+    },
+    {
+      "source": "celebrated",
+      "target": "noted",
+      "score": 101.5,
+      "char_delta": 5
+    },
+    {
+      "source": "spirited",
+      "target": "game",
+      "score": 101.44,
+      "char_delta": 4
+    },
+    {
+      "source": "secular",
+      "target": "lay",
+      "score": 101.4,
+      "char_delta": 4
+    },
+    {
+      "source": "induce",
+      "target": "get",
+      "score": 100.44,
+      "char_delta": 3
+    },
+    {
+      "source": "ignore",
+      "target": "cut",
+      "score": 100.32,
+      "char_delta": 3
+    },
+    {
+      "source": "gracious",
+      "target": "nice",
+      "score": 100.08,
+      "char_delta": 4
+    },
+    {
+      "source": "summary",
+      "target": "recap",
+      "score": 100.0,
+      "char_delta": 2
+    },
+    {
+      "source": "reserve",
+      "target": "book",
+      "score": 98.82,
+      "char_delta": 3
+    },
+    {
+      "source": "exhibit",
+      "target": "show",
+      "score": 98.28,
+      "char_delta": 3
+    },
+    {
+      "source": "fitting",
+      "target": "meet",
+      "score": 97.65,
+      "char_delta": 3
+    },
+    {
+      "source": "impersonal",
+      "target": "neutral",
+      "score": 97.44,
+      "char_delta": 3
+    },
+    {
+      "source": "suffice",
+      "target": "do",
+      "score": 97.25,
+      "char_delta": 5
+    },
+    {
+      "source": "comparatively",
+      "target": "relatively",
+      "score": 96.75,
+      "char_delta": 3
+    },
+    {
+      "source": "brilliantly",
+      "target": "bright",
+      "score": 96.75,
+      "char_delta": 5
+    },
+    {
+      "source": "classical",
+      "target": "classic",
+      "score": 96.36,
+      "char_delta": 2
+    },
+    {
+      "source": "confederate",
+      "target": "allied",
+      "score": 95.9,
+      "char_delta": 5
+    },
+    {
+      "source": "occupy",
+      "target": "take",
+      "score": 95.68,
+      "char_delta": 2
+    },
+    {
+      "source": "surviving",
+      "target": "living",
+      "score": 95.34,
+      "char_delta": 3
+    },
+    {
+      "source": "privileged",
+      "target": "inside",
+      "score": 95.2,
+      "char_delta": 4
+    },
+    {
+      "source": "courteous",
+      "target": "nice",
+      "score": 95.1,
+      "char_delta": 5
+    },
+    {
+      "source": "submit",
+      "target": "take",
+      "score": 95.04,
+      "char_delta": 2
+    },
+    {
+      "source": "earnest",
+      "target": "dear",
+      "score": 94.95,
+      "char_delta": 3
+    },
+    {
+      "source": "combine",
+      "target": "mix",
+      "score": 94.8,
+      "char_delta": 4
+    },
+    {
+      "source": "assemble",
+      "target": "meet",
+      "score": 94.68,
+      "char_delta": 4
+    },
+    {
+      "source": "telephone",
+      "target": "call",
+      "score": 94.5,
+      "char_delta": 5
+    },
+    {
+      "source": "unhappily",
+      "target": "sadly",
+      "score": 94.32,
+      "char_delta": 4
+    },
+    {
+      "source": "cleared",
+      "target": "clear",
+      "score": 94.3,
+      "char_delta": 2
+    },
+    {
+      "source": "peerless",
+      "target": "one",
+      "score": 94.2,
+      "char_delta": 5
+    },
+    {
+      "source": "salutary",
+      "target": "good",
+      "score": 94.2,
+      "char_delta": 4
+    },
+    {
+      "source": "interfering",
+      "target": "busy",
+      "score": 93.24,
+      "char_delta": 7
+    },
+    {
+      "source": "measure",
+      "target": "value",
+      "score": 93.0,
+      "char_delta": 2
+    },
+    {
+      "source": "aristocratic",
+      "target": "blue",
+      "score": 92.8,
+      "char_delta": 8
+    },
+    {
+      "source": "attract",
+      "target": "pull",
+      "score": 92.34,
+      "char_delta": 3
+    },
+    {
+      "source": "crushed",
+      "target": "low",
+      "score": 92.0,
+      "char_delta": 4
+    },
+    {
+      "source": "withdraw",
+      "target": "take",
+      "score": 91.84,
+      "char_delta": 4
+    },
+    {
+      "source": "terminal",
+      "target": "last",
+      "score": 91.8,
+      "char_delta": 4
+    },
+    {
+      "source": "spacious",
+      "target": "wide",
+      "score": 91.8,
+      "char_delta": 4
+    },
+    {
+      "source": "immense",
+      "target": "huge",
+      "score": 91.56,
+      "char_delta": 3
+    },
+    {
+      "source": "rattling",
+      "target": "very",
+      "score": 91.2,
+      "char_delta": 4
+    },
+    {
+      "source": "precise",
+      "target": "exact",
+      "score": 91.08,
+      "char_delta": 2
+    },
+    {
+      "source": "compulsive",
+      "target": "driven",
+      "score": 90.0,
+      "char_delta": 4
+    },
+    {
+      "source": "render",
+      "target": "try",
+      "score": 89.76,
+      "char_delta": 3
+    },
+    {
+      "source": "anxious",
+      "target": "dying",
+      "score": 89.32,
+      "char_delta": 2
+    },
+    {
+      "source": "plentiful",
+      "target": "rich",
+      "score": 89.25,
+      "char_delta": 5
+    },
+    {
+      "source": "spectacular",
+      "target": "dramatic",
+      "score": 89.1,
+      "char_delta": 3
+    },
+    {
+      "source": "healthy",
+      "target": "sound",
+      "score": 89.1,
+      "char_delta": 2
+    },
+    {
+      "source": "forthright",
+      "target": "frank",
+      "score": 89.1,
+      "char_delta": 5
+    },
+    {
+      "source": "upright",
+      "target": "just",
+      "score": 88.56,
+      "char_delta": 3
+    },
+    {
+      "source": "comparative",
+      "target": "relative",
+      "score": 87.21,
+      "char_delta": 3
+    },
+    {
+      "source": "intimate",
+      "target": "inner",
+      "score": 86.4,
+      "char_delta": 3
+    },
+    {
+      "source": "beloved",
+      "target": "dear",
+      "score": 86.4,
+      "char_delta": 3
+    },
+    {
+      "source": "overcome",
+      "target": "master",
+      "score": 86.32,
+      "char_delta": 2
+    },
+    {
+      "source": "eminent",
+      "target": "high",
+      "score": 86.13,
+      "char_delta": 3
+    },
+    {
+      "source": "genuinely",
+      "target": "really",
+      "score": 86.1,
+      "char_delta": 3
+    },
+    {
+      "source": "distinctly",
+      "target": "clearly",
+      "score": 86.04,
+      "char_delta": 3
+    },
+    {
+      "source": "departed",
+      "target": "gone",
+      "score": 86.04,
+      "char_delta": 4
+    },
+    {
+      "source": "informal",
+      "target": "loose",
+      "score": 85.86,
+      "char_delta": 3
+    },
+    {
+      "source": "harbor",
+      "target": "hold",
+      "score": 85.68,
+      "char_delta": 2
+    },
+    {
+      "source": "derive",
+      "target": "come",
+      "score": 85.02,
+      "char_delta": 2
+    },
+    {
+      "source": "confront",
+      "target": "face",
+      "score": 84.8,
+      "char_delta": 4
+    },
+    {
+      "source": "damned",
+      "target": "damn",
+      "score": 84.36,
+      "char_delta": 2
+    },
+    {
+      "source": "discharged",
+      "target": "fired",
+      "score": 84.15,
+      "char_delta": 5
+    },
+    {
+      "source": "mistaken",
+      "target": "false",
+      "score": 84.15,
+      "char_delta": 3
+    },
+    {
+      "source": "terribly",
+      "target": "awful",
+      "score": 83.7,
+      "char_delta": 3
+    },
+    {
+      "source": "travel",
+      "target": "move",
+      "score": 83.7,
+      "char_delta": 2
+    },
+    {
+      "source": "integrate",
+      "target": "mix",
+      "score": 83.58,
+      "char_delta": 6
+    },
+    {
+      "source": "evaluate",
+      "target": "value",
+      "score": 83.46,
+      "char_delta": 3
+    },
+    {
+      "source": "approve",
+      "target": "okay",
+      "score": 83.16,
+      "char_delta": 3
+    },
+    {
+      "source": "downright",
+      "target": "rank",
+      "score": 82.4,
+      "char_delta": 5
+    },
+    {
+      "source": "prevail",
+      "target": "run",
+      "score": 82.32,
+      "char_delta": 4
+    },
+    {
+      "source": "retiring",
+      "target": "past",
+      "score": 81.92,
+      "char_delta": 4
+    },
+    {
+      "source": "reverse",
+      "target": "turn",
+      "score": 81.9,
+      "char_delta": 3
+    },
+    {
+      "source": "concord",
+      "target": "hold",
+      "score": 81.6,
+      "char_delta": 3
+    },
+    {
+      "source": "magnificent",
+      "target": "brilliant",
+      "score": 81.54,
+      "char_delta": 2
+    },
+    {
+      "source": "recover",
+      "target": "find",
+      "score": 81.51,
+      "char_delta": 3
+    },
+    {
+      "source": "trusted",
+      "target": "sure",
+      "score": 81.51,
+      "char_delta": 3
+    },
+    {
+      "source": "gather",
+      "target": "meet",
+      "score": 81.2,
+      "char_delta": 2
+    },
+    {
+      "source": "rushed",
+      "target": "rush",
+      "score": 81.0,
+      "char_delta": 2
+    },
+    {
+      "source": "leisurely",
+      "target": "easy",
+      "score": 81.0,
+      "char_delta": 5
+    },
+    {
+      "source": "settle",
+      "target": "fall",
+      "score": 80.96,
+      "char_delta": 2
+    },
+    {
+      "source": "unconditional",
+      "target": "flat",
+      "score": 80.28,
+      "char_delta": 9
+    },
+    {
+      "source": "dismissed",
+      "target": "fired",
+      "score": 80.08,
+      "char_delta": 4
+    },
+    {
+      "source": "dictated",
+      "target": "set",
+      "score": 80.0,
+      "char_delta": 5
+    },
+    {
+      "source": "indifferent",
+      "target": "neutral",
+      "score": 79.2,
+      "char_delta": 4
+    },
+    {
+      "source": "propose",
+      "target": "aim",
+      "score": 79.04,
+      "char_delta": 4
+    },
+    {
+      "source": "alternate",
+      "target": "jump",
+      "score": 79.0,
+      "char_delta": 5
+    },
+    {
+      "source": "decent",
+      "target": "nice",
+      "score": 78.8,
+      "char_delta": 2
+    },
+    {
+      "source": "reinforced",
+      "target": "built",
+      "score": 78.4,
+      "char_delta": 5
+    },
+    {
+      "source": "decrease",
+      "target": "fall",
+      "score": 78.4,
+      "char_delta": 4
+    },
+    {
+      "source": "discourage",
+      "target": "warn",
+      "score": 78.3,
+      "char_delta": 6
+    },
+    {
+      "source": "frightful",
+      "target": "ugly",
+      "score": 78.0,
+      "char_delta": 5
+    },
+    {
+      "source": "unbroken",
+      "target": "kept",
+      "score": 77.84,
+      "char_delta": 4
+    },
+    {
+      "source": "astonishing",
+      "target": "amazing",
+      "score": 77.76,
+      "char_delta": 4
+    },
+    {
+      "source": "polish",
+      "target": "down",
+      "score": 77.7,
+      "char_delta": 2
+    },
+    {
+      "source": "crippled",
+      "target": "game",
+      "score": 77.28,
+      "char_delta": 4
+    },
+    {
+      "source": "sponsor",
+      "target": "shop",
+      "score": 77.28,
+      "char_delta": 3
+    },
+    {
+      "source": "inexpensive",
+      "target": "cheap",
+      "score": 77.04,
+      "char_delta": 6
+    },
+    {
+      "source": "operational",
+      "target": "operating",
+      "score": 77.0,
+      "char_delta": 2
+    },
+    {
+      "source": "employ",
+      "target": "use",
+      "score": 76.95,
+      "char_delta": 3
+    },
+    {
+      "source": "originate",
+      "target": "start",
+      "score": 76.56,
+      "char_delta": 4
+    },
+    {
+      "source": "stirred",
+      "target": "moved",
+      "score": 76.2,
+      "char_delta": 2
+    },
+    {
+      "source": "wretched",
+      "target": "poor",
+      "score": 76.16,
+      "char_delta": 4
+    },
+    {
+      "source": "stiffly",
+      "target": "bolt",
+      "score": 76.14,
+      "char_delta": 3
+    },
+    {
+      "source": "ironic",
+      "target": "dry",
+      "score": 75.66,
+      "char_delta": 3
+    },
+    {
+      "source": "simulated",
+      "target": "fake",
+      "score": 75.6,
+      "char_delta": 5
+    },
+    {
+      "source": "savage",
+      "target": "fell",
+      "score": 75.6,
+      "char_delta": 2
+    },
+    {
+      "source": "unwarranted",
+      "target": "wild",
+      "score": 75.32,
+      "char_delta": 7
+    },
+    {
+      "source": "weakened",
+      "target": "cut",
+      "score": 75.3,
+      "char_delta": 5
+    },
+    {
+      "source": "exploit",
+      "target": "work",
+      "score": 75.12,
+      "char_delta": 3
+    },
+    {
+      "source": "overly",
+      "target": "too",
+      "score": 74.88,
+      "char_delta": 3
+    },
+    {
+      "source": "faithful",
+      "target": "close",
+      "score": 74.58,
+      "char_delta": 3
+    },
+    {
+      "source": "divide",
+      "target": "part",
+      "score": 74.48,
+      "char_delta": 2
+    },
+    {
+      "source": "attach",
+      "target": "tie",
+      "score": 73.92,
+      "char_delta": 3
+    },
+    {
+      "source": "plainly",
+      "target": "plain",
+      "score": 73.8,
+      "char_delta": 2
+    },
+    {
+      "source": "hypothetical",
+      "target": "supposed",
+      "score": 73.6,
+      "char_delta": 4
+    },
+    {
+      "source": "posterior",
+      "target": "later",
+      "score": 73.44,
+      "char_delta": 4
+    },
+    {
+      "source": "indulge",
+      "target": "baby",
+      "score": 73.44,
+      "char_delta": 3
+    },
+    {
+      "source": "estimate",
+      "target": "guess",
+      "score": 73.32,
+      "char_delta": 3
+    },
+    {
+      "source": "intend",
+      "target": "mean",
+      "score": 73.2,
+      "char_delta": 2
+    },
+    {
+      "source": "locate",
+      "target": "site",
+      "score": 72.96,
+      "char_delta": 2
+    },
+    {
+      "source": "handicapped",
+      "target": "disabled",
+      "score": 72.93,
+      "char_delta": 3
+    },
+    {
+      "source": "confidential",
+      "target": "secret",
+      "score": 72.72,
+      "char_delta": 6
+    },
+    {
+      "source": "blessed",
+      "target": "damn",
+      "score": 72.54,
+      "char_delta": 3
+    },
+    {
+      "source": "defend",
+      "target": "hold",
+      "score": 72.24,
+      "char_delta": 2
+    },
+    {
+      "source": "dismiss",
+      "target": "can",
+      "score": 72.2,
+      "char_delta": 4
+    },
+    {
+      "source": "therapeutic",
+      "target": "healing",
+      "score": 71.76,
+      "char_delta": 4
+    },
+    {
+      "source": "engage",
+      "target": "take",
+      "score": 71.68,
+      "char_delta": 2
+    },
+    {
+      "source": "paying",
+      "target": "paid",
+      "score": 71.24,
+      "char_delta": 2
+    },
+    {
+      "source": "persist",
+      "target": "run",
+      "score": 71.04,
+      "char_delta": 4
+    },
+    {
+      "source": "plastered",
+      "target": "wet",
+      "score": 70.8,
+      "char_delta": 6
+    },
+    {
+      "source": "manipulate",
+      "target": "fake",
+      "score": 70.56,
+      "char_delta": 6
+    },
+    {
+      "source": "unspeakable",
+      "target": "awful",
+      "score": 70.2,
+      "char_delta": 6
+    },
+    {
+      "source": "contract",
+      "target": "get",
+      "score": 70.2,
+      "char_delta": 5
+    },
+    {
+      "source": "reckon",
+      "target": "see",
+      "score": 70.14,
+      "char_delta": 3
+    },
+    {
+      "source": "dispense",
+      "target": "lot",
+      "score": 70.0,
+      "char_delta": 5
+    },
+    {
+      "source": "corrupt",
+      "target": "buy",
+      "score": 69.76,
+      "char_delta": 4
+    },
+    {
+      "source": "suspect",
+      "target": "funny",
+      "score": 69.46,
+      "char_delta": 2
+    },
+    {
+      "source": "blackened",
+      "target": "black",
+      "score": 69.4,
+      "char_delta": 4
+    },
+    {
+      "source": "feature",
+      "target": "have",
+      "score": 69.36,
+      "char_delta": 3
+    },
+    {
+      "source": "disgusted",
+      "target": "sick",
+      "score": 69.3,
+      "char_delta": 5
+    },
+    {
+      "source": "saturated",
+      "target": "pure",
+      "score": 69.3,
+      "char_delta": 5
+    },
+    {
+      "source": "goddamn",
+      "target": "damn",
+      "score": 69.3,
+      "char_delta": 3
+    },
+    {
+      "source": "inactive",
+      "target": "still",
+      "score": 69.09,
+      "char_delta": 3
+    },
+    {
+      "source": "manifestly",
+      "target": "plain",
+      "score": 69.0,
+      "char_delta": 5
+    },
+    {
+      "source": "inaugural",
+      "target": "first",
+      "score": 68.8,
+      "char_delta": 4
+    },
+    {
+      "source": "majestic",
+      "target": "royal",
+      "score": 68.4,
+      "char_delta": 3
+    },
+    {
+      "source": "testify",
+      "target": "show",
+      "score": 68.16,
+      "char_delta": 3
+    },
+    {
+      "source": "distinguishable",
+      "target": "distinct",
+      "score": 67.76,
+      "char_delta": 7
+    },
+    {
+      "source": "moderately",
+      "target": "pretty",
+      "score": 67.68,
+      "char_delta": 4
+    },
+    {
+      "source": "intersect",
+      "target": "cross",
+      "score": 67.44,
+      "char_delta": 4
+    },
+    {
+      "source": "fundamentally",
+      "target": "basically",
+      "score": 66.96,
+      "char_delta": 4
+    },
+    {
+      "source": "authorize",
+      "target": "pass",
+      "score": 66.75,
+      "char_delta": 5
+    },
+    {
+      "source": "spring",
+      "target": "form",
+      "score": 66.72,
+      "char_delta": 2
+    },
+    {
+      "source": "successive",
+      "target": "serial",
+      "score": 66.24,
+      "char_delta": 4
+    },
+    {
+      "source": "dominate",
+      "target": "rule",
+      "score": 66.24,
+      "char_delta": 4
+    },
+    {
+      "source": "mastered",
+      "target": "down",
+      "score": 66.2,
+      "char_delta": 4
+    },
+    {
+      "source": "sovereign",
+      "target": "supreme",
+      "score": 66.12,
+      "char_delta": 2
+    },
+    {
+      "source": "pretend",
+      "target": "make",
+      "score": 66.0,
+      "char_delta": 3
+    },
+    {
+      "source": "instantaneous",
+      "target": "instant",
+      "score": 66.0,
+      "char_delta": 6
+    },
+    {
+      "source": "frighten",
+      "target": "scare",
+      "score": 65.67,
+      "char_delta": 3
+    },
+    {
+      "source": "complain",
+      "target": "kick",
+      "score": 65.56,
+      "char_delta": 4
+    },
+    {
+      "source": "absorbed",
+      "target": "intent",
+      "score": 65.28,
+      "char_delta": 2
+    },
+    {
+      "source": "spoiled",
+      "target": "bad",
+      "score": 65.28,
+      "char_delta": 4
+    },
+    {
+      "source": "reciprocal",
+      "target": "mutual",
+      "score": 65.28,
+      "char_delta": 4
+    },
+    {
+      "source": "fulfill",
+      "target": "meet",
+      "score": 65.07,
+      "char_delta": 3
+    },
+    {
+      "source": "denounce",
+      "target": "shit",
+      "score": 64.8,
+      "char_delta": 4
+    },
+    {
+      "source": "notable",
+      "target": "noted",
+      "score": 64.8,
+      "char_delta": 2
+    },
+    {
+      "source": "steadily",
+      "target": "steady",
+      "score": 64.68,
+      "char_delta": 2
+    },
+    {
+      "source": "endure",
+      "target": "run",
+      "score": 64.08,
+      "char_delta": 3
+    },
+    {
+      "source": "imperial",
+      "target": "royal",
+      "score": 63.96,
+      "char_delta": 3
+    },
+    {
+      "source": "illustrate",
+      "target": "instance",
+      "score": 63.92,
+      "char_delta": 2
+    },
+    {
+      "source": "lowest",
+      "target": "last",
+      "score": 63.7,
+      "char_delta": 2
+    },
+    {
+      "source": "unpaired",
+      "target": "odd",
+      "score": 63.6,
+      "char_delta": 5
+    },
+    {
+      "source": "penetrate",
+      "target": "click",
+      "score": 63.56,
+      "char_delta": 4
+    },
+    {
+      "source": "heroic",
+      "target": "epic",
+      "score": 63.42,
+      "char_delta": 2
+    },
+    {
+      "source": "pathetic",
+      "target": "poor",
+      "score": 63.36,
+      "char_delta": 4
+    },
+    {
+      "source": "introduce",
+      "target": "enter",
+      "score": 63.36,
+      "char_delta": 4
+    },
+    {
+      "source": "amusing",
+      "target": "funny",
+      "score": 63.28,
+      "char_delta": 2
+    },
+    {
+      "source": "disclose",
+      "target": "break",
+      "score": 63.18,
+      "char_delta": 3
+    },
+    {
+      "source": "restrict",
+      "target": "limit",
+      "score": 62.7,
+      "char_delta": 3
+    },
+    {
+      "source": "classify",
+      "target": "sort",
+      "score": 62.64,
+      "char_delta": 4
+    },
+    {
+      "source": "prescribed",
+      "target": "official",
+      "score": 62.44,
+      "char_delta": 2
+    },
+    {
+      "source": "northward",
+      "target": "north",
+      "score": 62.4,
+      "char_delta": 4
+    },
+    {
+      "source": "elevated",
+      "target": "grand",
+      "score": 62.04,
+      "char_delta": 3
+    },
+    {
+      "source": "undermine",
+      "target": "cave",
+      "score": 62.0,
+      "char_delta": 5
+    },
+    {
+      "source": "prescribe",
+      "target": "order",
+      "score": 62.0,
+      "char_delta": 4
+    },
+    {
+      "source": "profoundly",
+      "target": "deeply",
+      "score": 61.76,
+      "char_delta": 4
+    },
+    {
+      "source": "spherical",
+      "target": "global",
+      "score": 61.44,
+      "char_delta": 3
+    },
+    {
+      "source": "bitterly",
+      "target": "bitter",
+      "score": 61.44,
+      "char_delta": 2
+    },
+    {
+      "source": "endorse",
+      "target": "back",
+      "score": 61.38,
+      "char_delta": 3
+    },
+    {
+      "source": "uncommon",
+      "target": "rare",
+      "score": 60.8,
+      "char_delta": 4
+    },
+    {
+      "source": "exclude",
+      "target": "bar",
+      "score": 60.48,
+      "char_delta": 4
+    },
+    {
+      "source": "insistent",
+      "target": "crying",
+      "score": 60.24,
+      "char_delta": 3
+    },
+    {
+      "source": "refreshing",
+      "target": "fresh",
+      "score": 60.0,
+      "char_delta": 5
+    },
+    {
+      "source": "sullen",
+      "target": "dark",
+      "score": 59.94,
+      "char_delta": 2
+    },
+    {
+      "source": "disconnected",
+      "target": "split",
+      "score": 59.64,
+      "char_delta": 7
+    },
+    {
+      "source": "broadcast",
+      "target": "air",
+      "score": 59.4,
+      "char_delta": 6
+    },
+    {
+      "source": "loudly",
+      "target": "loud",
+      "score": 59.16,
+      "char_delta": 2
+    },
+    {
+      "source": "squarely",
+      "target": "square",
+      "score": 58.96,
+      "char_delta": 2
+    },
+    {
+      "source": "costly",
+      "target": "dear",
+      "score": 58.88,
+      "char_delta": 2
+    },
+    {
+      "source": "calculate",
+      "target": "look",
+      "score": 58.8,
+      "char_delta": 5
+    },
+    {
+      "source": "accelerate",
+      "target": "speed",
+      "score": 58.5,
+      "char_delta": 5
+    },
+    {
+      "source": "stress",
+      "target": "try",
+      "score": 58.41,
+      "char_delta": 3
+    },
+    {
+      "source": "ardent",
+      "target": "warm",
+      "score": 58.32,
+      "char_delta": 2
+    },
+    {
+      "source": "predict",
+      "target": "call",
+      "score": 58.32,
+      "char_delta": 3
+    },
+    {
+      "source": "immature",
+      "target": "young",
+      "score": 58.17,
+      "char_delta": 3
+    },
+    {
+      "source": "aggregate",
+      "target": "mass",
+      "score": 57.9,
+      "char_delta": 5
+    },
+    {
+      "source": "inspect",
+      "target": "visit",
+      "score": 57.84,
+      "char_delta": 2
+    },
+    {
+      "source": "virtuous",
+      "target": "pure",
+      "score": 57.84,
+      "char_delta": 4
+    },
+    {
+      "source": "inhuman",
+      "target": "cold",
+      "score": 57.75,
+      "char_delta": 3
+    },
+    {
+      "source": "everyday",
+      "target": "daily",
+      "score": 57.6,
+      "char_delta": 3
+    },
+    {
+      "source": "stagnant",
+      "target": "dead",
+      "score": 57.6,
+      "char_delta": 4
+    },
+    {
+      "source": "outspoken",
+      "target": "frank",
+      "score": 57.6,
+      "char_delta": 4
+    },
+    {
+      "source": "ensure",
+      "target": "see",
+      "score": 57.6,
+      "char_delta": 3
+    },
+    {
+      "source": "eloquent",
+      "target": "silver",
+      "score": 57.2,
+      "char_delta": 2
+    },
+    {
+      "source": "prevailing",
+      "target": "dominant",
+      "score": 57.12,
+      "char_delta": 2
+    },
+    {
+      "source": "luxurious",
+      "target": "grand",
+      "score": 56.64,
+      "char_delta": 4
+    },
+    {
+      "source": "questioning",
+      "target": "wondering",
+      "score": 56.62,
+      "char_delta": 2
+    },
+    {
+      "source": "restore",
+      "target": "fix",
+      "score": 56.52,
+      "char_delta": 4
+    },
+    {
+      "source": "patriotic",
+      "target": "loyal",
+      "score": 56.4,
+      "char_delta": 4
+    },
+    {
+      "source": "expert",
+      "target": "good",
+      "score": 56.32,
+      "char_delta": 2
+    },
+    {
+      "source": "characterize",
+      "target": "qualify",
+      "score": 56.1,
+      "char_delta": 5
+    },
+    {
+      "source": "accompany",
+      "target": "follow",
+      "score": 55.92,
+      "char_delta": 3
+    },
+    {
+      "source": "consecutive",
+      "target": "straight",
+      "score": 55.8,
+      "char_delta": 3
+    }
+  ],
+  "note": "Simple PPDB mirrors 404; used WordNet + Brown/agent corpora."
+}

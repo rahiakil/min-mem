@@ -95,6 +95,47 @@ def main() -> None:
     fig3.savefig(FIG_DIR / "fig_benchmark_reduction.png", dpi=150)
     plt.close(fig3)
 
+    policy = data.get("tiny_policy_validation", {})
+    rows = policy.get("agent_unique", policy).get("results", [])
+    if rows:
+        budgets = sorted({r["budget_ratio"] for r in rows})
+        fig4, ax4 = plt.subplots(figsize=(5.4, 3.4))
+        for policy_name, color, marker in (
+            ("fifo_oldest", "#C44E52", "o"),
+            ("fifo_newest", "#E17C72", "v"),
+            ("bm25_only", "#4C72B0", "s"),
+            ("tiny_linear", "#55A868", "^"),
+        ):
+            try:
+                ys = [
+                    next(
+                        r["retention_pct"]
+                        for r in rows
+                        if r["policy"] == policy_name and abs(r["budget_ratio"] - b) < 1e-9
+                    )
+                    for b in budgets
+                ]
+            except StopIteration:
+                continue
+            ax4.plot(
+                budgets,
+                ys,
+                marker=marker,
+                color=color,
+                label=policy_name.replace("_", " "),
+                linewidth=2,
+            )
+        ax4.set_xlabel("Keep budget ratio")
+        ax4.set_ylabel("QA retention vs full minified store (%)")
+        ax4.set_title("Read-path tiny policy vs FIFO/BM25")
+        ax4.set_ylim(0, 105)
+        ax4.grid(True, alpha=0.3)
+        ax4.legend(fontsize=7, framealpha=0.9)
+        fig4.tight_layout()
+        fig4.savefig(FIG_DIR / "fig_tiny_policy.pdf")
+        fig4.savefig(FIG_DIR / "fig_tiny_policy.png", dpi=150)
+        plt.close(fig4)
+
     print(f"Wrote figures to {FIG_DIR}")
 
 

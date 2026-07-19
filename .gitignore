@@ -6,3 +6,6 @@ __pycache__/
 dist/
 build/
 .min-mem/
+
+# IDE workspace
+*.code-workspace
