@@ -1,9 +1,9 @@
 {
   "version": "storage-proof-v1",
-  "timestamp": "2026-07-19T02:40:50.858742+00:00",
+  "timestamp": "2026-07-20T00:02:10.694881+00:00",
   "dict_path": "/home/papa/repos/min-mem/min_dict.json",
-  "dict_hash": "eb141c022109e6fa",
-  "dict_size": 873,
+  "dict_hash": "175ccf45f0c5b1f2",
+  "dict_size": 1315,
   "write_path_inference": "none",
   "reader_models": [
     "bm25_extract",
@@ -20,54 +20,54 @@
       "source": "/home/papa/repos/min-mem/experiments/corpus.json",
       "record_count": 60,
       "qa_count": 8,
-      "char_reduction_pct": 21.27941663904541,
+      "char_reduction_pct": 21.411998674179642,
       "identity_bytes": 12068,
-      "minified_bytes": 9500,
+      "minified_bytes": 9484,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1492,
+            "minified_payload_bytes": 1490,
             "identity_file_bytes": 3379,
-            "minified_file_bytes": 2968,
+            "minified_file_bytes": 2966,
             "identity_gzip_bytes": 1160,
-            "minified_gzip_bytes": 1026,
-            "reduction_pct": 21.597477666841826,
-            "minify_latency_ms": 10.73891848597365
+            "minified_gzip_bytes": 1025,
+            "reduction_pct": 21.702574881765635,
+            "minify_latency_ms": 11.48643321939744
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3867,
+            "minified_payload_bytes": 3861,
             "identity_file_bytes": 8616,
-            "minified_file_bytes": 7563,
+            "minified_file_bytes": 7557,
             "identity_gzip_bytes": 1770,
-            "minified_gzip_bytes": 1601,
-            "reduction_pct": 21.40243902439024,
-            "minify_latency_ms": 10.73891848597365
+            "minified_gzip_bytes": 1597,
+            "reduction_pct": 21.524390243902435,
+            "minify_latency_ms": 11.48643321939744
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 7909,
+            "minified_payload_bytes": 7897,
             "identity_file_bytes": 17493,
-            "minified_file_bytes": 15311,
+            "minified_file_bytes": 15299,
             "identity_gzip_bytes": 2063,
-            "minified_gzip_bytes": 1860,
-            "reduction_pct": 21.623228619561985,
-            "minify_latency_ms": 10.73891848597365
+            "minified_gzip_bytes": 1858,
+            "reduction_pct": 21.74214646714895,
+            "minify_latency_ms": 11.48643321939744
           }
         ],
         "identity_sqlite_bytes": 28672,
         "minified_sqlite_bytes": 28672,
         "identity_jsonl_bytes": 20948,
-        "minified_jsonl_bytes": 18380,
+        "minified_jsonl_bytes": 18364,
         "bytes_per_memory_identity": 349.1333333333333,
-        "bytes_per_memory_minified": 306.3333333333333,
+        "bytes_per_memory_minified": 306.06666666666666,
         "growth_slope_bytes_per_event": 204.7,
         "sqlite_reduction_pct": 0.0,
-        "jsonl_reduction_pct": 12.258926866526643
+        "jsonl_reduction_pct": 12.33530647317166
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -284,65 +284,65 @@
       "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/locomo_subset.json",
       "record_count": 120,
       "qa_count": 8,
-      "char_reduction_pct": 21.27941663904541,
+      "char_reduction_pct": 21.411998674179642,
       "identity_bytes": 24136,
-      "minified_bytes": 19000,
+      "minified_bytes": 18968,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1492,
+            "minified_payload_bytes": 1490,
             "identity_file_bytes": 3393,
-            "minified_file_bytes": 2982,
+            "minified_file_bytes": 2980,
             "identity_gzip_bytes": 1127,
-            "minified_gzip_bytes": 988,
-            "reduction_pct": 21.597477666841826,
-            "minify_latency_ms": 5.466733518793869
+            "minified_gzip_bytes": 986,
+            "reduction_pct": 21.702574881765635,
+            "minify_latency_ms": 5.9999369870638475
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3867,
+            "minified_payload_bytes": 3861,
             "identity_file_bytes": 8650,
-            "minified_file_bytes": 7597,
+            "minified_file_bytes": 7591,
             "identity_gzip_bytes": 1749,
-            "minified_gzip_bytes": 1579,
-            "reduction_pct": 21.40243902439024,
-            "minify_latency_ms": 5.466733518793869
+            "minified_gzip_bytes": 1575,
+            "reduction_pct": 21.524390243902435,
+            "minify_latency_ms": 5.9999369870638475
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 7909,
+            "minified_payload_bytes": 7897,
             "identity_file_bytes": 17556,
-            "minified_file_bytes": 15374,
+            "minified_file_bytes": 15362,
             "identity_gzip_bytes": 2089,
-            "minified_gzip_bytes": 1913,
-            "reduction_pct": 21.623228619561985,
-            "minify_latency_ms": 5.466733518793869
+            "minified_gzip_bytes": 1910,
+            "reduction_pct": 21.74214646714895,
+            "minify_latency_ms": 5.9999369870638475
           },
           {
             "event_count": 100,
             "identity_payload_bytes": 20005,
-            "minified_payload_bytes": 15742,
+            "minified_payload_bytes": 15716,
             "identity_file_bytes": 34935,
-            "minified_file_bytes": 30672,
+            "minified_file_bytes": 30646,
             "identity_gzip_bytes": 2788,
-            "minified_gzip_bytes": 2588,
-            "reduction_pct": 21.30967258185453,
-            "minify_latency_ms": 5.466733518793869
+            "minified_gzip_bytes": 2585,
+            "reduction_pct": 21.43964008997751,
+            "minify_latency_ms": 5.9999369870638475
           }
         ],
         "identity_sqlite_bytes": 45056,
         "minified_sqlite_bytes": 40960,
         "identity_jsonl_bytes": 42056,
-        "minified_jsonl_bytes": 36920,
+        "minified_jsonl_bytes": 36888,
         "bytes_per_memory_identity": 350.46666666666664,
-        "bytes_per_memory_minified": 307.6666666666667,
+        "bytes_per_memory_minified": 307.4,
         "growth_slope_bytes_per_event": 201.13333333333333,
         "sqlite_reduction_pct": 9.090909090909093,
-        "jsonl_reduction_pct": 12.21228837740156
+        "jsonl_reduction_pct": 12.288377401559824
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -559,54 +559,54 @@
       "source": "/home/papa/repos/min-mem/experiments/storage_proof/fixtures/membench_subset.json",
       "record_count": 90,
       "qa_count": 6,
-      "char_reduction_pct": 21.27941663904541,
+      "char_reduction_pct": 21.411998674179642,
       "identity_bytes": 18102,
-      "minified_bytes": 14250,
+      "minified_bytes": 14226,
       "storage": {
         "checkpoints": [
           {
             "event_count": 10,
             "identity_payload_bytes": 1903,
-            "minified_payload_bytes": 1492,
+            "minified_payload_bytes": 1490,
             "identity_file_bytes": 3683,
-            "minified_file_bytes": 3272,
+            "minified_file_bytes": 3270,
             "identity_gzip_bytes": 1155,
-            "minified_gzip_bytes": 1021,
-            "reduction_pct": 21.597477666841826,
-            "minify_latency_ms": 5.499724103396551
+            "minified_gzip_bytes": 1020,
+            "reduction_pct": 21.702574881765635,
+            "minify_latency_ms": 5.681322147655818
           },
           {
             "event_count": 25,
             "identity_payload_bytes": 4920,
-            "minified_payload_bytes": 3867,
+            "minified_payload_bytes": 3861,
             "identity_file_bytes": 9302,
-            "minified_file_bytes": 8249,
+            "minified_file_bytes": 8243,
             "identity_gzip_bytes": 1812,
-            "minified_gzip_bytes": 1647,
-            "reduction_pct": 21.40243902439024,
-            "minify_latency_ms": 5.499724103396551
+            "minified_gzip_bytes": 1644,
+            "reduction_pct": 21.524390243902435,
+            "minify_latency_ms": 5.681322147655818
           },
           {
             "event_count": 50,
             "identity_payload_bytes": 10091,
-            "minified_payload_bytes": 7909,
+            "minified_payload_bytes": 7897,
             "identity_file_bytes": 18854,
-            "minified_file_bytes": 16672,
+            "minified_file_bytes": 16660,
             "identity_gzip_bytes": 2187,
-            "minified_gzip_bytes": 2017,
-            "reduction_pct": 21.623228619561985,
-            "minify_latency_ms": 5.499724103396551
+            "minified_gzip_bytes": 2014,
+            "reduction_pct": 21.74214646714895,
+            "minify_latency_ms": 5.681322147655818
           }
         ],
         "identity_sqlite_bytes": 40960,
         "minified_sqlite_bytes": 36864,
         "identity_jsonl_bytes": 33819,
-        "minified_jsonl_bytes": 29967,
+        "minified_jsonl_bytes": 29943,
         "bytes_per_memory_identity": 375.76666666666665,
-        "bytes_per_memory_minified": 332.96666666666664,
+        "bytes_per_memory_minified": 332.7,
         "growth_slope_bytes_per_event": 204.7,
         "sqlite_reduction_pct": 9.999999999999998,
-        "jsonl_reduction_pct": 11.390047014991577
+        "jsonl_reduction_pct": 11.461013040007096
       },
       "retention": {
         "retention_ratio": 1.0,
@@ -774,46 +774,46 @@
       {
         "event_count": 10,
         "identity_payload_bytes": 1903,
-        "minified_payload_bytes": 1492,
+        "minified_payload_bytes": 1490,
         "identity_file_bytes": 3379,
-        "minified_file_bytes": 2968,
+        "minified_file_bytes": 2966,
         "identity_gzip_bytes": 1160,
-        "minified_gzip_bytes": 1026,
-        "reduction_pct": 21.597477666841826,
-        "minify_latency_ms": 5.631760313796501
+        "minified_gzip_bytes": 1025,
+        "reduction_pct": 21.702574881765635,
+        "minify_latency_ms": 5.698976070076848
       },
       {
         "event_count": 25,
         "identity_payload_bytes": 4920,
-        "minified_payload_bytes": 3867,
+        "minified_payload_bytes": 3861,
         "identity_file_bytes": 8616,
-        "minified_file_bytes": 7563,
+        "minified_file_bytes": 7557,
         "identity_gzip_bytes": 1770,
-        "minified_gzip_bytes": 1601,
-        "reduction_pct": 21.40243902439024,
-        "minify_latency_ms": 5.631760313796501
+        "minified_gzip_bytes": 1597,
+        "reduction_pct": 21.524390243902435,
+        "minify_latency_ms": 5.698976070076848
       },
       {
         "event_count": 50,
         "identity_payload_bytes": 10091,
-        "minified_payload_bytes": 7909,
+        "minified_payload_bytes": 7897,
         "identity_file_bytes": 17493,
-        "minified_file_bytes": 15311,
+        "minified_file_bytes": 15299,
         "identity_gzip_bytes": 2063,
-        "minified_gzip_bytes": 1860,
-        "reduction_pct": 21.623228619561985,
-        "minify_latency_ms": 5.631760313796501
+        "minified_gzip_bytes": 1858,
+        "reduction_pct": 21.74214646714895,
+        "minify_latency_ms": 5.698976070076848
       }
     ],
     "identity_sqlite_bytes": 28672,
     "minified_sqlite_bytes": 28672,
     "identity_jsonl_bytes": 20948,
-    "minified_jsonl_bytes": 18380,
+    "minified_jsonl_bytes": 18364,
     "bytes_per_memory_identity": 349.1333333333333,
-    "bytes_per_memory_minified": 306.3333333333333,
+    "bytes_per_memory_minified": 306.06666666666666,
     "growth_slope_bytes_per_event": 204.7,
     "sqlite_reduction_pct": 0.0,
-    "jsonl_reduction_pct": 12.258926866526643
+    "jsonl_reduction_pct": 12.33530647317166
   },
   "org_simulation": {
     "consolidation": {
@@ -824,9 +824,9 @@
         "writer_2": 3017
       },
       "naive_replicated_bytes": 12068,
-      "shared_consolidated_bytes": 2375,
+      "shared_consolidated_bytes": 2371,
       "dedup_removed_count": 45,
-      "consolidation_reduction_pct": 80.31985415976135,
+      "consolidation_reduction_pct": 80.35299966854491,
       "cross_agent_record_count": 15,
       "nightly_batches": 1
     },
@@ -972,12 +972,12 @@
           "kept_count": 4,
           "total_count": 15,
           "kept_bytes": 629,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 73.51578947368421,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 73.47110923660902,
           "retention_pct": 37.5,
           "regressions": 5,
           "comparisons": 8,
-          "latency_ms": 0.0226279953494668,
+          "latency_ms": 0.02291510463692248,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1067,12 +1067,12 @@
           "kept_count": 6,
           "total_count": 15,
           "kept_bytes": 920,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 61.26315789473684,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 61.19780683256011,
           "retention_pct": 37.5,
           "regressions": 5,
           "comparisons": 8,
-          "latency_ms": 0.019553146557882428,
+          "latency_ms": 0.017845479305833578,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1162,12 +1162,12 @@
           "kept_count": 8,
           "total_count": 15,
           "kept_bytes": 1193,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 49.76842105263158,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 49.68367777309153,
           "retention_pct": 62.5,
           "regressions": 3,
           "comparisons": 8,
-          "latency_ms": 0.023408225388266146,
+          "latency_ms": 0.021351370378397405,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1257,12 +1257,12 @@
           "kept_count": 4,
           "total_count": 15,
           "kept_bytes": 667,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 71.91578947368421,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 71.86840995360608,
           "retention_pct": 37.5,
           "regressions": 5,
           "comparisons": 8,
-          "latency_ms": 0.01539735239930451,
+          "latency_ms": 0.02126337494701147,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1351,13 +1351,13 @@
           "budget_ratio": 0.35,
           "kept_count": 6,
           "total_count": 15,
-          "kept_bytes": 1032,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 56.54736842105264,
+          "kept_bytes": 1030,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 56.55841417123577,
           "retention_pct": 50.0,
           "regressions": 4,
           "comparisons": 8,
-          "latency_ms": 0.016406236682087183,
+          "latency_ms": 0.017820377252064645,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1446,13 +1446,13 @@
           "budget_ratio": 0.5,
           "kept_count": 8,
           "total_count": 15,
-          "kept_bytes": 1324,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 44.252631578947366,
+          "kept_bytes": 1320,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 44.327288064107975,
           "retention_pct": 62.5,
           "regressions": 3,
           "comparisons": 8,
-          "latency_ms": 0.03609138366300613,
+          "latency_ms": 0.035753968404605985,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1542,12 +1542,12 @@
           "kept_count": 4,
           "total_count": 15,
           "kept_bytes": 621,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 73.82631578947368,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 73.80324757486292,
           "retention_pct": 87.5,
           "regressions": 1,
           "comparisons": 8,
-          "latency_ms": 0.7545197586296126,
+          "latency_ms": 0.7311596418730915,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1668,13 +1668,13 @@
           "budget_ratio": 0.35,
           "kept_count": 6,
           "total_count": 15,
-          "kept_bytes": 914,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 61.51052631578947,
+          "kept_bytes": 913,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 61.46668072543231,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.7343183679040521,
+          "latency_ms": 0.7341738819377497,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1795,13 +1795,13 @@
           "budget_ratio": 0.5,
           "kept_count": 8,
           "total_count": 15,
-          "kept_bytes": 1241,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 47.72105263157894,
+          "kept_bytes": 1240,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 47.66448755799241,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.7170353637775406,
+          "latency_ms": 0.7729042408755049,
           "items": [
             {
               "qa_id": "qa-01",
@@ -1923,12 +1923,12 @@
           "kept_count": 4,
           "total_count": 15,
           "kept_bytes": 640,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 73.02105263157894,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 73.0071699704766,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.7486348913516849,
+          "latency_ms": 0.7499635248677805,
           "items": [
             {
               "qa_id": "qa-01",
@@ -2049,13 +2049,13 @@
           "budget_ratio": 0.35,
           "kept_count": 6,
           "total_count": 15,
-          "kept_bytes": 956,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 59.74736842105264,
+          "kept_bytes": 954,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 59.732180514550826,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.7173476042225957,
+          "latency_ms": 0.7946968398755416,
           "items": [
             {
               "qa_id": "qa-01",
@@ -2176,13 +2176,13 @@
           "budget_ratio": 0.5,
           "kept_count": 8,
           "total_count": 15,
-          "kept_bytes": 1281,
-          "identity_context_bytes": 2375,
-          "bytes_reduction_pct": 46.05263157894737,
+          "kept_bytes": 1279,
+          "identity_context_bytes": 2371,
+          "bytes_reduction_pct": 46.05651623787431,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.7367925136350095,
+          "latency_ms": 0.7209568721009418,
           "items": [
             {
               "qa_id": "qa-01",
@@ -2307,10 +2307,10 @@
         "bm25_at_25_retention_pct": 87.5,
         "tiny_vs_fifo_oldest_lift_at_25": 62.5,
         "tiny_vs_bm25_lift_at_25": 12.5,
-        "tiny_at_25_bytes_reduction_pct": 73.02105263157894,
-        "tiny_at_35_bytes_reduction_pct": 59.74736842105264,
-        "tiny_at_25_latency_ms": 0.7486348913516849,
-        "tiny_at_35_latency_ms": 0.7173476042225957,
+        "tiny_at_25_bytes_reduction_pct": 73.0071699704766,
+        "tiny_at_35_bytes_reduction_pct": 59.732180514550826,
+        "tiny_at_25_latency_ms": 0.7499635248677805,
+        "tiny_at_35_latency_ms": 0.7946968398755416,
         "fifo_at_35_retention_pct": 37.5,
         "tiny_vs_fifo_lift_at_35": 62.5
       }
@@ -2336,13 +2336,13 @@
           "budget_ratio": 0.25,
           "kept_count": 30,
           "total_count": 120,
-          "kept_bytes": 4750,
-          "identity_context_bytes": 19000,
+          "kept_bytes": 4742,
+          "identity_context_bytes": 18968,
           "bytes_reduction_pct": 75.0,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.06515659333672374,
+          "latency_ms": 0.07269364141393453,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2431,13 +2431,13 @@
           "budget_ratio": 0.35,
           "kept_count": 42,
           "total_count": 120,
-          "kept_bytes": 6659,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 64.95263157894738,
+          "kept_bytes": 6647,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 64.95676929565583,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.09493051038589329,
+          "latency_ms": 0.07138184446375817,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2526,13 +2526,13 @@
           "budget_ratio": 0.5,
           "kept_count": 60,
           "total_count": 120,
-          "kept_bytes": 9500,
-          "identity_context_bytes": 19000,
+          "kept_bytes": 9484,
+          "identity_context_bytes": 18968,
           "bytes_reduction_pct": 50.0,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.09662372758612037,
+          "latency_ms": 0.08999650890473276,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2621,13 +2621,13 @@
           "budget_ratio": 0.25,
           "kept_count": 30,
           "total_count": 120,
-          "kept_bytes": 4750,
-          "identity_context_bytes": 19000,
+          "kept_bytes": 4742,
+          "identity_context_bytes": 18968,
           "bytes_reduction_pct": 75.0,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.07593024929519743,
+          "latency_ms": 0.06402938743121922,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2716,13 +2716,13 @@
           "budget_ratio": 0.35,
           "kept_count": 42,
           "total_count": 120,
-          "kept_bytes": 6631,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 65.10000000000001,
+          "kept_bytes": 6619,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 65.1043863348798,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.08752002031542361,
+          "latency_ms": 0.07747337804175913,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2811,13 +2811,13 @@
           "budget_ratio": 0.5,
           "kept_count": 60,
           "total_count": 120,
-          "kept_bytes": 9500,
-          "identity_context_bytes": 19000,
+          "kept_bytes": 9484,
+          "identity_context_bytes": 18968,
           "bytes_reduction_pct": 50.0,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 0.09668413258623332,
+          "latency_ms": 0.08607450581621379,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -2906,13 +2906,13 @@
           "budget_ratio": 0.25,
           "kept_count": 30,
           "total_count": 120,
-          "kept_bytes": 4832,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 74.5638157894737,
+          "kept_bytes": 4824,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 74.56439793336145,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 6.37250037107151,
+          "latency_ms": 7.138122731703334,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3033,13 +3033,13 @@
           "budget_ratio": 0.35,
           "kept_count": 42,
           "total_count": 120,
-          "kept_bytes": 6750,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 64.47302631578947,
+          "kept_bytes": 6737,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 64.47899093209617,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 5.847668246133253,
+          "latency_ms": 6.041263623046689,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3160,13 +3160,13 @@
           "budget_ratio": 0.5,
           "kept_count": 60,
           "total_count": 120,
-          "kept_bytes": 9518,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 49.902631578947364,
+          "kept_bytes": 9502,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 49.90246731336989,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 5.799998369184323,
+          "latency_ms": 6.112102986662649,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3287,13 +3287,13 @@
           "budget_ratio": 0.25,
           "kept_count": 30,
           "total_count": 120,
-          "kept_bytes": 4767,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 74.90723684210526,
+          "kept_bytes": 4760,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 74.90312631800929,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 5.847211767104454,
+          "latency_ms": 5.990678269881755,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3414,13 +3414,13 @@
           "budget_ratio": 0.35,
           "kept_count": 42,
           "total_count": 120,
-          "kept_bytes": 6700,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 64.73552631578947,
+          "kept_bytes": 6687,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 64.74193378321384,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 5.889080013730563,
+          "latency_ms": 6.033608238794841,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3541,13 +3541,13 @@
           "budget_ratio": 0.5,
           "kept_count": 60,
           "total_count": 120,
-          "kept_bytes": 9585,
-          "identity_context_bytes": 19000,
-          "bytes_reduction_pct": 49.550000000000004,
+          "kept_bytes": 9567,
+          "identity_context_bytes": 18968,
+          "bytes_reduction_pct": 49.56110291016449,
           "retention_pct": 100.0,
           "regressions": 0,
           "comparisons": 8,
-          "latency_ms": 5.980851899948902,
+          "latency_ms": 6.0055348731111735,
           "items": [
             {
               "qa_id": "locomo-sh-1",
@@ -3672,10 +3672,10 @@
         "bm25_at_25_retention_pct": 100.0,
         "tiny_vs_fifo_oldest_lift_at_25": 0.0,
         "tiny_vs_bm25_lift_at_25": 0.0,
-        "tiny_at_25_bytes_reduction_pct": 74.90723684210526,
-        "tiny_at_35_bytes_reduction_pct": 64.73552631578947,
-        "tiny_at_25_latency_ms": 5.847211767104454,
-        "tiny_at_35_latency_ms": 5.889080013730563,
+        "tiny_at_25_bytes_reduction_pct": 74.90312631800929,
+        "tiny_at_35_bytes_reduction_pct": 64.74193378321384,
+        "tiny_at_25_latency_ms": 5.990678269881755,
+        "tiny_at_35_latency_ms": 6.033608238794841,
         "fifo_at_35_retention_pct": 100.0,
         "tiny_vs_fifo_lift_at_35": 0.0
       }
@@ -3688,10 +3688,10 @@
       "agent_bm25_at_25_retention_pct": 87.5,
       "agent_tiny_vs_fifo_oldest_lift_at_25": 62.5,
       "agent_tiny_vs_bm25_lift_at_25": 12.5,
-      "agent_tiny_at_25_bytes_reduction_pct": 73.02105263157894,
-      "agent_tiny_at_35_bytes_reduction_pct": 59.74736842105264,
-      "agent_tiny_at_25_latency_ms": 0.7486348913516849,
-      "agent_tiny_at_35_latency_ms": 0.7173476042225957,
+      "agent_tiny_at_25_bytes_reduction_pct": 73.0071699704766,
+      "agent_tiny_at_35_bytes_reduction_pct": 59.732180514550826,
+      "agent_tiny_at_25_latency_ms": 0.7499635248677805,
+      "agent_tiny_at_35_latency_ms": 0.7946968398755416,
       "agent_fifo_at_35_retention_pct": 37.5,
       "agent_tiny_vs_fifo_lift_at_35": 62.5,
       "locomo_tiny_at_25_retention_pct": 100.0,
@@ -3701,10 +3701,10 @@
       "locomo_bm25_at_25_retention_pct": 100.0,
       "locomo_tiny_vs_fifo_oldest_lift_at_25": 0.0,
       "locomo_tiny_vs_bm25_lift_at_25": 0.0,
-      "locomo_tiny_at_25_bytes_reduction_pct": 74.90723684210526,
-      "locomo_tiny_at_35_bytes_reduction_pct": 64.73552631578947,
-      "locomo_tiny_at_25_latency_ms": 5.847211767104454,
-      "locomo_tiny_at_35_latency_ms": 5.889080013730563,
+      "locomo_tiny_at_25_bytes_reduction_pct": 74.90312631800929,
+      "locomo_tiny_at_35_bytes_reduction_pct": 64.74193378321384,
+      "locomo_tiny_at_25_latency_ms": 5.990678269881755,
+      "locomo_tiny_at_35_latency_ms": 6.033608238794841,
       "locomo_fifo_at_35_retention_pct": 100.0,
       "locomo_tiny_vs_fifo_lift_at_35": 0.0,
       "tiny_at_25_retention_pct": 100.0,
@@ -3714,10 +3714,10 @@
       "bm25_at_25_retention_pct": 87.5,
       "tiny_vs_fifo_oldest_lift_at_25": 62.5,
       "tiny_vs_bm25_lift_at_25": 12.5,
-      "tiny_at_25_bytes_reduction_pct": 73.02105263157894,
-      "tiny_at_35_bytes_reduction_pct": 59.74736842105264,
-      "tiny_at_25_latency_ms": 0.7486348913516849,
-      "tiny_at_35_latency_ms": 0.7173476042225957,
+      "tiny_at_25_bytes_reduction_pct": 73.0071699704766,
+      "tiny_at_35_bytes_reduction_pct": 59.732180514550826,
+      "tiny_at_25_latency_ms": 0.7499635248677805,
+      "tiny_at_35_latency_ms": 0.7946968398755416,
       "fifo_at_35_retention_pct": 37.5,
       "tiny_vs_fifo_lift_at_35": 62.5
     }
@@ -3742,8 +3742,8 @@
         "identity_score": 1.0,
         "minified_score": 0.0,
         "retained": false,
-        "identity_latency_ms": 5890,
-        "minified_latency_ms": 399
+        "identity_latency_ms": 533,
+        "minified_latency_ms": 393
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3754,8 +3754,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 345,
-        "minified_latency_ms": 323
+        "identity_latency_ms": 314,
+        "minified_latency_ms": 317
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3766,8 +3766,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 375,
-        "minified_latency_ms": 420
+        "identity_latency_ms": 351,
+        "minified_latency_ms": 414
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3778,8 +3778,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 361,
-        "minified_latency_ms": 334
+        "identity_latency_ms": 334,
+        "minified_latency_ms": 329
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3790,8 +3790,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 439,
-        "minified_latency_ms": 465
+        "identity_latency_ms": 434,
+        "minified_latency_ms": 440
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3802,8 +3802,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 411,
-        "minified_latency_ms": 436
+        "identity_latency_ms": 425,
+        "minified_latency_ms": 470
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3814,8 +3814,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 741,
-        "minified_latency_ms": 629
+        "identity_latency_ms": 760,
+        "minified_latency_ms": 651
       },
       {
         "model": "qwen2.5:0.5b",
@@ -3826,8 +3826,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 360,
-        "minified_latency_ms": 334
+        "identity_latency_ms": 328,
+        "minified_latency_ms": 329
       },
       {
         "model": "gemma4:latest",
@@ -3838,8 +3838,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 35699,
-        "minified_latency_ms": 2113
+        "identity_latency_ms": 2003,
+        "minified_latency_ms": 1966
       },
       {
         "model": "gemma4:latest",
@@ -3850,8 +3850,8 @@
         "identity_score": 1.0,
         "minified_score": 0.0,
         "retained": false,
-        "identity_latency_ms": 1009,
-        "minified_latency_ms": 2858
+        "identity_latency_ms": 899,
+        "minified_latency_ms": 1971
       },
       {
         "model": "gemma4:latest",
@@ -3862,8 +3862,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1025,
-        "minified_latency_ms": 1002
+        "identity_latency_ms": 983,
+        "minified_latency_ms": 995
       },
       {
         "model": "gemma4:latest",
@@ -3874,8 +3874,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1935,
-        "minified_latency_ms": 1924
+        "identity_latency_ms": 1997,
+        "minified_latency_ms": 1965
       },
       {
         "model": "gemma4:latest",
@@ -3886,8 +3886,8 @@
         "identity_score": 0.0,
         "minified_score": 0.0,
         "retained": true,
-        "identity_latency_ms": 1934,
-        "minified_latency_ms": 1949
+        "identity_latency_ms": 1996,
+        "minified_latency_ms": 1964
       },
       {
         "model": "gemma4:latest",
@@ -3898,8 +3898,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1054,
-        "minified_latency_ms": 988
+        "identity_latency_ms": 1024,
+        "minified_latency_ms": 1087
       },
       {
         "model": "gemma4:latest",
@@ -3910,8 +3910,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 1079,
-        "minified_latency_ms": 1032
+        "identity_latency_ms": 1233,
+        "minified_latency_ms": 1082
       },
       {
         "model": "gemma4:latest",
@@ -3922,8 +3922,8 @@
         "identity_score": 1.0,
         "minified_score": 1.0,
         "retained": true,
-        "identity_latency_ms": 953,
-        "minified_latency_ms": 938
+        "identity_latency_ms": 954,
+        "minified_latency_ms": 972
       }
     ]
   },
@@ -3939,28 +3939,28 @@
     "bytes_30_day": 5237000.000000001,
     "bytes_1_year": 63716833.33333334,
     "gb_month_cost_identity": 0.0013648412811259432,
-    "gb_month_cost_minified": 0.0010744110184534687,
-    "monthly_savings_usd": 0.0002904302626724744,
-    "annual_savings_usd": 0.003485163152069693
+    "gb_month_cost_minified": 0.0010726014841065997,
+    "monthly_savings_usd": 0.00029223979701934345,
+    "annual_savings_usd": 0.0035068775642321214
   },
   "network_savings": {
-    "payload_bytes_saved_per_full_sync": 2568,
-    "payload_reduction_pct": 21.279416639045408,
-    "gzip_bytes_saved_per_full_sync": 203,
-    "gzip_reduction_pct": 9.840038778477945,
-    "org_broadcast_bytes_saved": 9693,
-    "org_broadcast_reduction_pct": 80.31985415976135,
-    "projected_daily_sync_bytes_saved": 1284000.0,
-    "projected_30_day_sync_bytes_saved": 38520000.0
+    "payload_bytes_saved_per_full_sync": 2584,
+    "payload_reduction_pct": 21.41199867417965,
+    "gzip_bytes_saved_per_full_sync": 205,
+    "gzip_reduction_pct": 9.936984973339797,
+    "org_broadcast_bytes_saved": 9697,
+    "org_broadcast_reduction_pct": 80.35299966854491,
+    "projected_daily_sync_bytes_saved": 1292000.0,
+    "projected_30_day_sync_bytes_saved": 38760000.0
   },
   "auditability": {
-    "auditability_index": 88.95688902574905,
+    "auditability_index": 88.89562420361466,
     "phrase_only_char_pct": 1.6670850823581824,
     "verb_policy_char_pct": 9.643151788945293,
-    "full_pipeline_char_pct": 20.453597044950335,
-    "naive_char_pct": 28.35107774307644,
+    "full_pipeline_char_pct": 20.524519030765934,
+    "naive_char_pct": 28.473679315455353,
     "naive_noun_pct": 64.44462944462944,
-    "replacements_per_memory": 7.266666666666667,
+    "replacements_per_memory": 7.333333333333333,
     "rule_attribution_pct": 100.0
   }
 }
