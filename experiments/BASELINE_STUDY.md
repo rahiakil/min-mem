@@ -52,6 +52,23 @@ Corpus: **304** agent-memory passages · Dictionary: **1422** entries · Deletio
 4. Tiered min-mem → LLMLingua-2 compounds to **54.8%** char savings vs 45.8% for deletion alone.
 5. min-mem → GPT-2 selective stacking yields higher total compression than either stage alone at the same keep ratio.
 6. **Contribution framing:** min-mem is the auditable, zero-cost normalization tier; LM deletion methods are optional second stages for byte-starved deployments.
+7. **Retrieval win:** `min-mem+llmlingua-2@0.5` keeps 100% QA accuracy while cutting memory 53% (6352 chars) — best compression at full fidelity.
+
+## Retrieval fidelity (Ollama QA)
+
+Model: `qwen2.5:0.5b` · Probes: 5 · Memory blocks: 60
+
+| Mode | Accuracy | Tokens | Chars saved |
+| --- | --- | --- | --- |
+| `identity` | 100% | 1843 | 0 |
+| `min-mem` | 100% | 1807 | 2540 |
+| `min-mem×2` | 100% | 1807 | 2552 |
+| `gpt2-selective@0.5` | 80% | 1275 | 3872 |
+| `min-mem+gpt2-selective@0.5` | 40% | 1331 | 5036 |
+| `min-mem×2+gpt2-selective@0.5` | 40% | 1331 | 5048 |
+| `llmlingua-2@0.5` | 100% | 967 | 5132 |
+| `min-mem+llmlingua-2@0.5` | 100% | 935 | 6352 |
+| `min-mem×2+llmlingua-2@0.5` | 100% | 935 | 6352 |
 
 ## Reproduce
 

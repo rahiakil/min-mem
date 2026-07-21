@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-12T22:27:34.983037+00:00",
+  "timestamp": "2026-07-21T20:51:51.520288+00:00",
   "model": "qwen2.5:0.5b",
   "probe_count": 5,
   "memory_blocks": 60,
@@ -20,7 +20,7 @@
             "python"
           ],
           "matched": true,
-          "latency_ms": 458
+          "latency_ms": 453
         },
         {
           "question": "Where is the user's organization located?",
@@ -29,7 +29,7 @@
             "berlin"
           ],
           "matched": true,
-          "latency_ms": 485
+          "latency_ms": 442
         },
         {
           "question": "What note-taking tool does the user use?",
@@ -38,7 +38,7 @@
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 462
+          "latency_ms": 456
         },
         {
           "question": "Does the user prefer strict typing?",
@@ -49,7 +49,7 @@
             "yes"
           ],
           "matched": true,
-          "latency_ms": 488
+          "latency_ms": 467
         },
         {
           "question": "What architecture does the project use?",
@@ -59,7 +59,7 @@
             "docker"
           ],
           "matched": true,
-          "latency_ms": 495
+          "latency_ms": 488
         }
       ]
     },
@@ -67,9 +67,9 @@
       "mode": "min-mem",
       "accuracy_pct": 100.0,
       "accuracy_vs_verbose_delta": 0.0,
-      "prompt_tokens": 1819,
-      "memory_chars_saved": 2400,
-      "memory_reduction_pct": 19.9,
+      "prompt_tokens": 1807,
+      "memory_chars_saved": 2540,
+      "memory_reduction_pct": 21.0,
       "probes": [
         {
           "question": "What language does the user prefer?",
@@ -78,25 +78,25 @@
             "python"
           ],
           "matched": true,
-          "latency_ms": 746
+          "latency_ms": 735
         },
         {
           "question": "Where is the user's organization located?",
-          "answer": "The user's organization is located in Berlin.",
+          "answer": "The user's organization is set in Berlin. They often join in conferences and tell evenly with stakeholders on product requirements.",
           "keywords": [
             "berlin"
           ],
           "matched": true,
-          "latency_ms": 461
+          "latency_ms": 581
         },
         {
           "question": "What note-taking tool does the user use?",
-          "answer": "The user uses Obsidian for note-taking and has seted a Second Brain workflow.",
+          "answer": "The user uses Obsidian for note-taking.",
           "keywords": [
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 533
+          "latency_ms": 443
         },
         {
           "question": "Does the user prefer strict typing?",
@@ -107,7 +107,7 @@
             "yes"
           ],
           "matched": true,
-          "latency_ms": 424
+          "latency_ms": 437
         },
         {
           "question": "What architecture does the project use?",
@@ -117,7 +117,65 @@
             "docker"
           ],
           "matched": true,
-          "latency_ms": 473
+          "latency_ms": 455
+        }
+      ]
+    },
+    {
+      "mode": "min-mem\u00d72",
+      "accuracy_pct": 100.0,
+      "accuracy_vs_verbose_delta": 0.0,
+      "prompt_tokens": 1807,
+      "memory_chars_saved": 2552,
+      "memory_reduction_pct": 21.1,
+      "probes": [
+        {
+          "question": "What language does the user prefer?",
+          "answer": "The user prefers to use Python.",
+          "keywords": [
+            "python"
+          ],
+          "matched": true,
+          "latency_ms": 666
+        },
+        {
+          "question": "Where is the user's organization located?",
+          "answer": "The user's organization is set in Berlin. They often join in conferences and tell evenly with stakeholders on product requirements.",
+          "keywords": [
+            "berlin"
+          ],
+          "matched": true,
+          "latency_ms": 614
+        },
+        {
+          "question": "What note-taking tool does the user use?",
+          "answer": "The user uses Obsidian for note-taking.",
+          "keywords": [
+            "obsidian"
+          ],
+          "matched": true,
+          "latency_ms": 456
+        },
+        {
+          "question": "Does the user prefer strict typing?",
+          "answer": "Yes, the user prefers strict typing.",
+          "keywords": [
+            "typescript",
+            "typing",
+            "yes"
+          ],
+          "matched": true,
+          "latency_ms": 468
+        },
+        {
+          "question": "What architecture does the project use?",
+          "answer": "The project uses a microservices architecture using Docker containers.",
+          "keywords": [
+            "microservices",
+            "docker"
+          ],
+          "matched": true,
+          "latency_ms": 456
         }
       ]
     },
@@ -131,12 +189,12 @@
       "probes": [
         {
           "question": "What language does the user prefer?",
-          "answer": "The user prefers Python.",
+          "answer": "The user prefers using Python.",
           "keywords": [
             "python"
           ],
           "matched": true,
-          "latency_ms": 759
+          "latency_ms": 602
         },
         {
           "question": "Where is the user's organization located?",
@@ -145,7 +203,7 @@
             "berlin"
           ],
           "matched": true,
-          "latency_ms": 493
+          "latency_ms": 439
         },
         {
           "question": "What note-taking tool does the user use?",
@@ -154,7 +212,7 @@
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 452
+          "latency_ms": 422
         },
         {
           "question": "Does the user prefer strict typing?",
@@ -165,7 +223,7 @@
             "yes"
           ],
           "matched": false,
-          "latency_ms": 497
+          "latency_ms": 476
         },
         {
           "question": "What architecture does the project use?",
@@ -175,7 +233,7 @@
             "docker"
           ],
           "matched": true,
-          "latency_ms": 451
+          "latency_ms": 426
         }
       ]
     },
@@ -183,9 +241,9 @@
       "mode": "min-mem+gpt2-selective@0.5",
       "accuracy_pct": 40.0,
       "accuracy_vs_verbose_delta": -60.0,
-      "prompt_tokens": 1311,
-      "memory_chars_saved": 5136,
-      "memory_reduction_pct": 42.6,
+      "prompt_tokens": 1331,
+      "memory_chars_saved": 5036,
+      "memory_reduction_pct": 41.7,
       "probes": [
         {
           "question": "What language does the user prefer?",
@@ -194,46 +252,104 @@
             "python"
           ],
           "matched": true,
-          "latency_ms": 588
+          "latency_ms": 736
         },
         {
           "question": "Where is the user's organization located?",
-          "answer": "The user's organization is not specified in the given information. It only mentions that they work with Python and use GitHub Actions for CI/CD. Without more details about their specific location, it's impossible to determine where the user's organization is located.",
+          "answer": "The user's organization is not specified in the given information. It only mentions that they work with Python and have a specific workflow setup (GitHub Actions). Without more details about their location, it's impossible to provide an accurate answer.",
           "keywords": [
             "berlin"
           ],
           "matched": false,
-          "latency_ms": 945
+          "latency_ms": 823
         },
         {
           "question": "What note-taking tool does the user use?",
-          "answer": "The user uses Obsidian for note-taking and has set a Second Brain workflow.",
+          "answer": "The user uses Obsidian for note-taking.",
           "keywords": [
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 523
+          "latency_ms": 437
         },
         {
           "question": "Does the user prefer strict typing?",
-          "answer": "The assistant helped the user construct an API endpoint. The user asked more documentation and so the assistant gave full examples.",
+          "answer": "The user prefers concise summaries at the conclusion of each interaction.",
           "keywords": [
             "typescript",
             "typing",
             "yes"
           ],
           "matched": false,
-          "latency_ms": 572
+          "latency_ms": 502
         },
         {
           "question": "What architecture does the project use?",
-          "answer": "The project uses a POS tagging-based architecture that adds proper entities and nouns to preserve them in the semantic space.",
+          "answer": "The project uses a POS tagging-based architecture that aids storage reduction while keeping semantic equivalence.",
           "keywords": [
             "microservices",
             "docker"
           ],
           "matched": false,
-          "latency_ms": 578
+          "latency_ms": 534
+        }
+      ]
+    },
+    {
+      "mode": "min-mem\u00d72+gpt2-selective@0.5",
+      "accuracy_pct": 40.0,
+      "accuracy_vs_verbose_delta": -60.0,
+      "prompt_tokens": 1331,
+      "memory_chars_saved": 5048,
+      "memory_reduction_pct": 41.8,
+      "probes": [
+        {
+          "question": "What language does the user prefer?",
+          "answer": "The user prefers Python.",
+          "keywords": [
+            "python"
+          ],
+          "matched": true,
+          "latency_ms": 624
+        },
+        {
+          "question": "Where is the user's organization located?",
+          "answer": "The user's organization is not specified in the given information. It only mentions that they work with a Python-based application and have set up a Second Brain workflow. Without more details about their specific location, it's impossible to determine where the user's organization is located.",
+          "keywords": [
+            "berlin"
+          ],
+          "matched": false,
+          "latency_ms": 999
+        },
+        {
+          "question": "What note-taking tool does the user use?",
+          "answer": "The user uses Obsidian for note-taking.",
+          "keywords": [
+            "obsidian"
+          ],
+          "matched": true,
+          "latency_ms": 453
+        },
+        {
+          "question": "Does the user prefer strict typing?",
+          "answer": "The user prefers concise summaries at the conclusion of each interaction.",
+          "keywords": [
+            "typescript",
+            "typing",
+            "yes"
+          ],
+          "matched": false,
+          "latency_ms": 468
+        },
+        {
+          "question": "What architecture does the project use?",
+          "answer": "The project uses a POS tagging-based architecture that adds proper entities and nouns.",
+          "keywords": [
+            "microservices",
+            "docker"
+          ],
+          "matched": false,
+          "latency_ms": 494
         }
       ]
     },
@@ -252,7 +368,7 @@
             "python"
           ],
           "matched": true,
-          "latency_ms": 809
+          "latency_ms": 763
         },
         {
           "question": "Where is the user's organization located?",
@@ -261,37 +377,37 @@
             "berlin"
           ],
           "matched": true,
-          "latency_ms": 454
+          "latency_ms": 413
         },
         {
           "question": "What note-taking tool does the user use?",
-          "answer": "The user uses Obsidian, a powerful note-taking and organization tool that allows for efficient collaboration and content management.",
+          "answer": "The user uses Obsidian, a collaborative note-taking and organization tool.",
           "keywords": [
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 605
+          "latency_ms": 489
         },
         {
           "question": "Does the user prefer strict typing?",
-          "answer": "Yes, the user prefers TypeScript over JavaScript for their project.",
+          "answer": "Yes, the user prefers TypeScript over JavaScript for their code.",
           "keywords": [
             "typescript",
             "typing",
             "yes"
           ],
           "matched": true,
-          "latency_ms": 489
+          "latency_ms": 483
         },
         {
           "question": "What architecture does the project use?",
-          "answer": "The project uses a microservices architecture, which is characterized by its modular design and separation of concerns. This approach allows for easier maintenance, scalability, and flexibility in managing different components within the application.",
+          "answer": "The project uses a microservices architecture, which is characterized by its modular design and separation of concerns. This approach allows for easy scaling, maintenance, and expansion of individual services while maintaining a high degree of isolation between them.",
           "keywords": [
             "microservices",
             "docker"
           ],
           "matched": true,
-          "latency_ms": 818
+          "latency_ms": 831
         }
       ]
     },
@@ -299,18 +415,18 @@
       "mode": "min-mem+llmlingua-2@0.5",
       "accuracy_pct": 100.0,
       "accuracy_vs_verbose_delta": 0.0,
-      "prompt_tokens": 939,
-      "memory_chars_saved": 6324,
-      "memory_reduction_pct": 52.4,
+      "prompt_tokens": 935,
+      "memory_chars_saved": 6352,
+      "memory_reduction_pct": 52.6,
       "probes": [
         {
           "question": "What language does the user prefer?",
-          "answer": "The user prefers using Python for data analysis tasks and workflows.",
+          "answer": "The user prefers using Python, which is a popular programming language.",
           "keywords": [
             "python"
           ],
           "matched": true,
-          "latency_ms": 739
+          "latency_ms": 803
         },
         {
           "question": "Where is the user's organization located?",
@@ -319,37 +435,95 @@
             "berlin"
           ],
           "matched": true,
-          "latency_ms": 484
+          "latency_ms": 455
         },
         {
           "question": "What note-taking tool does the user use?",
-          "answer": "The user uses Obsidian, a note-taking tool that allows for efficient organization and management of their notes.",
+          "answer": "The user uses Obsidian, a powerful note-taking tool that allows users to organize and store their information in an organized manner.",
           "keywords": [
             "obsidian"
           ],
           "matched": true,
-          "latency_ms": 603
+          "latency_ms": 600
         },
         {
           "question": "Does the user prefer strict typing?",
-          "answer": "Yes, the user prefers TypeScript for their code style and maintainability.",
+          "answer": "Yes, the user prefers TypeScript over JavaScript for strict typing.",
           "keywords": [
             "typescript",
             "typing",
             "yes"
           ],
           "matched": true,
-          "latency_ms": 487
+          "latency_ms": 456
         },
         {
           "question": "What architecture does the project use?",
-          "answer": "The project uses a microservices architecture, which is characterized by its modular design and separation of concerns. This approach allows for easy scaling, maintenance, and scalability of the application as new services are added or existing ones are modified.",
+          "answer": "The project uses a microservices architecture, which is characterized by its modular design and separation of concerns. This approach allows for easy scaling, maintenance, and scalability of the application.",
           "keywords": [
             "microservices",
             "docker"
           ],
           "matched": true,
-          "latency_ms": 814
+          "latency_ms": 757
+        }
+      ]
+    },
+    {
+      "mode": "min-mem\u00d72+llmlingua-2@0.5",
+      "accuracy_pct": 100.0,
+      "accuracy_vs_verbose_delta": 0.0,
+      "prompt_tokens": 935,
+      "memory_chars_saved": 6352,
+      "memory_reduction_pct": 52.6,
+      "probes": [
+        {
+          "question": "What language does the user prefer?",
+          "answer": "The user prefers using Python for data analysis tasks and workflows.",
+          "keywords": [
+            "python"
+          ],
+          "matched": true,
+          "latency_ms": 648
+        },
+        {
+          "question": "Where is the user's organization located?",
+          "answer": "The user's organization is located in Berlin, Germany.",
+          "keywords": [
+            "berlin"
+          ],
+          "matched": true,
+          "latency_ms": 432
+        },
+        {
+          "question": "What note-taking tool does the user use?",
+          "answer": "The user uses Obsidian, a note-taking tool that allows for efficient organization and management of information.",
+          "keywords": [
+            "obsidian"
+          ],
+          "matched": true,
+          "latency_ms": 550
+        },
+        {
+          "question": "Does the user prefer strict typing?",
+          "answer": "Yes, the user prefers TypeScript over JavaScript for maintaining type safety and ensuring code quality.",
+          "keywords": [
+            "typescript",
+            "typing",
+            "yes"
+          ],
+          "matched": true,
+          "latency_ms": 528
+        },
+        {
+          "question": "What architecture does the project use?",
+          "answer": "The project uses a microservices architecture, which is a popular design pattern for building scalable and maintainable software systems.",
+          "keywords": [
+            "microservices",
+            "docker"
+          ],
+          "matched": true,
+          "latency_ms": 587
         }
       ]
     }
