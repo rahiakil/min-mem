@@ -1,5 +1,5 @@
 {
-  "description": "Synthetic LLM agent memory corpus — formal verbose phrasing typical of persistent memory stores. 200 passages across eight agent-memory categories.",
+  "description": "Synthetic LLM agent memory corpus — formal verbose phrasing typical of persistent memory stores. 200 base + 104 verbose-allowlist passages across eight agent-memory categories.",
   "samples": [
     {
       "id": "prefs-01",
@@ -1000,6 +1000,526 @@
       "id": "project-285",
       "category": "project_context",
       "text": "The project implements a microservices architecture utilizing Argo CD containers. The team previously attempted to facilitate deployment through MySQL but subsequently determined that additional complexity was insufficiently advantageous."
+    },
+    {
+      "id": "prefs-28",
+      "category": "user_preferences",
+      "text": "The user definitely prefers to utilize a standing desk and frequently requests that the laboratory maintain a quiet environment. Although they previously utilized a mechanical keyboard, they currently utilize a membrane model and highly recommend it."
+    },
+    {
+      "id": "prefs-29",
+      "category": "user_preferences",
+      "text": "The user particularly appreciates concise documentation and regularly requests that the team demonstrate new features on a television monitor. They previously indicated that they rarely utilize voice notes and subsequently switched to written summaries."
+    },
+    {
+      "id": "prefs-30",
+      "category": "user_preferences",
+      "text": "The user generally prefers dark mode and frequently asks that the microphone be muted during meetings. They previously required additional lighting, nevertheless they currently utilize natural light and consider it sufficient."
+    },
+    {
+      "id": "prefs-31",
+      "category": "user_preferences",
+      "text": "The user definitely prefers tea over coffee and frequently requests that the refrigerator be stocked with cold brew. Although they previously utilized a motorcycle for commuting, they currently utilize a bicycle and maintain a steady routine."
+    },
+    {
+      "id": "prefs-32",
+      "category": "user_preferences",
+      "text": "The user particularly likes to utilize a second monitor and regularly requests that the mathematics library be installed. They previously utilized a different editor, however they subsequently switched and demonstrate considerable expertise."
+    },
+    {
+      "id": "prefs-33",
+      "category": "user_preferences",
+      "text": "The user typically prefers to utilize headphones and frequently asks that the telephone be set to silent. They previously required printed documentation, nevertheless they currently utilize digital notes and consider them sufficient."
+    },
+    {
+      "id": "prefs-34",
+      "category": "user_preferences",
+      "text": "The user definitely prefers to utilize the gymnasium in the morning and frequently requests that the schedule be maintained. Although they previously utilized a personal automobile, they currently utilize public transit and highly recommend it."
+    },
+    {
+      "id": "prefs-35",
+      "category": "user_preferences",
+      "text": "The user particularly appreciates that the team demonstrate patience and regularly requests that the laboratory equipment be calibrated. They previously utilized a film photograph, however they subsequently switched to digital and consider it sufficient."
+    },
+    {
+      "id": "prefs-36",
+      "category": "user_preferences",
+      "text": "The user generally prefers to utilize the early hours and frequently asks that the influenza vaccine be scheduled. They previously required a quiet office, nevertheless they currently utilize a shared space and maintain productivity."
+    },
+    {
+      "id": "prefs-37",
+      "category": "user_preferences",
+      "text": "The user definitely prefers concise summaries and frequently requests that the team demonstrate the new tool on a television. Although they previously utilized kilometers as a unit, they currently utilize miles and highly recommend consistency."
+    },
+    {
+      "id": "prefs-38",
+      "category": "user_preferences",
+      "text": "The user particularly likes to utilize a standing desk and regularly requests that the refrigerator be adjusted. They previously utilized a different microphone, however they subsequently upgraded and demonstrate clear audio quality."
+    },
+    {
+      "id": "prefs-39",
+      "category": "user_preferences",
+      "text": "The user typically prefers to utilize the afternoon and frequently asks that the mathematics review be scheduled. They previously required a longer break, nevertheless they currently utilize a short walk and maintain focus."
+    },
+    {
+      "id": "prefs-40",
+      "category": "user_preferences",
+      "text": "The user definitely prefers to utilize the new laboratory and frequently requests that the team maintain the equipment. Although they previously utilized a motorcycle, they currently utilize a sedan and highly recommend it."
+    },
+    {
+      "id": "project-27",
+      "category": "project_context",
+      "text": "The project definitely requires that the team synchronize the deployment pipeline and frequently requests that the laboratory validate the results. Although the team previously utilized a manual process, they currently utilize automation and maintain a steady cadence."
+    },
+    {
+      "id": "project-28",
+      "category": "project_context",
+      "text": "The project particularly depends on the mathematics module and regularly requires that the team demonstrate the new feature on a television. They previously utilized a different framework, however they subsequently migrated and demonstrate considerable progress."
+    },
+    {
+      "id": "project-29",
+      "category": "project_context",
+      "text": "The project generally requires that the microphone be calibrated and frequently requests that the team maintain the documentation. Although they previously utilized a local server, they currently utilize a cloud instance and highly recommend it."
+    },
+    {
+      "id": "project-30",
+      "category": "project_context",
+      "text": "The project definitely requires that the team terminate the legacy service and frequently requests that the refrigerator in the break room be replaced. They previously utilized a different database, nevertheless they subsequently switched and maintain consistency."
+    },
+    {
+      "id": "project-31",
+      "category": "project_context",
+      "text": "The project particularly depends on the synchronization service and regularly requires that the team demonstrate the new workflow. They previously utilized a motorcycle courier, however they subsequently switched to digital delivery and demonstrate faster turnaround."
+    },
+    {
+      "id": "project-32",
+      "category": "project_context",
+      "text": "The project generally requires that the mathematics library be updated and frequently requests that the team maintain the test suite. Although they previously utilized a manual process, they currently utilize automation and maintain a steady cadence."
+    },
+    {
+      "id": "project-33",
+      "category": "project_context",
+      "text": "The project definitely requires that the team utilize the new laboratory and frequently requests that the influenza protocol be reviewed. They previously utilized a different vendor, nevertheless they subsequently switched and demonstrate considerable savings."
+    },
+    {
+      "id": "project-34",
+      "category": "project_context",
+      "text": "The project particularly depends on the microphone array and regularly requires that the team demonstrate the new capability. They previously utilized a television display, however they subsequently upgraded and demonstrate clear visuals."
+    },
+    {
+      "id": "project-35",
+      "category": "project_context",
+      "text": "The project generally requires that the team maintain the documentation and frequently requests that the refrigerator be serviced. Although they previously utilized a manual process, they currently utilize automation and highly recommend it."
+    },
+    {
+      "id": "project-36",
+      "category": "project_context",
+      "text": "The project definitely requires that the team synchronize the releases and frequently requests that the mathematics review be completed. They previously utilized a different schedule, nevertheless they subsequently adjusted and maintain a steady cadence."
+    },
+    {
+      "id": "project-37",
+      "category": "project_context",
+      "text": "The project particularly depends on the laboratory results and regularly requires that the team demonstrate the new approach. They previously utilized a motorcycle for delivery, however they subsequently switched and demonstrate faster turnaround."
+    },
+    {
+      "id": "project-38",
+      "category": "project_context",
+      "text": "The project generally requires that the team utilize the new microphone and frequently requests that the television be mounted. Although they previously utilized a different mount, they currently utilize a stand and maintain stability."
+    },
+    {
+      "id": "project-39",
+      "category": "project_context",
+      "text": "The project definitely requires that the team maintain the synchronization logs and frequently requests that the documentation be updated. They previously utilized a manual process, nevertheless they subsequently switched and demonstrate considerable progress."
+    },
+    {
+      "id": "session-25",
+      "category": "session_summary",
+      "text": "The session definitely covered the laboratory upgrade and frequently referenced the mathematics review. Although the user previously utilized a manual approach, they currently utilize automation and demonstrate considerable efficiency."
+    },
+    {
+      "id": "session-26",
+      "category": "session_summary",
+      "text": "The session particularly summarized the microphone calibration and regularly referenced the television broadcast. They previously utilized a different tool, however they subsequently switched and maintain a steady workflow."
+    },
+    {
+      "id": "session-27",
+      "category": "session_summary",
+      "text": "The session generally covered the influenza protocol and frequently referenced the refrigerator maintenance. Although they previously utilized a manual process, they currently utilize automation and highly recommend it."
+    },
+    {
+      "id": "session-28",
+      "category": "session_summary",
+      "text": "The session definitely summarized the synchronization issue and frequently referenced the mathematics module. They previously utilized a different editor, nevertheless they subsequently migrated and demonstrate considerable progress."
+    },
+    {
+      "id": "session-29",
+      "category": "session_summary",
+      "text": "The session particularly covered the motorcycle delivery and regularly referenced the laboratory results. They previously utilized a different vendor, however they subsequently switched and demonstrate faster turnaround."
+    },
+    {
+      "id": "session-30",
+      "category": "session_summary",
+      "text": "The session generally summarized the microphone array and frequently referenced the television display. Although they previously utilized a manual process, they currently utilize automation and maintain a steady cadence."
+    },
+    {
+      "id": "session-31",
+      "category": "session_summary",
+      "text": "The session definitely covered the documentation review and frequently referenced the refrigerator in the break room. They previously utilized a different process, nevertheless they subsequently switched and demonstrate considerable savings."
+    },
+    {
+      "id": "session-32",
+      "category": "session_summary",
+      "text": "The session particularly summarized the mathematics library and regularly referenced the synchronization service. They previously utilized a manual approach, however they subsequently migrated and demonstrate considerable efficiency."
+    },
+    {
+      "id": "session-33",
+      "category": "session_summary",
+      "text": "The session generally covered the laboratory upgrade and frequently referenced the influenza protocol. Although they previously utilized a different vendor, they currently utilize a new one and highly recommend it."
+    },
+    {
+      "id": "session-34",
+      "category": "session_summary",
+      "text": "The session definitely summarized the microphone calibration and frequently referenced the television broadcast. They previously utilized a manual process, nevertheless they subsequently switched and demonstrate clear audio quality."
+    },
+    {
+      "id": "session-35",
+      "category": "session_summary",
+      "text": "The session particularly covered the motorcycle delivery and regularly referenced the documentation review. They previously utilized a different tool, however they subsequently switched and maintain a steady workflow."
+    },
+    {
+      "id": "session-36",
+      "category": "session_summary",
+      "text": "The session generally summarized the synchronization issue and frequently referenced the mathematics module. Although they previously utilized a manual approach, they currently utilize automation and demonstrate considerable progress."
+    },
+    {
+      "id": "session-37",
+      "category": "session_summary",
+      "text": "The session definitely covered the laboratory results and frequently referenced the refrigerator maintenance. They previously utilized a different process, nevertheless they subsequently switched and demonstrate considerable savings."
+    },
+    {
+      "id": "facts-25",
+      "category": "factual_memory",
+      "text": "The organization definitely operates a laboratory in Munich and frequently ships approximately 50 kilograms of materials. Although the team previously utilized a truck, they currently utilize a train and maintain a steady schedule."
+    },
+    {
+      "id": "facts-26",
+      "category": "factual_memory",
+      "text": "The company particularly maintains a mathematics department and regularly records approximately 200 kilometers of test track. They previously utilized a different site, however they subsequently relocated and demonstrate considerable capacity."
+    },
+    {
+      "id": "facts-27",
+      "category": "factual_memory",
+      "text": "The organization generally operates a microphone factory and frequently ships approximately 30 kilograms of components. Although they previously utilized a courier, they currently utilize a freight service and highly recommend it."
+    },
+    {
+      "id": "facts-28",
+      "category": "factual_memory",
+      "text": "The company definitely maintains a television studio and regularly records approximately 15 kilograms of cables. They previously utilized a different vendor, nevertheless they subsequently switched and demonstrate considerable output."
+    },
+    {
+      "id": "facts-29",
+      "category": "factual_memory",
+      "text": "The organization particularly operates a gymnasium and frequently ships approximately 40 kilograms of equipment. They previously utilized a manual process, however they subsequently upgraded and demonstrate considerable efficiency."
+    },
+    {
+      "id": "facts-30",
+      "category": "factual_memory",
+      "text": "The company generally maintains a motorcycle workshop and regularly records approximately 80 kilometers of test rides. Although they previously utilized a different track, they currently utilize a new one and maintain a steady schedule."
+    },
+    {
+      "id": "facts-31",
+      "category": "factual_memory",
+      "text": "The organization definitely operates a mathematics institute and frequently ships approximately 25 kilograms of books. They previously utilized a different carrier, nevertheless they subsequently switched and demonstrate considerable reach."
+    },
+    {
+      "id": "facts-32",
+      "category": "factual_memory",
+      "text": "The company particularly maintains a laboratory and regularly records approximately 60 kilometers of pipeline. They previously utilized a manual process, however they subsequently automated and demonstrate considerable accuracy."
+    },
+    {
+      "id": "facts-33",
+      "category": "factual_memory",
+      "text": "The organization generally operates a television network and frequently ships approximately 10 kilograms of gear. Although they previously utilized a truck, they currently utilize a van and highly recommend it."
+    },
+    {
+      "id": "facts-34",
+      "category": "factual_memory",
+      "text": "The company definitely maintains a microphone plant and regularly records approximately 45 kilograms of stock. They previously utilized a different warehouse, nevertheless they subsequently relocated and demonstrate considerable throughput."
+    },
+    {
+      "id": "facts-35",
+      "category": "factual_memory",
+      "text": "The organization particularly operates a gymnasium and frequently ships approximately 35 kilograms of mats. They previously utilized a manual process, however they subsequently upgraded and demonstrate considerable capacity."
+    },
+    {
+      "id": "facts-36",
+      "category": "factual_memory",
+      "text": "The company generally maintains a motorcycle fleet and regularly records approximately 90 kilometers of routes. Although they previously utilized a different map, they currently utilize a new one and maintain a steady schedule."
+    },
+    {
+      "id": "facts-37",
+      "category": "factual_memory",
+      "text": "The organization definitely operates a mathematics lab and frequently ships approximately 20 kilograms of instruments. They previously utilized a different vendor, nevertheless they subsequently switched and demonstrate considerable precision."
+    },
+    {
+      "id": "instr-28",
+      "category": "instructions",
+      "text": "Always synchronize the laboratory equipment before use and frequently verify that the microphone is calibrated. Although you previously utilized a manual checklist, you currently utilize an automated one and maintain a steady cadence."
+    },
+    {
+      "id": "instr-29",
+      "category": "instructions",
+      "text": "Definitely demonstrate the new feature on the television and regularly update the documentation. They previously utilized a different format, however they subsequently switched and demonstrate considerable clarity."
+    },
+    {
+      "id": "instr-30",
+      "category": "instructions",
+      "text": "Generally maintain the refrigerator temperature and frequently check the mathematics logs. Although you previously utilized a manual process, you currently utilize automation and highly recommend it."
+    },
+    {
+      "id": "instr-31",
+      "category": "instructions",
+      "text": "Definitely terminate the legacy service and regularly synchronize the deployment. They previously utilized a different pipeline, nevertheless they subsequently migrated and demonstrate considerable progress."
+    },
+    {
+      "id": "instr-32",
+      "category": "instructions",
+      "text": "Particularly demonstrate the new microphone and regularly update the television display. They previously utilized a manual process, however they subsequently upgraded and demonstrate clear audio quality."
+    },
+    {
+      "id": "instr-33",
+      "category": "instructions",
+      "text": "Generally maintain the laboratory schedule and frequently check the influenza protocol. Although you previously utilized a different calendar, you currently utilize a new one and maintain a steady cadence."
+    },
+    {
+      "id": "instr-34",
+      "category": "instructions",
+      "text": "Definitely synchronize the mathematics module and regularly update the documentation. They previously utilized a different approach, nevertheless they subsequently switched and demonstrate considerable efficiency."
+    },
+    {
+      "id": "instr-35",
+      "category": "instructions",
+      "text": "Particularly demonstrate the motorcycle safety check and regularly maintain the equipment. They previously utilized a manual checklist, however they subsequently automated and demonstrate considerable accuracy."
+    },
+    {
+      "id": "instr-36",
+      "category": "instructions",
+      "text": "Generally maintain the refrigerator stock and frequently check the synchronization logs. Although you previously utilized a manual process, you currently utilize automation and highly recommend it."
+    },
+    {
+      "id": "instr-37",
+      "category": "instructions",
+      "text": "Definitely terminate the old television broadcast and regularly update the microphone settings. They previously utilized a different setup, nevertheless they subsequently switched and demonstrate clear output."
+    },
+    {
+      "id": "instr-38",
+      "category": "instructions",
+      "text": "Particularly demonstrate the new mathematics tool and regularly maintain the laboratory equipment. They previously utilized a manual process, however they subsequently upgraded and demonstrate considerable precision."
+    },
+    {
+      "id": "instr-39",
+      "category": "instructions",
+      "text": "Generally synchronize the documentation and frequently check the influenza protocol. Although you previously utilized a different system, you currently utilize a new one and maintain a steady cadence."
+    },
+    {
+      "id": "instr-40",
+      "category": "instructions",
+      "text": "Definitely terminate the legacy microphone and regularly update the television display. They previously utilized a manual process, nevertheless they subsequently switched and demonstrate considerable clarity."
+    },
+    {
+      "id": "mixed-28",
+      "category": "mixed",
+      "text": "The user definitely prefers to utilize the laboratory in the morning and frequently requests that the team demonstrate the new microphone. Although they previously utilized a television, they currently utilize a projector and highly recommend it."
+    },
+    {
+      "id": "mixed-29",
+      "category": "mixed",
+      "text": "The project particularly requires that the mathematics module be updated and regularly requests that the team maintain the documentation. They previously utilized a different process, however they subsequently switched and demonstrate considerable progress."
+    },
+    {
+      "id": "mixed-30",
+      "category": "mixed",
+      "text": "The session generally covered the refrigerator maintenance and frequently referenced the influenza protocol. Although they previously utilized a manual approach, they currently utilize automation and maintain a steady cadence."
+    },
+    {
+      "id": "mixed-31",
+      "category": "mixed",
+      "text": "The user definitely prefers concise documentation and frequently requests that the team synchronize the releases. They previously utilized a different tool, nevertheless they subsequently migrated and demonstrate considerable efficiency."
+    },
+    {
+      "id": "mixed-32",
+      "category": "mixed",
+      "text": "The project particularly depends on the motorcycle delivery and regularly requires that the team demonstrate the new route. They previously utilized a different map, however they subsequently switched and demonstrate faster turnaround."
+    },
+    {
+      "id": "mixed-33",
+      "category": "mixed",
+      "text": "The session generally summarized the television broadcast and frequently referenced the microphone calibration. Although they previously utilized a manual process, they currently utilize automation and highly recommend it."
+    },
+    {
+      "id": "mixed-34",
+      "category": "mixed",
+      "text": "The user definitely prefers to utilize the gymnasium and frequently requests that the mathematics review be scheduled. They previously utilized a different time, nevertheless they subsequently adjusted and maintain a steady routine."
+    },
+    {
+      "id": "mixed-35",
+      "category": "mixed",
+      "text": "The project particularly requires that the laboratory be upgraded and regularly requests that the team maintain the equipment. They previously utilized a manual process, however they subsequently automated and demonstrate considerable accuracy."
+    },
+    {
+      "id": "mixed-36",
+      "category": "mixed",
+      "text": "The session generally covered the synchronization issue and frequently referenced the documentation. Although they previously utilized a different approach, they currently utilize a new one and demonstrate considerable progress."
+    },
+    {
+      "id": "mixed-37",
+      "category": "mixed",
+      "text": "The user definitely prefers to utilize the new microphone and frequently requests that the television be mounted. They previously utilized a different stand, nevertheless they subsequently upgraded and demonstrate clear audio."
+    },
+    {
+      "id": "mixed-38",
+      "category": "mixed",
+      "text": "The project particularly depends on the mathematics library and regularly requires that the team demonstrate the new feature. They previously utilized a manual process, however they subsequently switched and demonstrate considerable efficiency."
+    },
+    {
+      "id": "mixed-39",
+      "category": "mixed",
+      "text": "The session generally summarized the motorcycle delivery and frequently referenced the refrigerator maintenance. Although they previously utilized a different vendor, they currently utilize a new one and maintain a steady schedule."
+    },
+    {
+      "id": "mixed-40",
+      "category": "mixed",
+      "text": "The user definitely prefers to utilize the laboratory and frequently requests that the influenza protocol be reviewed. They previously utilized a different process, nevertheless they subsequently switched and demonstrate considerable savings."
+    },
+    {
+      "id": "verbose-24",
+      "category": "high_verbosity",
+      "text": "Notwithstanding the aforementioned circumstances, the team definitely decided to utilize the new laboratory and frequently requested that the mathematics review be completed. Although they previously utilized a manual process, they subsequently utilized automation and demonstrated considerable efficiency."
+    },
+    {
+      "id": "verbose-25",
+      "category": "high_verbosity",
+      "text": "Furthermore, the organization particularly emphasized that the microphone be calibrated and regularly requested that the television broadcast be reviewed. They previously utilized a different approach, however they subsequently switched and demonstrated clear audio quality."
+    },
+    {
+      "id": "verbose-26",
+      "category": "high_verbosity",
+      "text": "Nevertheless, the project generally required that the refrigerator be serviced and frequently requested that the influenza protocol be updated. Although they previously utilized a manual process, they subsequently utilized automation and highly recommended it."
+    },
+    {
+      "id": "verbose-27",
+      "category": "high_verbosity",
+      "text": "Consequently, the team definitely decided to synchronize the deployment and frequently requested that the documentation be maintained. They previously utilized a different pipeline, nevertheless they subsequently migrated and demonstrated considerable progress."
+    },
+    {
+      "id": "verbose-28",
+      "category": "high_verbosity",
+      "text": "Additionally, the organization particularly emphasized that the mathematics module be updated and regularly requested that the laboratory be upgraded. They previously utilized a manual process, however they subsequently automated and demonstrated considerable accuracy."
+    },
+    {
+      "id": "verbose-29",
+      "category": "high_verbosity",
+      "text": "However, the project generally required that the motorcycle delivery be reviewed and frequently requested that the television be mounted. Although they previously utilized a different setup, they subsequently switched and demonstrated clear visuals."
+    },
+    {
+      "id": "verbose-30",
+      "category": "high_verbosity",
+      "text": "Notwithstanding the aforementioned circumstances, the team definitely decided to utilize the new microphone and frequently requested that the synchronization be verified. They previously utilized a manual process, nevertheless they subsequently upgraded and demonstrated considerable efficiency."
+    },
+    {
+      "id": "verbose-31",
+      "category": "high_verbosity",
+      "text": "Furthermore, the organization particularly emphasized that the gymnasium be reserved and regularly requested that the mathematics review be scheduled. They previously utilized a different time, however they subsequently adjusted and demonstrated a steady cadence."
+    },
+    {
+      "id": "verbose-32",
+      "category": "high_verbosity",
+      "text": "Nevertheless, the project generally required that the laboratory be cleaned and frequently requested that the influenza protocol be followed. Although they previously utilized a manual approach, they subsequently utilized automation and highly recommended it."
+    },
+    {
+      "id": "verbose-33",
+      "category": "high_verbosity",
+      "text": "Consequently, the team definitely decided to terminate the legacy service and frequently requested that the documentation be updated. They previously utilized a different process, nevertheless they subsequently switched and demonstrated considerable savings."
+    },
+    {
+      "id": "verbose-34",
+      "category": "high_verbosity",
+      "text": "Additionally, the organization particularly emphasized that the microphone array be tested and regularly requested that the television display be calibrated. They previously utilized a manual process, however they subsequently upgraded and demonstrated clear output."
+    },
+    {
+      "id": "verbose-35",
+      "category": "high_verbosity",
+      "text": "However, the project generally required that the motorcycle fleet be inspected and frequently requested that the synchronization logs be reviewed. Although they previously utilized a different system, they subsequently switched and demonstrated considerable accuracy."
+    },
+    {
+      "id": "verbose-36",
+      "category": "high_verbosity",
+      "text": "Notwithstanding the aforementioned circumstances, the team definitely decided to utilize the new laboratory and frequently requested that the mathematics library be installed. They previously utilized a manual process, nevertheless they subsequently automated and demonstrated considerable precision."
+    },
+    {
+      "id": "entities-23",
+      "category": "entity_heavy",
+      "text": "The Munich laboratory definitely utilizes a Leica microscope and frequently ships approximately 50 kilograms of samples. Although the team previously utilized a Zeiss model, they currently utilize the Leica and maintain a steady inventory."
+    },
+    {
+      "id": "entities-24",
+      "category": "entity_heavy",
+      "text": "The Berlin studio particularly operates a Sony microphone and regularly records approximately 200 kilometers of test footage. They previously utilized a Canon camera, however they subsequently switched and demonstrate considerable output."
+    },
+    {
+      "id": "entities-25",
+      "category": "entity_heavy",
+      "text": "The Lyon workshop generally maintains a Yamaha motorcycle and frequently ships approximately 30 kilograms of parts. Although they previously utilized a Honda model, they currently utilize the Yamaha and highly recommend it."
+    },
+    {
+      "id": "entities-26",
+      "category": "entity_heavy",
+      "text": "The Oslo institute definitely operates a Texas mathematics lab and regularly records approximately 15 kilograms of reagents. They previously utilized a different supplier, nevertheless they subsequently switched and demonstrate considerable precision."
+    },
+    {
+      "id": "entities-27",
+      "category": "entity_heavy",
+      "text": "The Prague gymnasium particularly uses a Rogue barbell and frequently ships approximately 40 kilograms of plates. They previously utilized a different brand, however they subsequently upgraded and demonstrate considerable capacity."
+    },
+    {
+      "id": "entities-28",
+      "category": "entity_heavy",
+      "text": "The Vienna network generally operates a Samsung television and frequently records approximately 60 kilometers of cable. Although they previously utilized a different display, they currently utilize the Samsung and maintain a steady signal."
+    },
+    {
+      "id": "entities-29",
+      "category": "entity_heavy",
+      "text": "The Helsinki plant definitely maintains a Sennheiser microphone and regularly ships approximately 10 kilograms of stock. They previously utilized a different vendor, nevertheless they subsequently switched and demonstrate considerable throughput."
+    },
+    {
+      "id": "entities-30",
+      "category": "entity_heavy",
+      "text": "The Madrid studio particularly operates a Bosch refrigerator and frequently records approximately 45 kilograms of supplies. They previously utilized a different unit, however they subsequently upgraded and demonstrate considerable efficiency."
+    },
+    {
+      "id": "entities-31",
+      "category": "entity_heavy",
+      "text": "The Dublin lab generally maintains a Nikon microscope and frequently ships approximately 25 kilograms of slides. Although they previously utilized a different model, they currently utilize the Nikon and maintain a steady inventory."
+    },
+    {
+      "id": "entities-32",
+      "category": "entity_heavy",
+      "text": "The Warsaw workshop definitely operates a Kawasaki motorcycle and regularly records approximately 80 kilometers of test rides. They previously utilized a different model, nevertheless they subsequently switched and demonstrate considerable range."
+    },
+    {
+      "id": "entities-33",
+      "category": "entity_heavy",
+      "text": "The Athens institute particularly uses a Casio mathematics tool and frequently ships approximately 20 kilograms of manuals. They previously utilized a different brand, however they subsequently switched and demonstrate considerable accuracy."
+    },
+    {
+      "id": "entities-34",
+      "category": "entity_heavy",
+      "text": "The Lisbon gymnasium generally maintains an Eleiko barbell and frequently records approximately 35 kilograms of plates. Although they previously utilized a different brand, they currently utilize the Eleiko and highly recommend it."
+    },
+    {
+      "id": "entities-35",
+      "category": "entity_heavy",
+      "text": "The Helsinki laboratory definitely operates a Sony microphone and regularly ships approximately 55 kilograms of components. They previously utilized a different vendor, nevertheless they subsequently switched and demonstrate considerable output."
     }
   ]
 }

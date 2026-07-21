@@ -44,6 +44,7 @@ class MethodResult:
     token_savings_pct: float
     replacements: int
     nouns_preserved_pct: float
+    entity_nouns_preserved_pct: float
     content_jaccard: float
     synonym_aware_pct: float
 
@@ -114,9 +115,11 @@ def synonym_aware_overlap(original: str, transformed: str, dictionary: MinDictio
     return preserved / len(orig_words)
 
 
-def noun_preservation(original: str, transformed: str) -> float:
+def noun_preservation(original: str, transformed: str, exclude: frozenset[str] | None = None) -> float:
     orig = extract_nouns(original)
     new = extract_nouns(transformed)
+    if exclude:
+        orig = [n for n in orig if n not in exclude]
     if not orig:
         return 100.0
     preserved = sum(1 for n in orig if n in new)
@@ -214,6 +217,7 @@ def evaluate(
 ) -> MethodResult:
     oc, mc = len(original), len(transformed)
     ot, mt = count_tokens(original), count_tokens(transformed)
+    allowlist = dictionary.noun_abbreviation_sources()
     return MethodResult(
         method=method,
         sample_id=sample_id,
@@ -225,6 +229,7 @@ def evaluate(
         token_savings_pct=100.0 * (ot - mt) / ot if ot else 0.0,
         replacements=replacements,
         nouns_preserved_pct=noun_preservation(original, transformed),
+        entity_nouns_preserved_pct=noun_preservation(original, transformed, exclude=allowlist),
         content_jaccard=jaccard(content_words(original), content_words(transformed)),
         synonym_aware_pct=100.0 * synonym_aware_overlap(original, transformed, dictionary),
     )
@@ -244,6 +249,7 @@ def aggregate(results: list[MethodResult]) -> dict:
             "token_savings_pct_mean": sum(r.token_savings_pct for r in rows) / n,
             "replacements_mean": sum(r.replacements for r in rows) / n,
             "nouns_preserved_pct_mean": sum(r.nouns_preserved_pct for r in rows) / n,
+            "entity_nouns_preserved_pct_mean": sum(r.entity_nouns_preserved_pct for r in rows) / n,
             "content_jaccard_mean": sum(r.content_jaccard for r in rows) / n,
             "synonym_aware_pct_mean": sum(r.synonym_aware_pct for r in rows) / n,
         }
@@ -253,16 +259,22 @@ def aggregate(results: list[MethodResult]) -> dict:
 def run_dictionary_ablation(corpus: list[dict], full_entries: dict[str, str]) -> dict:
     """Benchmark progressive min dictionary tiers."""
     tiers = build_tiers(full_entries)
+    # The "full" tier uses the real shipped dictionary (including the
+    # noun-abbreviation allowlist) so it matches the headline savings.
+    full_dict_with_allowlist = MinDictionary.from_path()
     ablation = []
 
     for tier in tiers:
-        dictionary = MinDictionary.from_dict(tier["entries"])
+        if tier["name"] == "full":
+            dictionary = full_dict_with_allowlist
+        else:
+            dictionary = MinDictionary.from_dict(tier["entries"])
         converter = MinMemConverter(dictionary)
         char_savings, token_savings, noun_pres, swaps = [], [], [], []
 
         for sample in corpus:
             text = sample["text"]
-            if not tier["entries"]:
+            if not tier["entries"] and tier["name"] != "full":
                 transformed = text
                 n_swaps = 0
             else:

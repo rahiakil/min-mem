@@ -135,6 +135,21 @@ class MinMemConverter:
 
             working = pattern.sub(_phrase_sub, working)
 
+        # Unambiguous common-noun abbreviations: applied before the POS noun-gate
+        # so the entity-noun protection guarantee is preserved for every other noun.
+        # Only the explicit, auditable allowlist in the dictionary bypasses the gate.
+        for entry in self.dictionary.noun_abbreviation_entries():
+            pattern = re.compile(re.escape(entry.source), re.IGNORECASE)
+
+            def _abbrev_sub(match: re.Match[str], target: str = entry.target) -> str:
+                original = match.group(0)
+                replacements.append(
+                    Replacement(original=original, replacement=target, position=match.start())
+                )
+                return _preserve_case(original, target)
+
+            working = pattern.sub(_abbrev_sub, working)
+
         tokens = word_tokenize(working)
         tagged = pos_tag(tokens)
 

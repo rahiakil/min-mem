@@ -94,7 +94,7 @@ class DictionaryEntry:
 class MinDictionary:
     """Loads and indexes the minimal synonym dictionary."""
 
-    def __init__(self, entries: dict[str, str]) -> None:
+    def __init__(self, entries: dict[str, str], noun_abbreviations: dict[str, str] | None = None) -> None:
         self._entries = {k.lower(): v for k, v in entries.items()}
         self._phrases = sorted(
             (k for k in self._entries if " " in k),
@@ -102,13 +102,17 @@ class MinDictionary:
             reverse=True,
         )
         self._words = {k: v for k, v in self._entries.items() if " " not in k}
+        # Unambiguous common-noun abbreviations applied BEFORE the POS noun-gate
+        # (entity nouns remain protected). Keys are single words.
+        self._noun_abbreviations = {k.lower(): v for k, v in (noun_abbreviations or {}).items()}
 
     @classmethod
     def from_path(cls, path: Path | str | None = None) -> MinDictionary:
         resolved = resolve_dict_path(path)
         data = _load_dict_json(resolved)
         entries = data.get("entries", data)
-        return cls(entries)
+        noun_abbrev = data.get("noun_abbreviations", {}) if isinstance(data, dict) else {}
+        return cls(entries, noun_abbrev)
 
     @classmethod
     def from_dict(cls, entries: dict[str, str]) -> MinDictionary:
@@ -127,6 +131,15 @@ class MinDictionary:
     def phrase_entries(self) -> Iterator[DictionaryEntry]:
         for source in self._phrases:
             yield DictionaryEntry(source, self._entries[source], is_phrase=True)
+
+    def noun_abbreviation_entries(self) -> Iterator[DictionaryEntry]:
+        """Unambiguous common-noun abbreviations; applied before the POS gate."""
+        for source, target in self._noun_abbreviations.items():
+            yield DictionaryEntry(source, target, is_phrase=True)
+
+    def noun_abbreviation_sources(self) -> frozenset[str]:
+        """Lowercased source nouns in the abbreviation allowlist."""
+        return frozenset(self._noun_abbreviations.keys())
 
     def word_entries(self) -> Iterator[DictionaryEntry]:
         for source, target in self._words.items():

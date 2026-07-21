@@ -231,6 +231,8 @@ def main() -> None:
                     help="Max words in target phrase when --allow-multiword.")
     ap.add_argument("--min-target-zipf", type=float, default=3.5,
                     help="Target must be at least this common (Zipf).")
+    ap.add_argument("--dump-pool", type=Path, default=None,
+                    help="Dump the freq-gated pool (pre-POS) to this JSON file for inspection.")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     single_word_only = not args.allow_multiword
@@ -300,6 +302,14 @@ def main() -> None:
                 continue
         kept.append((k, t))
     pool = kept[: 50_000]
+    if args.dump_pool is not None:
+        import json as _json
+        args.dump_pool.write_text(
+            _json.dumps([{"src": k, "tgt": t, "char_delta": len(k) - len(t)}
+                         for k, t in kept], indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(f"Dumped {len(kept):,} freq-gated candidates to {args.dump_pool}")
     scored = [(k, t, score(k, t)) for k, t in pool]
     scored.sort(key=lambda x: x[2], reverse=True)
     print(f"Scanned {scanned:,} survivors; {len(best):,} unique; pre-ranked {len(candidates):,} by char_delta; "
