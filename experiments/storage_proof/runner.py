@@ -34,7 +34,7 @@ from storage_proof.adapters.fixtures import build_agent_corpus_bundle  # noqa: E
 from storage_proof.adapters.locomo import LoCoMoAdapter  # noqa: E402
 from storage_proof.adapters.membench import MemBenchAdapter  # noqa: E402
 from storage_proof.bm25 import MemoryRecord  # noqa: E402
-from storage_proof.cloud_cost import projection_to_dict, project_cloud_cost  # noqa: E402
+from storage_proof.cloud_cost import projection_to_dict, project_cloud_cost, project_company_table  # noqa: E402
 from storage_proof.org_simulation import (  # noqa: E402
     nightly_consolidate,
     org_result_to_dict,
@@ -470,7 +470,13 @@ def main() -> int:
     cloud = project_cloud_cost(
         bytes_per_memory=storage_report.bytes_per_memory_identity,
         memories_per_day=50,
-        agents=10,
+        employees=1000,
+        agents_per_employee=20,
+        retention_years=3,
+        reduction_pct=benchmark_results["agent_corpus"]["char_reduction_pct"],
+    )
+    company_table = project_company_table(
+        bytes_per_memory=storage_report.bytes_per_memory_identity,
         reduction_pct=benchmark_results["agent_corpus"]["char_reduction_pct"],
     )
 
@@ -495,6 +501,7 @@ def main() -> int:
             "definition": "minified_score >= identity_score for every question/model pair",
         },
         "cloud_projection": projection_to_dict(cloud),
+        "company_cloud_table": company_table,
         "network_savings": compute_network_savings(
             benchmark_results["agent_corpus"]["identity_bytes"],
             benchmark_results["agent_corpus"]["minified_bytes"],

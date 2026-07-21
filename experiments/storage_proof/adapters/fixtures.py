@@ -189,8 +189,22 @@ def build_membench_fixture(scale: int = 6) -> BenchmarkBundle:
     return BenchmarkBundle("membench", "fixture-v1", _hash_payload(payload), records, qa_items, str(path))
 
 
+def _load_agent_qa() -> list[QAItem]:
+    """Load agent-corpus QA from experiments/agent_qa.json if present, else AGENT_QA."""
+    qa_path = ROOT / "experiments" / "agent_qa.json"
+    if qa_path.exists():
+        data = json.loads(qa_path.read_text(encoding="utf-8"))
+        return [
+            QAItem(q.get("qa_id", f"qa-{i}"), q["question"], q["answer"],
+                   q.get("keywords", []), q.get("category", ""), q.get("evidence_ids", []),
+                   "agent_corpus")
+            for i, q in enumerate(data.get("qa", []))
+        ]
+    return list(AGENT_QA)
+
+
 def build_agent_corpus_bundle(scale: int = 4) -> BenchmarkBundle:
     records = build_agent_corpus_records(scale)
-    qa = list(AGENT_QA)
+    qa = _load_agent_qa()
     payload = {"records": [r.__dict__ for r in records], "qa": [q.__dict__ for q in qa]}
     return BenchmarkBundle("agent_corpus", "corpus-v1", _hash_payload(payload), records, qa, str(CORPUS))

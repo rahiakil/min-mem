@@ -1,0 +1,111 @@
+{
+  "scales": [
+    {
+      "scale": 1,
+      "records": 200,
+      "identity_bytes": 38028,
+      "minified_bytes": 30357,
+      "bytes_saved": 7671,
+      "char_savings_pct": 20.17,
+      "identity_tokens": 5582,
+      "minified_tokens": 5492,
+      "tokens_saved": 90,
+      "token_savings_pct": 1.61,
+      "det_qa_retention_pct": 98.4,
+      "det_qa_regressions": 3
+    },
+    {
+      "scale": 5,
+      "records": 1000,
+      "identity_bytes": 190140,
+      "minified_bytes": 151785,
+      "bytes_saved": 38355,
+      "char_savings_pct": 20.17,
+      "identity_tokens": 27910,
+      "minified_tokens": 27460,
+      "tokens_saved": 450,
+      "token_savings_pct": 1.61,
+      "det_qa_retention_pct": null,
+      "det_qa_regressions": null
+    },
+    {
+      "scale": 25,
+      "records": 5000,
+      "identity_bytes": 950700,
+      "minified_bytes": 758925,
+      "bytes_saved": 191775,
+      "char_savings_pct": 20.17,
+      "identity_tokens": 139550,
+      "minified_tokens": 137300,
+      "tokens_saved": 2250,
+      "token_savings_pct": 1.61,
+      "det_qa_retention_pct": null,
+      "det_qa_regressions": null
+    },
+    {
+      "scale": 100,
+      "records": 20000,
+      "identity_bytes": 3802800,
+      "minified_bytes": 3035700,
+      "bytes_saved": 767100,
+      "char_savings_pct": 20.17,
+      "identity_tokens": 558200,
+      "minified_tokens": 549200,
+      "tokens_saved": 9000,
+      "token_savings_pct": 1.61,
+      "det_qa_retention_pct": null,
+      "det_qa_regressions": null
+    }
+  ],
+  "extrapolation": {
+    "local_model_tokens_per_sec": 50.0,
+    "local_model_context_tokens": 8000,
+    "scenarios": [
+      {
+        "n_records": 1000,
+        "disk_identity_mb": 0.2,
+        "disk_saved_mb": 0.0,
+        "disk_saved_pct": 20.17,
+        "ctx_identity_tokens": 38000,
+        "ctx_saved_tokens": 611,
+        "ctx_saved_pct": 1.61,
+        "latency_identity_s": 760.0,
+        "latency_saved_s": 12.2
+      },
+      {
+        "n_records": 10000,
+        "disk_identity_mb": 1.9,
+        "disk_saved_mb": 0.4,
+        "disk_saved_pct": 20.17,
+        "ctx_identity_tokens": 380000,
+        "ctx_saved_tokens": 6118,
+        "ctx_saved_pct": 1.61,
+        "latency_identity_s": 7600.0,
+        "latency_saved_s": 122.4
+      },
+      {
+        "n_records": 100000,
+        "disk_identity_mb": 19.1,
+        "disk_saved_mb": 3.8,
+        "disk_saved_pct": 20.17,
+        "ctx_identity_tokens": 3800000,
+        "ctx_saved_tokens": 61180,
+        "ctx_saved_pct": 1.61,
+        "latency_identity_s": 76000.0,
+        "latency_saved_s": 1223.6
+      },
+      {
+        "n_records": 1000000,
+        "disk_identity_mb": 190.7,
+        "disk_saved_mb": 38.5,
+        "disk_saved_pct": 20.17,
+        "ctx_identity_tokens": 38000000,
+        "ctx_saved_tokens": 611800,
+        "ctx_saved_pct": 1.61,
+        "latency_identity_s": 760000.0,
+        "latency_saved_s": 12236.0
+      }
+    ]
+  },
+  "note": "Character-savings rate is per-record and scale-invariant; absolute bytes and context tokens scale linearly with the record count."
+}

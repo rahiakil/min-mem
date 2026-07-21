@@ -1,0 +1,2519 @@
+{
+  "qa": [
+    {
+      "qa_id": "qa-01",
+      "question": "What language does the user prefer?",
+      "answer": "Python",
+      "keywords": [
+        "python"
+      ],
+      "category": "preference",
+      "evidence_ids": [
+        "prefs-01"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-02",
+      "question": "Where is the user's organization located?",
+      "answer": "Berlin",
+      "keywords": [
+        "berlin"
+      ],
+      "category": "factual",
+      "evidence_ids": [
+        "facts-01"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-03",
+      "question": "What note-taking tool does the user use?",
+      "answer": "Obsidian",
+      "keywords": [
+        "obsidian"
+      ],
+      "category": "preference",
+      "evidence_ids": [
+        "mixed-01"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-04",
+      "question": "Does the user prefer strict typing?",
+      "answer": "TypeScript",
+      "keywords": [
+        "typescript",
+        "typing"
+      ],
+      "category": "preference",
+      "evidence_ids": [
+        "prefs-02"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-05",
+      "question": "What architecture does the project use?",
+      "answer": "microservices",
+      "keywords": [
+        "microservices",
+        "docker"
+      ],
+      "category": "project",
+      "evidence_ids": [
+        "project-01"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-06",
+      "question": "What database does the application use?",
+      "answer": "PostgreSQL",
+      "keywords": [
+        "postgresql",
+        "postgres"
+      ],
+      "category": "factual",
+      "evidence_ids": [
+        "facts-02"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-07",
+      "question": "What does min-mem implement?",
+      "answer": "lexical normalization",
+      "keywords": [
+        "lexical",
+        "normalization",
+        "min-mem"
+      ],
+      "category": "project",
+      "evidence_ids": [
+        "mixed-02"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-08",
+      "question": "What CI tool was previously used?",
+      "answer": "GitHub Actions",
+      "keywords": [
+        "github",
+        "actions"
+      ],
+      "category": "project",
+      "evidence_ids": [
+        "entities-01"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-101",
+      "question": "What does the user have experience with?",
+      "answer": "Actix",
+      "keywords": [
+        "actix"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-101"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-102",
+      "question": "What configuration should be validated?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-102"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-103",
+      "question": "What tool does the user use for notes?",
+      "answer": "LangChain",
+      "keywords": [
+        "langchain"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-103"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-104",
+      "question": "What container runtime does the project use?",
+      "answer": "Kubernetes",
+      "keywords": [
+        "kubernetes"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-104"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-105",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-105"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-106",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-106"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-107",
+      "question": "What tool does the user use for notes?",
+      "answer": "Vue",
+      "keywords": [
+        "vue"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-107"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-108",
+      "question": "What area do the modules relate to?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-108"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-109",
+      "question": "What tool monitors the pipeline?",
+      "answer": "Prometheus",
+      "keywords": [
+        "prometheus"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-109"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-110",
+      "question": "What project implements lexical normalization?",
+      "answer": "Beacon",
+      "keywords": [
+        "beacon"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-110"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-111",
+      "question": "What framework was used in the session?",
+      "answer": "Svelte",
+      "keywords": [
+        "svelte"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-111"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-112",
+      "question": "What language does the user work with?",
+      "answer": "Python",
+      "keywords": [
+        "python"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-112"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-113",
+      "question": "What does the microservice use for caching?",
+      "answer": "Vault",
+      "keywords": [
+        "vault"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-113"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-114",
+      "question": "What kind of errors should be investigated?",
+      "answer": "onboarding",
+      "keywords": [
+        "onboarding"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-114"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-115",
+      "question": "What database does the application use?",
+      "answer": "MongoDB",
+      "keywords": [
+        "mongodb"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-115"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-116",
+      "question": "What tool was used for the rollout?",
+      "answer": "Helm",
+      "keywords": [
+        "helm"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-116"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-117",
+      "question": "What database does the service use?",
+      "answer": "Elasticsearch",
+      "keywords": [
+        "elasticsearch"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-117"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-118",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "LangChain",
+      "keywords": [
+        "langchain"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-118"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-119",
+      "question": "What did developers attempt to implement?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-119"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-120",
+      "question": "What does the user have experience with?",
+      "answer": "Svelte",
+      "keywords": [
+        "svelte"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-120"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-121",
+      "question": "What language does the user prefer?",
+      "answer": "Elixir",
+      "keywords": [
+        "elixir"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-121"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-122",
+      "question": "What configuration should be validated?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-122"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-123",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-123"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-124",
+      "question": "Where is the organization located?",
+      "answer": "Prague",
+      "keywords": [
+        "prague"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-124"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-125",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-125"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-126",
+      "question": "What does the user have experience with?",
+      "answer": "PyTorch",
+      "keywords": [
+        "pytorch"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-126"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-127",
+      "question": "What kind of errors should be investigated?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-127"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-128",
+      "question": "What language does the user prefer?",
+      "answer": "Kotlin",
+      "keywords": [
+        "kotlin"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-128"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-129",
+      "question": "What container runtime does the project use?",
+      "answer": "Vault",
+      "keywords": [
+        "vault"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-129"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-130",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-130"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-131",
+      "question": "What does the microservice use for caching?",
+      "answer": "Helm",
+      "keywords": [
+        "helm"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-131"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-132",
+      "question": "What database does the application use?",
+      "answer": "BigQuery",
+      "keywords": [
+        "bigquery"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-132"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-133",
+      "question": "What language does the user prefer?",
+      "answer": "Scala",
+      "keywords": [
+        "scala"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-133"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-134",
+      "question": "What does the user prefer for typing?",
+      "answer": "Swift",
+      "keywords": [
+        "swift"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-134"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-135",
+      "question": "What does the user have experience with?",
+      "answer": "Svelte",
+      "keywords": [
+        "svelte"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-135"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-136",
+      "question": "What does the user have experience with?",
+      "answer": "Next.js",
+      "keywords": [
+        "next.js"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-136"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-137",
+      "question": "What area do the modules relate to?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-137"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-138",
+      "question": "What did developers attempt to implement?",
+      "answer": "caching",
+      "keywords": [
+        "caching"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-138"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-139",
+      "question": "What project implements lexical normalization?",
+      "answer": "Cedar",
+      "keywords": [
+        "cedar"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-139"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-140",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-140"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-141",
+      "question": "What does the microservice use for caching?",
+      "answer": "Vault",
+      "keywords": [
+        "vault"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-141"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-142",
+      "question": "What language does the user prefer?",
+      "answer": "Scala",
+      "keywords": [
+        "scala"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-142"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-143",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Next.js",
+      "keywords": [
+        "next.js"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-143"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-144",
+      "question": "What area do the modules relate to?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-144"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-145",
+      "question": "Where is the organization located?",
+      "answer": "Munich",
+      "keywords": [
+        "munich"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-145"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-146",
+      "question": "What does the user have experience with?",
+      "answer": "Laravel",
+      "keywords": [
+        "laravel"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-146"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-147",
+      "question": "What framework was used in the session?",
+      "answer": "Rails",
+      "keywords": [
+        "rails"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-147"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-148",
+      "question": "What project implements lexical normalization?",
+      "answer": "Orion",
+      "keywords": [
+        "orion"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-148"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-149",
+      "question": "At which organization does the user work?",
+      "answer": "Cyberdyne",
+      "keywords": [
+        "cyberdyne"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-149"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-150",
+      "question": "What did developers attempt to implement?",
+      "answer": "rollout",
+      "keywords": [
+        "rollout"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-150"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-151",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-151"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-152",
+      "question": "What tool does the user use for notes?",
+      "answer": "Next.js",
+      "keywords": [
+        "next.js"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-152"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-153",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Next.js",
+      "keywords": [
+        "next.js"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-153"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-154",
+      "question": "At which organization does the user work?",
+      "answer": "Umbra Labs",
+      "keywords": [
+        "umbra labs"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-154"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-155",
+      "question": "Where is the organization located?",
+      "answer": "Seoul",
+      "keywords": [
+        "seoul"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-155"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-156",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "authentication",
+      "keywords": [
+        "authentication"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-156"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-157",
+      "question": "What area do the modules relate to?",
+      "answer": "rollout",
+      "keywords": [
+        "rollout"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-157"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-158",
+      "question": "What framework was used in the session?",
+      "answer": "React",
+      "keywords": [
+        "react"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-158"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-159",
+      "question": "What database does the service use?",
+      "answer": "Redis",
+      "keywords": [
+        "redis"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-159"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-160",
+      "question": "What language does the user work with?",
+      "answer": "Swift",
+      "keywords": [
+        "swift"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-160"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-161",
+      "question": "What does the microservice use for caching?",
+      "answer": "Helm",
+      "keywords": [
+        "helm"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-161"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-162",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "PyTorch",
+      "keywords": [
+        "pytorch"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-162"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-163",
+      "question": "What framework was used in the session?",
+      "answer": "Django",
+      "keywords": [
+        "django"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-163"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-164",
+      "question": "What kind of errors should be investigated?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-164"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-165",
+      "question": "What project implements lexical normalization?",
+      "answer": "Heron",
+      "keywords": [
+        "heron"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-165"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-166",
+      "question": "At which organization does the user work?",
+      "answer": "Wayne Tech",
+      "keywords": [
+        "wayne tech"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-166"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-167",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-167"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-168",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-168"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-169",
+      "question": "What project implements lexical normalization?",
+      "answer": "Cedar",
+      "keywords": [
+        "cedar"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-169"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-170",
+      "question": "What kind of errors should be investigated?",
+      "answer": "deployment",
+      "keywords": [
+        "deployment"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-170"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-171",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-171"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-172",
+      "question": "What tool was used for the rollout?",
+      "answer": "Terraform",
+      "keywords": [
+        "terraform"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-172"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-173",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Ansible",
+      "keywords": [
+        "ansible"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-173"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-174",
+      "question": "What configuration should be validated?",
+      "answer": "onboarding",
+      "keywords": [
+        "onboarding"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-174"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-175",
+      "question": "What area do the modules relate to?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-175"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-176",
+      "question": "What container runtime does the project use?",
+      "answer": "Nomad",
+      "keywords": [
+        "nomad"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-176"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-177",
+      "question": "What project implements lexical normalization?",
+      "answer": "Atlas",
+      "keywords": [
+        "atlas"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-177"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-178",
+      "question": "What tool does the user use for notes?",
+      "answer": "Spring",
+      "keywords": [
+        "spring"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-178"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-179",
+      "question": "What does the user prefer for typing?",
+      "answer": "Rust",
+      "keywords": [
+        "rust"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-179"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-180",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Argo CD",
+      "keywords": [
+        "argo cd"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-180"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-181",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-181"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-182",
+      "question": "What database does the application use?",
+      "answer": "DynamoDB",
+      "keywords": [
+        "dynamodb"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-182"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-183",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Ansible",
+      "keywords": [
+        "ansible"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-183"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-184",
+      "question": "At which organization does the user work?",
+      "answer": "Stark Industries",
+      "keywords": [
+        "stark industries"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-184"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-185",
+      "question": "What language does the user work with?",
+      "answer": "Kotlin",
+      "keywords": [
+        "kotlin"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-185"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-186",
+      "question": "At which organization does the user work?",
+      "answer": "Umbra Labs",
+      "keywords": [
+        "umbra labs"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-186"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-187",
+      "question": "What language does the user prefer?",
+      "answer": "Rust",
+      "keywords": [
+        "rust"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-187"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-188",
+      "question": "What did developers attempt to implement?",
+      "answer": "caching",
+      "keywords": [
+        "caching"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-188"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-189",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Consul",
+      "keywords": [
+        "consul"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-189"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-190",
+      "question": "What area do the modules relate to?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-190"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-191",
+      "question": "Where is the organization located?",
+      "answer": "Tel Aviv",
+      "keywords": [
+        "tel aviv"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-191"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-192",
+      "question": "What area do the modules relate to?",
+      "answer": "rollout",
+      "keywords": [
+        "rollout"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-192"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-193",
+      "question": "What configuration should be validated?",
+      "answer": "deployment",
+      "keywords": [
+        "deployment"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-193"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-194",
+      "question": "What kind of errors should be investigated?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-194"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-195",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "authentication",
+      "keywords": [
+        "authentication"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-195"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-196",
+      "question": "What does the user prefer for typing?",
+      "answer": "PHP",
+      "keywords": [
+        "php"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-196"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-197",
+      "question": "What kind of errors should be investigated?",
+      "answer": "onboarding",
+      "keywords": [
+        "onboarding"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-197"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-198",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-198"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-199",
+      "question": "What tool monitors the pipeline?",
+      "answer": "Loki",
+      "keywords": [
+        "loki"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-199"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-200",
+      "question": "Where is the organization located?",
+      "answer": "Helsinki",
+      "keywords": [
+        "helsinki"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-200"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-201",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "React",
+      "keywords": [
+        "react"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-201"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-202",
+      "question": "What tool does the user use for notes?",
+      "answer": "Gin",
+      "keywords": [
+        "gin"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-202"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-203",
+      "question": "What does the user prefer for typing?",
+      "answer": "PHP",
+      "keywords": [
+        "php"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-203"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-204",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-204"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-205",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Next.js",
+      "keywords": [
+        "next.js"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-205"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-206",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "caching",
+      "keywords": [
+        "caching"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-206"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-207",
+      "question": "Where is the organization located?",
+      "answer": "Sao Paulo",
+      "keywords": [
+        "sao paulo"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-207"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-208",
+      "question": "What container runtime does the project use?",
+      "answer": "Consul",
+      "keywords": [
+        "consul"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-208"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-209",
+      "question": "What does the user prefer for typing?",
+      "answer": "Lua",
+      "keywords": [
+        "lua"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-209"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-210",
+      "question": "What does the user prefer for typing?",
+      "answer": "Ruby",
+      "keywords": [
+        "ruby"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-210"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-211",
+      "question": "What container runtime does the project use?",
+      "answer": "Envoy",
+      "keywords": [
+        "envoy"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-211"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-212",
+      "question": "Where is the organization located?",
+      "answer": "Austin",
+      "keywords": [
+        "austin"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-212"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-213",
+      "question": "What project implements lexical normalization?",
+      "answer": "Forge",
+      "keywords": [
+        "forge"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-213"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-214",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "React",
+      "keywords": [
+        "react"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-214"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-215",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-215"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-216",
+      "question": "What kind of errors should be investigated?",
+      "answer": "authentication",
+      "keywords": [
+        "authentication"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-216"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-217",
+      "question": "What tool was used for the rollout?",
+      "answer": "Kubernetes",
+      "keywords": [
+        "kubernetes"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-217"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-218",
+      "question": "What kind of errors should be investigated?",
+      "answer": "onboarding",
+      "keywords": [
+        "onboarding"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-218"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-219",
+      "question": "What framework was used in the session?",
+      "answer": "Rails",
+      "keywords": [
+        "rails"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-219"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-220",
+      "question": "What framework was used in the session?",
+      "answer": "Spring",
+      "keywords": [
+        "spring"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-220"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-221",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "onboarding",
+      "keywords": [
+        "onboarding"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-221"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-222",
+      "question": "What tool does the user use for notes?",
+      "answer": "Angular",
+      "keywords": [
+        "angular"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-222"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-223",
+      "question": "What container runtime does the project use?",
+      "answer": "Ansible",
+      "keywords": [
+        "ansible"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-223"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-224",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-224"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-225",
+      "question": "What tool does the user use for notes?",
+      "answer": "Angular",
+      "keywords": [
+        "angular"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-225"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-226",
+      "question": "What does the microservice use for caching?",
+      "answer": "Kubernetes",
+      "keywords": [
+        "kubernetes"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-226"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-227",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "indexing",
+      "keywords": [
+        "indexing"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-227"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-228",
+      "question": "What container runtime does the project use?",
+      "answer": "Pulumi",
+      "keywords": [
+        "pulumi"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-228"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-229",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "deployment",
+      "keywords": [
+        "deployment"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-229"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-230",
+      "question": "What container runtime does the project use?",
+      "answer": "Ansible",
+      "keywords": [
+        "ansible"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-230"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-231",
+      "question": "What database does the application use?",
+      "answer": "BigQuery",
+      "keywords": [
+        "bigquery"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-231"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-instr-232",
+      "question": "What should the assistant avoid regarding explanations?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "instructions",
+      "evidence_ids": [
+        "instr-232"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-233",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "observability",
+      "keywords": [
+        "observability"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-233"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-234",
+      "question": "What project implements lexical normalization?",
+      "answer": "Apollo",
+      "keywords": [
+        "apollo"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-234"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-235",
+      "question": "What language does the user prefer?",
+      "answer": "Ruby",
+      "keywords": [
+        "ruby"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-235"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-236",
+      "question": "What database does the service use?",
+      "answer": "ClickHouse",
+      "keywords": [
+        "clickhouse"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-236"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-237",
+      "question": "What database does the application use?",
+      "answer": "Neo4j",
+      "keywords": [
+        "neo4j"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-237"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-238",
+      "question": "Where is the organization located?",
+      "answer": "Munich",
+      "keywords": [
+        "munich"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-238"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-239",
+      "question": "What project implements lexical normalization?",
+      "answer": "Forge",
+      "keywords": [
+        "forge"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-239"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-240",
+      "question": "What does the microservice use for caching?",
+      "answer": "Envoy",
+      "keywords": [
+        "envoy"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-240"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-241",
+      "question": "What does the user prefer for typing?",
+      "answer": "Elixir",
+      "keywords": [
+        "elixir"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-241"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-242",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Spring",
+      "keywords": [
+        "spring"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-242"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-243",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Rails",
+      "keywords": [
+        "rails"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-243"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-244",
+      "question": "What database does the application use?",
+      "answer": "MySQL",
+      "keywords": [
+        "mysql"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-244"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-245",
+      "question": "What does the microservice use for caching?",
+      "answer": "Pulumi",
+      "keywords": [
+        "pulumi"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-245"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-246",
+      "question": "What language does the user prefer?",
+      "answer": "JavaScript",
+      "keywords": [
+        "javascript"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-246"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-247",
+      "question": "What language does the user work with?",
+      "answer": "Rust",
+      "keywords": [
+        "rust"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-247"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-248",
+      "question": "What tool does the user use for notes?",
+      "answer": "Rails",
+      "keywords": [
+        "rails"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-248"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-249",
+      "question": "What database does the service use?",
+      "answer": "DynamoDB",
+      "keywords": [
+        "dynamodb"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-249"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-250",
+      "question": "What language does the user work with?",
+      "answer": "C#",
+      "keywords": [
+        "c#"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-250"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-251",
+      "question": "What tool was used for the rollout?",
+      "answer": "Docker",
+      "keywords": [
+        "docker"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-251"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-252",
+      "question": "What tool does the user use for notes?",
+      "answer": "LangChain",
+      "keywords": [
+        "langchain"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-252"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-253",
+      "question": "What tool does the user prefer for analysis?",
+      "answer": "Spring",
+      "keywords": [
+        "spring"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-253"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-prefs-254",
+      "question": "What does the user prefer for typing?",
+      "answer": "C++",
+      "keywords": [
+        "c++"
+      ],
+      "category": "user_preferences",
+      "evidence_ids": [
+        "prefs-254"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-255",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Nomad",
+      "keywords": [
+        "nomad"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-255"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-256",
+      "question": "What database does the application use?",
+      "answer": "Snowflake",
+      "keywords": [
+        "snowflake"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-256"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-257",
+      "question": "What language does the user work with?",
+      "answer": "Swift",
+      "keywords": [
+        "swift"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-257"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-258",
+      "question": "What tool was used for the rollout?",
+      "answer": "Kubernetes",
+      "keywords": [
+        "kubernetes"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-258"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-259",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "routing",
+      "keywords": [
+        "routing"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-259"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-260",
+      "question": "What area do the modules relate to?",
+      "answer": "rollout",
+      "keywords": [
+        "rollout"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-260"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-261",
+      "question": "What does the microservice use for caching?",
+      "answer": "Consul",
+      "keywords": [
+        "consul"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-261"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-262",
+      "question": "What did developers attempt to implement?",
+      "answer": "deployment",
+      "keywords": [
+        "deployment"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-262"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-263",
+      "question": "What does the pipeline deploy to?",
+      "answer": "Ansible",
+      "keywords": [
+        "ansible"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-263"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-264",
+      "question": "Where is the organization located?",
+      "answer": "Stockholm",
+      "keywords": [
+        "stockholm"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-264"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-265",
+      "question": "Where is the organization located?",
+      "answer": "Munich",
+      "keywords": [
+        "munich"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-265"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-mixed-266",
+      "question": "What project implements lexical normalization?",
+      "answer": "Cedar",
+      "keywords": [
+        "cedar"
+      ],
+      "category": "mixed",
+      "evidence_ids": [
+        "mixed-266"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-267",
+      "question": "What database does the application use?",
+      "answer": "Redis",
+      "keywords": [
+        "redis"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-267"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-268",
+      "question": "What does the microservice use for caching?",
+      "answer": "Argo CD",
+      "keywords": [
+        "argo cd"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-268"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-269",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-269"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-270",
+      "question": "What does the user have experience with?",
+      "answer": "TensorFlow",
+      "keywords": [
+        "tensorflow"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-270"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-271",
+      "question": "What area do the modules relate to?",
+      "answer": "observability",
+      "keywords": [
+        "observability"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-271"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-272",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "scheduling",
+      "keywords": [
+        "scheduling"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-272"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-entities-273",
+      "question": "At which organization does the user work?",
+      "answer": "Globex",
+      "keywords": [
+        "globex"
+      ],
+      "category": "entity_heavy",
+      "evidence_ids": [
+        "entities-273"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-274",
+      "question": "What kind of tasks should be accomplished?",
+      "answer": "migration",
+      "keywords": [
+        "migration"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-274"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-275",
+      "question": "What container runtime does the project use?",
+      "answer": "Kubernetes",
+      "keywords": [
+        "kubernetes"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-275"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-276",
+      "question": "Where is the organization located?",
+      "answer": "Amsterdam",
+      "keywords": [
+        "amsterdam"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-276"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-277",
+      "question": "What framework was used in the session?",
+      "answer": "Spring",
+      "keywords": [
+        "spring"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-277"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-278",
+      "question": "What should be facilitated prior to migration?",
+      "answer": "authentication",
+      "keywords": [
+        "authentication"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-278"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-279",
+      "question": "What tool was used for the rollout?",
+      "answer": "Docker",
+      "keywords": [
+        "docker"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-279"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-280",
+      "question": "What does the user have experience with?",
+      "answer": "Svelte",
+      "keywords": [
+        "svelte"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-280"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-281",
+      "question": "What container runtime does the project use?",
+      "answer": "Pulumi",
+      "keywords": [
+        "pulumi"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-281"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-facts-282",
+      "question": "What database does the application use?",
+      "answer": "PostgreSQL",
+      "keywords": [
+        "postgresql"
+      ],
+      "category": "factual_memory",
+      "evidence_ids": [
+        "facts-282"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-session-283",
+      "question": "What framework was used in the session?",
+      "answer": "React",
+      "keywords": [
+        "react"
+      ],
+      "category": "session_summary",
+      "evidence_ids": [
+        "session-283"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-verbose-284",
+      "question": "What did developers attempt to implement?",
+      "answer": "observability",
+      "keywords": [
+        "observability"
+      ],
+      "category": "high_verbosity",
+      "evidence_ids": [
+        "verbose-284"
+      ],
+      "benchmark": "agent_corpus"
+    },
+    {
+      "qa_id": "qa-project-285",
+      "question": "What container runtime does the project use?",
+      "answer": "Argo CD",
+      "keywords": [
+        "argo cd"
+      ],
+      "category": "project_context",
+      "evidence_ids": [
+        "project-285"
+      ],
+      "benchmark": "agent_corpus"
+    }
+  ]
+}

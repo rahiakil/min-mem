@@ -90,11 +90,16 @@ class MinMemConverter:
         """Apply minification repeatedly until stable or *passes* exhausted."""
         if passes < 1:
             passes = 1
-        result = self._minify_once(text)
+        # Nouns identified in the original text are protected across all passes:
+        # re-tagging already-minified text can mis-tag a noun as a verb and let a
+        # noun source entry fire, corrupting an entity. Protecting by the original
+        # tagging preserves the noun-preservation guarantee across passes.
+        protected = self._noun_tokens(text)
+        result = self._minify_once(text, protected=protected)
         for _ in range(passes - 1):
             if not result.replacements:
                 break
-            nxt = self._minify_once(result.minified)
+            nxt = self._minify_once(result.minified, protected=protected)
             if nxt.minified == result.minified:
                 break
             result = MinifyResult(
@@ -104,7 +109,15 @@ class MinMemConverter:
             )
         return result
 
-    def _minify_once(self, text: str) -> MinifyResult:
+    def _noun_tokens(self, text: str) -> frozenset[str]:
+        _ensure_nltk_data()
+        return frozenset(
+            tok.lower()
+            for tok, tag in pos_tag(word_tokenize(text))
+            if tag in NOUN_TAGS
+        )
+
+    def _minify_once(self, text: str, protected: frozenset[str] | None = None) -> MinifyResult:
         _ensure_nltk_data()
 
         replacements: list[Replacement] = []
@@ -135,7 +148,7 @@ class MinMemConverter:
                 cursor = pos
 
             replacement: str | None = None
-            if tag not in NOUN_TAGS:
+            if tag not in NOUN_TAGS and (protected is None or token.lower() not in protected):
                 replacement = self.dictionary.lookup_inflected(token)
 
             if replacement is not None and replacement.lower() != token.lower():

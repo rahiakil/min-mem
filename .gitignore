@@ -9,3 +9,8 @@ build/
 
 # IDE workspace
 *.code-workspace
+
+# PPDB build inputs (728MB download) and grower logs — not committed
+experiments/ppdb/*.gz
+experiments/ppdb/*.log
+min_dict.json.bak-pre-ppdb
