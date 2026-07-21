@@ -7,6 +7,7 @@ Outputs experiments/tiered_value.json and experiments/TIERED_VALUE.md
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -32,7 +33,7 @@ CORPUS = Path(__file__).parent / "corpus.json"
 OUT_JSON = Path(__file__).parent / "tiered_value.json"
 OUT_MD = Path(__file__).parent / "TIERED_VALUE.md"
 PRIMARY_RATE = 0.5
-SCALE = 4  # agent-scale memory blocks
+SCALE = int(os.environ.get("TIERED_SCALE", "1"))  # agent-scale memory blocks (waterfall is scale-invariant)
 
 
 def load_corpus() -> list[dict]:

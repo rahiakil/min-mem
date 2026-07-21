@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19T02:37:44.828184+00:00",
+  "generated": "2026-07-21T20:16:11.934086+00:00",
   "algorithm": "streaming_multi_feature_token_aware",
   "scorer_weights": {
     "freq": 1.0,
@@ -15,64 +15,56 @@
     "char savings do not regress"
   ],
   "base_dict_size": 120,
-  "final_dict_size": 360,
-  "batches_run": 4,
+  "final_dict_size": 240,
+  "batches_run": 3,
   "baseline": {
-    "char_savings_pct": 2.6619346857269677,
-    "noun_preservation_pct": 99.64788732394366,
+    "char_savings_pct": 4.34899301719834,
+    "noun_preservation_pct": 98.69634340222575,
     "dict_size": 120.0
   },
   "final_eval_mix": {
-    "char_savings_pct": 2.941989807256242,
-    "noun_preservation_pct": 99.64788732394366,
-    "dict_size": 360.0
+    "char_savings_pct": 5.858428840384464,
+    "noun_preservation_pct": 98.69634340222575,
+    "dict_size": 240.0
   },
   "final_agent": {
-    "char_savings_pct": 5.162259778887342,
-    "noun_preservation_pct": 100.0,
-    "dict_size": 360.0
+    "char_savings_pct": 6.994849871276295,
+    "noun_preservation_pct": 98.42910293509715,
+    "dict_size": 240.0
   },
   "learning_curve": [
     {
       "batch": 0,
       "dict_size": 120,
-      "char_savings_pct": 2.662,
-      "noun_preservation_pct": 99.648,
+      "char_savings_pct": 4.349,
+      "noun_preservation_pct": 98.696,
       "added": 0,
       "marginal_char_gain": 0.0
     },
     {
       "batch": 1,
-      "dict_size": 180,
-      "char_savings_pct": 2.819,
-      "noun_preservation_pct": 99.648,
-      "added": 60,
-      "marginal_char_gain": 0.1569
+      "dict_size": 160,
+      "char_savings_pct": 5.842,
+      "noun_preservation_pct": 98.696,
+      "added": 40,
+      "marginal_char_gain": 1.4932
     },
     {
       "batch": 2,
-      "dict_size": 240,
-      "char_savings_pct": 2.933,
-      "noun_preservation_pct": 99.648,
-      "added": 120,
-      "marginal_char_gain": 0.1139
-    },
-    {
-      "batch": 3,
-      "dict_size": 300,
-      "char_savings_pct": 2.933,
-      "noun_preservation_pct": 99.648,
-      "added": 180,
+      "dict_size": 200,
+      "char_savings_pct": 5.842,
+      "noun_preservation_pct": 98.696,
+      "added": 80,
       "marginal_char_gain": 0.0
     },
     {
-      "batch": 4,
-      "dict_size": 360,
-      "char_savings_pct": 2.942,
-      "noun_preservation_pct": 99.648,
-      "added": 240,
-      "marginal_char_gain": 0.0093
+      "batch": 3,
+      "dict_size": 240,
+      "char_savings_pct": 5.858,
+      "noun_preservation_pct": 98.696,
+      "added": 120,
+      "marginal_char_gain": 0.0162
     }
   ],
-  "plateau_batch": 3
+  "plateau_batch": 2
 }

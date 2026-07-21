@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-07-21T20:01:54.207809+00:00",
+  "corpus_size": 304,
+  "target_sizes": [
+    50,
+    100,
+    200,
+    400,
+    800,
+    1422
+  ],
+  "rows": [
+    {
+      "dict_size": 50,
+      "char_savings_pct": 17.92,
+      "entity_nouns_preserved_pct": 95.45
+    },
+    {
+      "dict_size": 100,
+      "char_savings_pct": 19.54,
+      "entity_nouns_preserved_pct": 95.31
+    },
+    {
+      "dict_size": 200,
+      "char_savings_pct": 20.38,
+      "entity_nouns_preserved_pct": 94.56
+    },
+    {
+      "dict_size": 400,
+      "char_savings_pct": 20.58,
+      "entity_nouns_preserved_pct": 94.56
+    },
+    {
+      "dict_size": 800,
+      "char_savings_pct": 20.85,
+      "entity_nouns_preserved_pct": 94.56
+    },
+    {
+      "dict_size": 1422,
+      "char_savings_pct": 21.29,
+      "entity_nouns_preserved_pct": 94.71
+    }
+  ]
+}

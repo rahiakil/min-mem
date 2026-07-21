@@ -13,6 +13,7 @@ Outputs:
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -174,10 +175,12 @@ def main() -> None:
         corpus, dictionary, rates=(PRIMARY_RATE,)
     )
 
-    print("\n=== Full sweep (0.3, 0.5, 0.7) ===")
-    sweep_results, sweep_summary, sweep_meta = run_mode_benchmark(
-        corpus, dictionary, rates=SWEEP_RATES
-    )
+    sweep_results, sweep_summary, sweep_meta = [], {}, {"optional_deps": meta["optional_deps"], "errors": {}, "elapsed_sec": 0.0}
+    if os.environ.get("SKIP_SWEEP") != "1":
+        print("\n=== Full sweep (0.3, 0.5, 0.7) ===")
+        sweep_results, sweep_summary, sweep_meta = run_mode_benchmark(
+            corpus, dictionary, rates=SWEEP_RATES
+        )
 
     # Load internal ablation summary for context
     internal_path = Path(__file__).parent / "results.json"
